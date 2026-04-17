@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đêm Sao Trên Núi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: #000000;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #canvas-container {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    <script>
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setClearColor(0x000033, 1); // Sáng hơn một chút
+        document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+        // Camera nhìn lên trên, đất chỉ chiếm 20% dưới cùng
+        camera.position.set(0, -5, 30);
+        camera.lookAt(0, 5, 0); // Nhìn lên trên để thấy nhiều bầu trời
+
+        // Tạo bầu trời sao
+        const starGeometry = new THREE.BufferGeometry();
+        const starCount = 2000; // Giảm số lượng sao để thưa hơn
+        const starPositions = new Float32Array(starCount * 3);
+        const starColors = new Float32Array(starCount * 3);
+        const starSizes = new Float32Array(starCount);
+
+        for (let i = 0; i < starCount; i++) {
+            const i3 = i * 3;
+            const radius = 100;
+            const theta = Math.random() * Math.PI * 2;
+            const phi = Math.acos(2 * Math.random() - 1);
+            
+            starPositions[i3] = radius * Math.sin(phi) * Math.cos(theta);
+            starPositions[i3 + 1] = radius * Math.sin(phi) * Math.sin(theta);
+            starPositions[i3 + 2] = radius * Math.cos(phi);
+            
+            const color = new THREE.Color();
+            if (Math.random() > 0.9) {
+                color.setHex(0x87ceeb);
+            } else {
+                color.setHex(0xffffff);
+            }
+            starColors[i3] = color.r;
+            starColors[i3 + 1] = color.g;
+            starColors[i3 + 2] = color.b;
+            
+            starSizes[i] = (Math.random() * 3 + 1.5) * 0.5; // Giảm kích thước 50%
+        }
+
+        starGeometry.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
+        starGeometry.setAttribute('color', new THREE.BufferAttribute(starColors, 3));
+        starGeometry.setAttribute('size', new THREE.BufferAttribute(starSizes, 1));
+
+        const starVertexShader = `
+            attribute float size;
+            varying vec3 vColor;
+            uniform float uTime;
+            
+            void main() {
+                vColor = color;
+                float twinkle = sin(uTime * 2.0 + position.x * 0.1) * 0.5 + 0.5;
+                vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+                gl_PointSize = size * (300.0 / -mvPosition.z) * (0.7 + twinkle * 0.3);
+                gl_Position = projectionMatrix * mvPosition;
+            }
+        `;
+
+        const starFragmentShader = `
+            varying vec3 vColor;
+            
+            void main() {
+                float distanceToCenter = distance(gl_PointCoord, vec2(0.5));
+                float alpha = 1.0 - smoothstep(0.0, 0.5, distanceToCenter);
+                float glow = 1.0 - smoothstep(0.0, 0.3, distanceToCenter);
+                // Tăng độ sáng mạnh hơn
+                gl_FragColor = vec4(vColor * 1.5 + glow * 0.8, alpha * 1.5);
+            }
+        `;
+
+        const starMaterial = new THREE.ShaderMaterial({
+            vertexShader: starVertexShader,
+            fragmentShader: starFragmentShader,
+            transparent: true,
+            vertexColors: true,
+            blending: THREE.AdditiveBlending,
+            depthWrite: false,
+            uniforms: {
+                uTime: { value: 0 }
+            }
+        });
+
+        const stars = new THREE.Points(starGeometry, starMaterial);
+        scene.add(stars);
+
+        // Tạo cực quang uyển chuyển
+        function createAurora() {
+            const auroraGroup = new THREE.Group();
+            
+            const auroraColors = [
+                new THREE.Color(0x00ff96),
+                new THREE.Color(0x00c8ff),
+                new THREE.Color(0x9600ff)
+            ];
+            
+            for (let layer = 0; layer < 3; layer++) {
+                const width = 200;
+                const height = 30;
+                const segments = 100;
+                
+                const geometry = new THREE.PlaneGeometry(width, height, segments, 1);
+                const positions = geometry.attributes.position.array;
+                
+                const auroraVertexShader = `
+                    uniform float uTime;
+                    uniform float uLayer;
+                    varying vec3 vPosition;
+                    varying float vHeight;
+                    
+                    void main() {
+                        vPosition = position;
+                        vec3 pos = position;
+                        
+                        // Tạo sóng uyển chuyển
+                        float wave1 = sin(pos.x * 0.05 + uTime * 0.5 + uLayer) * 3.0;
+                        float wave2 = sin(pos.x * 0.1 + uTime * 0.8 + uLayer * 2.0) * 2.0;
+                        float wave3 = sin(pos.x * 0.15 + uTime * 1.2 + uLayer * 3.0) * 1.0;
+                        
+                        pos.y += wave1 + wave2 + wave3;
+                        vHeight = (pos.y + 15.0) / 30.0;
+                        
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
+                    }
+                `;
+                
+                const auroraFragmentShader = `
+                    uniform vec3 uColor;
+                    uniform float uTime;
+                    uniform float uLayer;
+                    varying vec3 vPosition;
+                    varying float vHeight;
+                    
+                    void main() {
+                        float alpha = vHeight * (0.6 - uLayer * 0.1); // Tăng độ sáng
+                        alpha *= (1.0 - abs(vPosition.x) / 100.0);
+                        
+                        // Thêm hiệu ứng glow mạnh hơn
+                        float glow = sin(vPosition.x * 0.1 + uTime + uLayer) * 0.5 + 0.5;
+                        alpha *= (0.7 + glow * 0.3);
+                        
+                        vec3 color = uColor * 1.3; // Tăng độ sáng màu
+                        color += vec3(glow * 0.4);
+                        
+                        gl_FragColor = vec4(color, alpha);
+                    }
+                `;
+                
+                const material = new THREE.ShaderMaterial({
+                    vertexShader: auroraVertexShader,
+                    fragmentShader: auroraFragmentShader,
+                    transparent: true,
+                    side: THREE.DoubleSide,
+                    blending: THREE.AdditiveBlending,
+                    depthWrite: false,
+                    uniforms: {
+                        uColor: { value: auroraColors[layer] },
+                        uTime: { value: 0 },
+                        uLayer: { value: layer }
+                    }
+                });
+                
+                const aurora = new THREE.Mesh(geometry, material);
+                aurora.position.set(0, 15 + layer * 8, -50);
+                aurora.rotation.x = -Math.PI / 6;
+                auroraGroup.add(aurora);
+            }
+            
+            return auroraGroup;
+        }
+
+        const aurora = createAurora();
+        scene.add(aurora);
+
+        // Tạo núi đẹp với góc cạnh rõ ràng, cao thấp khác nhau và có khe núi
+        function createMountain() {
+            const mountainGroup = new THREE.Group();
+            
+            // Tạo các núi với vị trí và kích thước khác nhau rõ ràng - lớn hơn
+            const mountainData = [
+                { x: -70, width: 35, height: 7, z: -30 },   // Núi thấp bên trái
+                { x: -35, width: 48, height: 15, z: -35 },  // Núi cao
+                { x: 0, width: 28, height: 6, z: -28 },     // Núi thấp giữa (khe núi)
+                { x: 35, width: 52, height: 18, z: -38 },   // Núi cao nhất
+                { x: 70, width: 38, height: 8, z: -32 }     // Núi thấp bên phải
+            ];
+            
+            mountainData.forEach((data, i) => {
+                const shape = new THREE.Shape();
+                const width = data.width;
+                const height = data.height;
+                
+                // Tạo hình núi đẹp với nhiều điểm tạo góc cạnh tự nhiên
+                shape.moveTo(-width / 2, 0);
+                
+                // Tạo sườn núi với nhiều điểm
+                const points = 8; // Số điểm tạo hình dạng núi
+                for (let p = 0; p <= points; p++) {
+                    const t = p / points;
+                    const x = -width / 2 + t * width;
+                    let y = 0;
+                    
+                    if (t < 0.3) {
+                        // Sườn trái - dốc lên
+                        y = (t / 0.3) * height * 0.3;
+                    } else if (t < 0.5) {
+                        // Gần đỉnh - dốc mạnh
+                        const localT = (t - 0.3) / 0.2;
+                        y = height * 0.3 + localT * height * 0.5;
+                    } else if (t < 0.7) {
+                        // Đỉnh núi - có thể có nhiều đỉnh nhỏ
+                        const localT = (t - 0.5) / 0.2;
+                        y = height * 0.8 + Math.sin(localT * Math.PI) * height * 0.2;
+                    } else {
+                        // Sườn phải - dốc xuống
+                        const localT = (t - 0.7) / 0.3;
+                        y = height * (1 - localT * 0.7);
+                    }
+                    
+                    // Thêm biến thiên nhẹ để tự nhiên hơn
+                    y += (Math.random() - 0.5) * height * 0.1;
+                    
+                    if (p === 0) {
+                        shape.moveTo(x, y);
+                    } else {
+                        shape.lineTo(x, y);
+                    }
+                }
+                
+                shape.lineTo(width / 2, 0);
+                shape.lineTo(-width / 2, 0);
+                shape.closePath();
+                
+                const extrudeSettings = {
+                    depth: 25, // Sâu hơn
+                    bevelEnabled: false,
+                    curveSegments: 20 // Nhiều segments hơn để mượt hơn
+                };
+                
+                const geometry = new THREE.ExtrudeGeometry(shape, extrudeSettings);
+                const material = new THREE.MeshStandardMaterial({
+                    color: 0x000000,
+                    emissive: 0x000000,
+                    roughness: 1,
+                    metalness: 0,
+                    flatShading: true
+                });
+                
+                const mountain = new THREE.Mesh(geometry, material);
+                const groundLevel = -25;
+                mountain.position.set(
+                    data.x,
+                    groundLevel,
+                    data.z
+                );
+                mountain.rotation.y = (Math.random() - 0.5) * 0.08;
+                mountainGroup.add(mountain);
+            });
+            
+            return mountainGroup;
+        }
+
+        // Tạo mặt đất phẳng ở dưới cùng với texture đẹp hơn
+        const groundGeometry = new THREE.PlaneGeometry(250, 250, 20, 20);
+        const groundMaterial = new THREE.MeshStandardMaterial({ 
+            color: 0x000000,
+            emissive: 0x000000,
+            roughness: 1,
+            flatShading: true
+        });
+        const ground = new THREE.Mesh(groundGeometry, groundMaterial);
+        ground.rotation.x = -Math.PI / 2;
+        ground.position.y = -25; // Mặt đất ở Y = -25
+        scene.add(ground);
+        
+        // Thêm một số đá nhỏ trên mặt đất
+        const rocks = new THREE.Group();
+        for (let i = 0; i < 15; i++) {
+            const rockSize = 0.3 + Math.random() * 0.5;
+            const rockGeometry = new THREE.DodecahedronGeometry(rockSize, 0);
+            const rockMaterial = new THREE.MeshStandardMaterial({ 
+                color: 0x000000,
+                flatShading: true
+            });
+            const rock = new THREE.Mesh(rockGeometry, rockMaterial);
+            rock.position.set(
+                (Math.random() - 0.5) * 120,
+                -25 + rockSize,
+                -20 - Math.random() * 30
+            );
+            rock.rotation.set(
+                Math.random() * Math.PI,
+                Math.random() * Math.PI,
+                Math.random() * Math.PI
+            );
+            rocks.add(rock);
+        }
+        scene.add(rocks);
+
+        const mountains = createMountain();
+        scene.add(mountains);
+
+        // Tạo cây cối đẹp
+        function createTree(x, z) {
+            const treeGroup = new THREE.Group();
+            
+            // Thân cây - vừa phải, không che bầu trời
+            const trunkHeight = 2.5 + Math.random() * 1.5;
+            const trunkGeometry = new THREE.CylinderGeometry(
+                0.2 + Math.random() * 0.1, 
+                0.3 + Math.random() * 0.1, 
+                trunkHeight, 
+                12
+            );
+            const trunkMaterial = new THREE.MeshStandardMaterial({ 
+                color: 0x000000,
+                flatShading: true
+            });
+            const trunk = new THREE.Mesh(trunkGeometry, trunkMaterial);
+            trunk.position.y = trunkHeight / 2;
+            trunk.rotation.z = (Math.random() - 0.5) * 0.1; // Hơi nghiêng
+            treeGroup.add(trunk);
+            
+            // Tạo nhiều lớp lá để đẹp hơn - vừa phải
+            const branchCount = 3 + Math.floor(Math.random() * 4);
+            for (let i = 0; i < branchCount; i++) {
+                const layerHeight = trunkHeight + i * 1.2;
+                const layerWidth = (1.2 + i * 0.4) * (0.9 + Math.random() * 0.2);
+                const layerDepth = (1.5 + i * 0.5) * (0.9 + Math.random() * 0.2);
+                
+                // Tạo hình nón cho lá
+                const branchGeometry = new THREE.ConeGeometry(
+                    layerWidth,
+                    layerDepth,
+                    16 // Nhiều mặt hơn để mượt hơn
+                );
+                const branchMaterial = new THREE.MeshStandardMaterial({ 
+                    color: 0x000000,
+                    flatShading: true
+                });
+                const branch = new THREE.Mesh(branchGeometry, branchMaterial);
+                branch.position.y = layerHeight;
+                
+                // Thêm chút xoay để tự nhiên hơn
+                branch.rotation.z = (Math.random() - 0.5) * 0.2;
+                branch.rotation.x = (Math.random() - 0.5) * 0.1;
+                
+                treeGroup.add(branch);
+            }
+            
+            // Thêm một số cành nhỏ cho tự nhiên hơn
+            const smallBranchCount = 2 + Math.floor(Math.random() * 3);
+            for (let i = 0; i < smallBranchCount; i++) {
+                const angle = Math.random() * Math.PI * 2;
+                const distance = 0.8 + Math.random() * 0.5;
+                const branchHeight = trunkHeight * 0.6 + Math.random() * trunkHeight * 0.4;
+                
+                const smallBranchGeometry = new THREE.CylinderGeometry(0.06, 0.1, 0.9, 8);
+                const smallBranchMaterial = new THREE.MeshStandardMaterial({ color: 0x000000 });
+                const smallBranch = new THREE.Mesh(smallBranchGeometry, smallBranchMaterial);
+                smallBranch.position.set(
+                    Math.cos(angle) * distance,
+                    branchHeight,
+                    Math.sin(angle) * distance
+                );
+                smallBranch.rotation.z = Math.PI / 2;
+                smallBranch.rotation.y = angle;
+                treeGroup.add(smallBranch);
+            }
+            
+            // Đặt cây thấp xuống, base ở Y = -25
+            const groundLevel = -25;
+            treeGroup.position.set(x, groundLevel, z);
+            // Tạo đa dạng kích thước - có cây lớn và cây nhỏ
+            const sizeType = Math.random();
+            let scale;
+            if (sizeType < 0.3) {
+                // 30% cây nhỏ
+                scale = 0.6 + Math.random() * 0.4; // 0.6 - 1.0
+            } else if (sizeType < 0.7) {
+                // 40% cây vừa
+                scale = 1.0 + Math.random() * 0.5; // 1.0 - 1.5
+            } else {
+                // 30% cây lớn
+                scale = 1.5 + Math.random() * 0.8; // 1.5 - 2.3
+            }
+            treeGroup.scale.setScalar(scale);
+            return treeGroup;
+        }
+
+        const forest = new THREE.Group();
+        for (let i = 0; i < 22; i++) { // Số lượng vừa phải
+            const x = (Math.random() - 0.5) * 100;
+            const z = -20 - Math.random() * 30;
+            const tree = createTree(x, z);
+            forest.add(tree);
+        }
+        scene.add(forest);
+
+        // Ánh sáng tăng cường
+        const ambientLight = new THREE.AmbientLight(0x404040, 0.3);
+        scene.add(ambientLight);
+        
+        // Thêm ánh sáng từ cực quang
+        const auroraLight = new THREE.PointLight(0x00ffff, 0.5, 200);
+        auroraLight.position.set(0, 15, -50);
+        scene.add(auroraLight);
+
+        // Animation
+        let time = 0;
+        function animate() {
+            requestAnimationFrame(animate);
+            time += 0.01;
+
+            // Cập nhật sao
+            starMaterial.uniforms.uTime.value = time;
+            stars.rotation.y += 0.0001;
+
+            // Cập nhật cực quang
+            aurora.children.forEach((layer, index) => {
+                layer.material.uniforms.uTime.value = time;
+            });
+
+            renderer.render(scene, camera);
+        }
+
+        // Resize
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        animate();
+    </script>
+</body>
+</html>
