@@ -1,5 +1,11 @@
 'use strict';
 
+let isPaused = false;
+let pausedAnimeInstances = [];
+function isExperiencePaused() {
+    return isPaused;
+}
+
 // ===== SHARED NIGHT SKY + FIREFLIES CANVAS =====
 (function () {
     const canvas = document.getElementById('bgCanvas');
@@ -39,6 +45,10 @@
 
     let t = 0;
     function draw() {
+        if (isExperiencePaused()) {
+            requestAnimationFrame(draw);
+            return;
+        }
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         t += 0.016;
 
@@ -179,6 +189,10 @@ const PETAL_SYSTEM = (function () {
     }
 
     function animate() {
+        if (isExperiencePaused()) {
+            requestAnimationFrame(animate);
+            return;
+        }
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         t += 0.016;
         wind += (windTarget - wind) * 0.028;
@@ -241,10 +255,14 @@ const NUM_SCENES = 7;
 let current = -1;
 let autoTimerId = null;
 let progressRaf = null;
-let progressStart = 0;
+let autoStartAt = 0;
+let autoDuration = 0;
+let autoRemaining = 0;
+let autoNextScene = -1;
 //                  s1      s2      s3      s4(seeds) s5(flowers) s6(photos) s7(wishes+ending)
-const AUTO_DUR = [11000, 11000, 15000,   43000,    16000,       18000,     0];
+const AUTO_DUR = [9000, 9000, 15000,   43000,    11000,       16000,     0];
 const cleanups = {};
+const sceneTimers = {};
 
 const dotsEl = document.getElementById('nav-dots');
 for (let i = 0; i < NUM_SCENES; i++) {
@@ -256,30 +274,50 @@ for (let i = 0; i < NUM_SCENES; i++) {
 
 document.getElementById('prev-btn').addEventListener('click', () => { if (current > 0) goToScene(current - 1); });
 document.getElementById('next-btn').addEventListener('click', () => { if (current < NUM_SCENES - 1) goToScene(current + 1); });
+document.getElementById('pause-btn').addEventListener('click', togglePause);
 document.addEventListener('keydown', e => {
-    if (e.key === 'ArrowRight' || e.key === ' ') document.getElementById('next-btn').click();
+    if (e.code === 'Space') {
+        e.preventDefault();
+        if (current < 0) {
+            document.getElementById('play')?.click();
+        } else {
+            togglePause();
+        }
+        return;
+    }
+    if (e.key.toLowerCase() === 'p') {
+        togglePause();
+        return;
+    }
+    if (isPaused) return;
+    if (e.key === 'ArrowRight') document.getElementById('next-btn').click();
     if (e.key === 'ArrowLeft') document.getElementById('prev-btn').click();
 });
 
 function goToScene(idx) {
-    if (idx < 0 || idx >= NUM_SCENES) return;
-    clearTimeout(autoTimerId);
-    cancelAnimationFrame(progressRaf);
+    if (idx < 0 || idx >= NUM_SCENES || isPaused) return;
+    stopAutoAdvance(false);
     document.getElementById('progress-fill').style.width = '0%';
 
     const prev = current;
     current = idx;
     updateDots();
+    const scenes = document.querySelectorAll('.scene');
 
     if (prev >= 0) {
+        clearSceneTimers(prev);
         if (cleanups[prev]) { cleanups[prev](); delete cleanups[prev]; }
         // Petal burst at scene transition
         PETAL_SYSTEM.burst(innerWidth * 0.5, innerHeight * 0.45, 10, 2.8);
+        scenes[prev]?.classList.remove('is-active');
         anime({ targets: `#scene-${prev + 1}`, opacity: 0, duration: 500, easing: 'easeInSine' });
     }
 
-    setTimeout(() => {
+    const enterDelay = prev >= 0 ? 420 : 0;
+    setSceneTimeout(idx, () => {
         resetScene(idx);
+        scenes.forEach(s => s.classList.remove('is-active'));
+        scenes[idx]?.classList.add('is-active');
         anime({
             targets: `#scene-${idx + 1}`,
             opacity: [0, 1],
@@ -289,12 +327,11 @@ function goToScene(idx) {
                 enterScene(idx);
                 const dur = AUTO_DUR[idx];
                 if (dur) {
-                    startProgress(dur);
-                    autoTimerId = setTimeout(() => goToScene(idx + 1), dur);
+                    startAutoAdvance(idx, dur);
                 }
             }
         });
-    }, prev >= 0 ? 420 : 0);
+    }, enterDelay);
 }
 
 function updateDots() {
@@ -304,14 +341,110 @@ function updateDots() {
 }
 
 function startProgress(duration) {
-    progressStart = Date.now();
+    autoDuration = duration;
+    autoStartAt = Date.now();
     const fill = document.getElementById('progress-fill');
     function tick() {
-        const pct = Math.min((Date.now() - progressStart) / duration * 100, 100);
+        if (isPaused) return;
+        const pct = Math.min((Date.now() - autoStartAt) / autoDuration * 100, 100);
         fill.style.width = pct + '%';
         if (pct < 100) progressRaf = requestAnimationFrame(tick);
     }
     tick();
+}
+
+function startAutoAdvance(idx, duration) {
+    autoNextScene = idx + 1;
+    autoRemaining = duration;
+    startProgress(duration);
+    autoTimerId = setTimeout(() => goToScene(autoNextScene), duration);
+}
+
+function stopAutoAdvance(keepRemaining) {
+    if (autoTimerId) {
+        clearTimeout(autoTimerId);
+        autoTimerId = null;
+    }
+    if (progressRaf) {
+        cancelAnimationFrame(progressRaf);
+        progressRaf = null;
+    }
+    if (keepRemaining && autoDuration > 0 && autoStartAt > 0) {
+        const elapsed = Date.now() - autoStartAt;
+        autoRemaining = Math.max(autoDuration - elapsed, 0);
+    } else if (!keepRemaining) {
+        autoRemaining = 0;
+        autoDuration = 0;
+        autoStartAt = 0;
+        autoNextScene = -1;
+    }
+}
+
+function resumeAutoAdvance() {
+    if (autoRemaining <= 0 || autoNextScene < 0) return;
+    startProgress(autoRemaining);
+    autoTimerId = setTimeout(() => goToScene(autoNextScene), autoRemaining);
+}
+
+function ensureSceneTimerBag(sceneIdx) {
+    if (!sceneTimers[sceneIdx]) {
+        sceneTimers[sceneIdx] = { timeouts: new Set(), intervals: new Set() };
+    }
+    return sceneTimers[sceneIdx];
+}
+
+function setSceneTimeout(sceneIdx, fn, delay) {
+    const bag = ensureSceneTimerBag(sceneIdx);
+    const id = setTimeout(() => {
+        bag.timeouts.delete(id);
+        if (sceneIdx !== current) return;
+        fn();
+    }, delay);
+    bag.timeouts.add(id);
+    return id;
+}
+
+function setSceneInterval(sceneIdx, fn, delay) {
+    const bag = ensureSceneTimerBag(sceneIdx);
+    const id = setInterval(() => {
+        if (sceneIdx !== current || isPaused) return;
+        fn();
+    }, delay);
+    bag.intervals.add(id);
+    return id;
+}
+
+function clearSceneTimers(sceneIdx) {
+    const bag = sceneTimers[sceneIdx];
+    if (!bag) return;
+    bag.timeouts.forEach(clearTimeout);
+    bag.intervals.forEach(clearInterval);
+    bag.timeouts.clear();
+    bag.intervals.clear();
+}
+
+function togglePause() {
+    if (current < 0) return;
+    const pauseBtn = document.getElementById('pause-btn');
+    const music = document.getElementById('music');
+    isPaused = !isPaused;
+    document.body.classList.toggle('experience-paused', isPaused);
+    pauseBtn.classList.toggle('is-paused', isPaused);
+    pauseBtn.textContent = isPaused ? '▶' : 'II';
+    pauseBtn.setAttribute('aria-label', isPaused ? 'Resume experience' : 'Pause experience');
+    if (isPaused) {
+        stopAutoAdvance(true);
+        if (!music.paused) music.pause();
+        pausedAnimeInstances = anime.running.slice();
+        pausedAnimeInstances.forEach(instance => instance.pause());
+        return;
+    }
+    music.play().catch(() => { });
+    pausedAnimeInstances.forEach(instance => {
+        if (instance && typeof instance.play === 'function') instance.play();
+    });
+    pausedAnimeInstances = [];
+    resumeAutoAdvance();
 }
 
 function resetScene(idx) {
@@ -335,15 +468,18 @@ function enterScene(idx) {
 function enter1() {
     // Gentle wind for scene 1
     PETAL_SYSTEM.setWind(0.22);
-    setTimeout(() => PETAL_SYSTEM.setWind(0), 2800);
+    setSceneTimeout(0, () => PETAL_SYSTEM.setWind(0), 2800);
 
     const lines = document.querySelectorAll('#scene-1 .opening-lines p');
+    lines.forEach(el => {
+        if (el.dataset.rawText) el.textContent = el.dataset.rawText;
+    });
     anime({
         targets: lines,
         opacity: [0, 1],
         translateY: [28, 0],
         filter: ['blur(6px)', 'blur(0px)'],
-        delay: el => parseInt(el.dataset.delay) || 0,
+        delay: el => parseInt(el.dataset.delay, 10) || 0,
         duration: 1000,
         easing: 'easeOutExpo'
     });
@@ -367,6 +503,10 @@ function enter2() {
 
     function drawAurora() {
         if (!running) return;
+        if (isExperiencePaused()) {
+            requestAnimationFrame(drawAurora);
+            return;
+        }
         ctx.clearRect(0, 0, aCanvas.width, aCanvas.height);
         at += 0.005;
         bands.forEach(b => {
@@ -384,10 +524,10 @@ function enter2() {
     cleanups[1] = () => { running = false; ctx.clearRect(0, 0, aCanvas.width, aCanvas.height); };
 
     // Petal burst when name appears (1 sec delay)
-    setTimeout(() => {
+    setSceneTimeout(1, () => {
         PETAL_SYSTEM.burst(innerWidth / 2, innerHeight * 0.52, 22, 4);
-        setTimeout(() => PETAL_SYSTEM.burst(innerWidth * 0.35, innerHeight * 0.5, 8, 3), 400);
-        setTimeout(() => PETAL_SYSTEM.burst(innerWidth * 0.65, innerHeight * 0.5, 8, 3), 700);
+        setSceneTimeout(1, () => PETAL_SYSTEM.burst(innerWidth * 0.35, innerHeight * 0.5, 8, 3), 400);
+        setSceneTimeout(1, () => PETAL_SYSTEM.burst(innerWidth * 0.65, innerHeight * 0.5, 8, 3), 700);
     }, 900);
 
     anime.timeline({ easing: 'easeOutExpo' })
@@ -415,22 +555,26 @@ function enter2() {
             easing: 'easeInOutSine',
             complete: () => el.remove()
         });
-        setTimeout(spawnSparkle, 300 + Math.random() * 400);
+        setSceneTimeout(1, spawnSparkle, 300 + Math.random() * 400);
     }
-    setTimeout(spawnSparkle, 1200);
+    setSceneTimeout(1, spawnSparkle, 1200);
 }
 
 // ===== SCENE 3: gentle messages =====
-const messages3 = [
-    { main: '"C\u00f3 nh\u1eefng ng\u00e0y b\u00ecnh th\u01b0\u1eddng\u2026', sub: 'm\u00e0 l\u1ea1i d\u1ec5 ch\u1ecbu m\u1ed9t c\u00e1ch l\u1ea1"' },
-    { main: '"Kh\u00f4ng c\u1ea7n g\u00ec nhi\u1ec1u,', sub: 'ch\u1ec9 c\u1ea7n \u0111\u1ee7 tho\u1ea3i m\u00e1i l\u00e0 \u0111\u01b0\u1ee3c"' },
-    { main: '"M\u1ecdi th\u1ee9 \u0111\u01a1n gi\u1ea3n m\u1ed9t ch\u00fat\u2026', sub: 'l\u1ea1i th\u1ea5y nh\u1eb9 h\u01a1n"' },
-    { main: '"C\u00f3 nh\u1eefng th\u1ee9 kh\u00f4ng c\u1ea7n n\u00f3i ra\u2026', sub: 'nh\u01b0ng v\u1eabn hi\u1ec3u"' },
-    { main: '"\u0110\u00f4i khi ch\u1ec9 c\u1ea7n th\u1ea5y\u2026', sub: 'l\u00e0 \u0111\u1ee7 r\u1ed3i"' },
-    { main: '"C\u00f3 nh\u1eefng \u0111i\u1ec1u nh\u1ecf th\u00f4i\u2026', sub: 'nh\u01b0ng l\u1ea1i \u0111\u00e1ng nh\u1edb"' },
-    { main: '"Ch\u1ec9 l\u00e0 m\u1ed9t ch\u00fat g\u00ec \u0111\u00f3\u2026', sub: 'nh\u01b0ng em mu\u1ed1n l\u00e0m cho h\u00f4m nay kh\u00e1c \u0111i" \u2728' },
-    { main: '"M\u1ed9t kho\u1ea3nh kh\u1eafc nh\u1ecf th\u00f4i\u2026', sub: 'nh\u01b0ng hy v\u1ecdng ch\u1ecb s\u1ebd nh\u1edb" \uD83D\uDC96' }
-];
+const messages3 = (() => {
+    const nodes = document.querySelectorAll('#scene-3-messages [data-main][data-sub]');
+    const fromHtml = Array.from(nodes).map(node => ({
+        main: node.getAttribute('data-main') || '',
+        sub: node.getAttribute('data-sub') || ''
+    })).filter(item => item.main || item.sub);
+
+    if (fromHtml.length) return fromHtml;
+
+    return [
+        { main: '"Có những ngày bình thường…', sub: 'mà lại dễ chịu một cách lạ"' },
+        { main: '"Không cần gì nhiều,', sub: 'chỉ cần đủ thoải mái là được"' }
+    ];
+})();
 
 
 function enter3() {
@@ -468,6 +612,10 @@ function enter3() {
     let bt = 0;
     function drawBokeh() {
         if (!running) return;
+        if (isExperiencePaused()) {
+            requestAnimationFrame(drawBokeh);
+            return;
+        }
         ctx.clearRect(0, 0, bCanvas.width, bCanvas.height);
         bt += 0.016;
 
@@ -513,15 +661,20 @@ function enter3() {
         const m = messages3[i % messages3.length];
         anime({ targets: [mainEl, subEl], opacity: 0, translateY: -12, filter: ['blur(0px)', 'blur(4px)'], duration: 440, easing: 'easeInSine',
             complete: () => {
-                mainEl.textContent = m.main; subEl.textContent = m.sub;
+                mainEl.textContent = m.main;
+                subEl.textContent = m.sub;
                 anime({ targets: mainEl, opacity: [0, 1], translateY: [24, 0], filter: ['blur(5px)', 'blur(0px)'], duration: 800, easing: 'easeOutExpo' });
                 anime({ targets: subEl,  opacity: [0, 1], translateY: [18, 0], filter: ['blur(4px)', 'blur(0px)'], duration: 800, delay: 200, easing: 'easeOutExpo' });
             }
         });
     }
     showMsg(0);
-    const iv = setInterval(() => { msgIdx++; showMsg(msgIdx); }, 2500);
-    cleanups[2] = () => { running = false; clearInterval(iv); ctx.clearRect(0, 0, bCanvas.width, bCanvas.height); };
+    const iv = setSceneInterval(2, () => { msgIdx++; showMsg(msgIdx); }, 2500);
+    cleanups[2] = () => {
+        running = false;
+        clearInterval(iv);
+        ctx.clearRect(0, 0, bCanvas.width, bCanvas.height);
+    };
 }
 
 // ===== SCENE 4: Háº T GIá»NG =====
@@ -1406,6 +1559,11 @@ function enter4() {
     // ============ MAIN LOOP ============
     function loop(ts){
         if(!running)return;
+        if (isExperiencePaused()) {
+            lastTs = ts;
+            requestAnimationFrame(loop);
+            return;
+        }
         const dtRaw = Math.min((ts - lastTs) / 1000, 0.05);
         lastTs = ts;
         const allBranchesComplete = lSegs.length > 0 && lSegs.every(s => s.prog >= 1);
@@ -1452,12 +1610,7 @@ function enter4() {
             });
 
             if (lSegs.some(s => s.cluster && s.bprog > 0) && !forestGoing) startForest();
-            const showSeedPoem =
-                !textShown &&
-                (sinceBloomUnlocked >= 0.35 ||
-                    bloomGlow > 0.22 ||
-                    (elapsed > 36 && allBranchesComplete) ||
-                    elapsed > 42);
+            const showSeedPoem = !textShown && elapsed > 26;
             if (showSeedPoem) {
                 textShown = true;
                 document.querySelectorAll('#scene-4 .seed-line, #scene-4 .seed-sub').forEach(el => {
@@ -1522,7 +1675,7 @@ function enter5() {
         .add({ targets: '#scene-5 .fl-poem-sub', opacity: [0, 1], translateY: [15, 0],  duration: 800 }, '-=400');
 
     // Like flowers.html: after ~1s remove not-loaded; until then CSS animations stay paused
-    setTimeout(() => { scene.classList.add('fl-active'); }, 1000);
+    setSceneTimeout(4, () => { scene.classList.add('fl-active'); }, 1000);
 
     // Snowflake + firefly canvas for this scene
     const canvas = document.getElementById('fl-canvas');
@@ -1546,6 +1699,10 @@ function enter5() {
     let running = true;
     function drawFl() {
         if (!running) return;
+        if (isExperiencePaused()) {
+            requestAnimationFrame(drawFl);
+            return;
+        }
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         flakes.forEach(f => {
             f.y += f.vy; f.x += f.vx;
@@ -1577,7 +1734,7 @@ function enter5() {
 
     // Gentle petal wind through the flowers
     PETAL_SYSTEM.setWind(0.22);
-    setTimeout(() => PETAL_SYSTEM.setWind(0.08), 3000);
+    setSceneTimeout(4, () => PETAL_SYSTEM.setWind(0.08), 3000);
 
     cleanups[4] = () => {
         running = false;
@@ -1591,7 +1748,7 @@ function enter5() {
 function enter6() {
     // Wind gusts occasionally move petals past photos
     PETAL_SYSTEM.setWind(0.28);
-    setTimeout(() => PETAL_SYSTEM.setWind(0.1), 2500);
+    setSceneTimeout(5, () => PETAL_SYSTEM.setWind(0.1), 2500);
 
     anime({ targets: '.s4-title', opacity: [0, 1], translateY: [-22, 0], filter: ['blur(5px)', 'blur(0px)'], duration: 800, easing: 'easeOutExpo' });
     const cardTilts = [-2.1, 1.7, -1.55, 2.05];
@@ -1630,10 +1787,19 @@ function enter6() {
     const clickFns = [];
     const autoTimeouts = [];
     let photosRunning = true;
+    const sceneDuration = AUTO_DUR[5] || 16000;
+    const introBuffer = 2000;
+    const usableDuration = Math.max(sceneDuration - introBuffer, 8000);
+    const maxImgsPerCard = Math.max(
+        2,
+        ...Array.from(cards, card => card.querySelectorAll('.photo-flip img').length)
+    );
+    // Distribute flips evenly across this scene's active window.
+    const flipInterval = Math.max(1400, Math.floor(usableDuration / (maxImgsPerCard - 1)));
 
     function scheduleNextFlip(flip) {
-        const delay = 4200 + Math.random() * 3800;
-        const id = setTimeout(() => {
+        const delay = flipInterval;
+        const id = setSceneTimeout(5, () => {
             const ix = autoTimeouts.indexOf(id);
             if (ix >= 0) autoTimeouts.splice(ix, 1);
             if (!photosRunning) return;
@@ -1648,11 +1814,11 @@ function enter6() {
         const fn = () => advanceFlip(flip);
         card.addEventListener('click', fn);
         clickFns.push([card, fn]);
-        const kickoff = setTimeout(() => {
+        const kickoff = setSceneTimeout(5, () => {
             const kix = autoTimeouts.indexOf(kickoff);
             if (kix >= 0) autoTimeouts.splice(kix, 1);
             if (photosRunning) scheduleNextFlip(flip);
-        }, 700 + idx * 400 + Math.random() * 1200);
+        }, 900 + idx * 120);
         autoTimeouts.push(kickoff);
     });
 
@@ -1696,6 +1862,10 @@ function enter7() {
     let running = true;
     function drawC() {
         if (!running) return;
+        if (isExperiencePaused()) {
+            requestAnimationFrame(drawC);
+            return;
+        }
         ctx.clearRect(0, 0, cCanvas.width, cCanvas.height);
         pieces.forEach(p => {
             p.y += p.vy; p.x += p.vx; p.rot += p.rspd;
@@ -1718,25 +1888,28 @@ function enter7() {
         requestAnimationFrame(drawC);
     }
     drawC();
-    cleanups[6] = () => { running = false; ctx.clearRect(0, 0, cCanvas.width, cCanvas.height); };
+    cleanups[6] = () => {
+        running = false;
+        ctx.clearRect(0, 0, cCanvas.width, cCanvas.height);
+    };
 
     // Burst of petals when HB text appears
-    setTimeout(() => {
+    setSceneTimeout(6, () => {
         PETAL_SYSTEM.burst(innerWidth / 2, innerHeight * 0.4, 18, 4);
         PETAL_SYSTEM.setWind(-0.32);
-        setTimeout(() => PETAL_SYSTEM.setWind(0.15), 2000);
+        setSceneTimeout(6, () => PETAL_SYSTEM.setWind(0.15), 2000);
     }, 700);
 
     PETAL_SYSTEM.setWind(0.12);
 
     anime.timeline({ easing: 'easeOutExpo' })
         .add({ targets: '.s5-cake', opacity: [0, 1], scale: [0.2, 1], easing: 'easeOutBack', duration: 1100, delay: 200 })
-        .add({ targets: '.s5-hb',   opacity: [0, 1], scale: [0.5, 1], easing: 'easeOutBack', duration: 1000 }, '-=300')
+        .add({ targets: '.s5-hb',   opacity: [0, 1], scale: [0.5, 1], easing: 'easeOutBack', duration: 700 }, '-=300')
         .add({ targets: '.s5-wishes p', opacity: [0, 1], translateX: [-32, 0], filter: ['blur(4px)','blur(0px)'], delay: anime.stagger(300), duration: 750 }, '-=200')
         .add({ targets: '#scene-7 .s6-date', opacity: [0, 1], scale: [0.38, 1], filter: ['blur(12px)','blur(0px)'], easing: 'easeOutBack', duration: 1500 }, '-=100')
         .add({ targets: '#scene-7 .s6-msg', opacity: [0, 1], translateY: [26, 0], filter: ['blur(5px)','blur(0px)'], delay: anime.stagger(420), duration: 850 }, '-=500');
 
-    setTimeout(() => {
+    setSceneTimeout(6, () => {
         const egg = document.getElementById('egg');
         if (!egg) return;
         egg.classList.add('show');
@@ -1744,7 +1917,7 @@ function enter7() {
     }, 5200);
 
     const pyLo = innerHeight * 0.06;
-    setTimeout(() => PETAL_SYSTEM.burst(innerWidth * 0.3, pyLo + Math.random() * 40, 6, 2.2), 1000);
-    setTimeout(() => PETAL_SYSTEM.burst(innerWidth * 0.7, pyLo + Math.random() * 40, 6, 2.2), 2200);
-    setTimeout(() => PETAL_SYSTEM.burst(innerWidth * 0.5, pyLo + Math.random() * 35, 5, 2), 3500);
+    setSceneTimeout(6, () => PETAL_SYSTEM.burst(innerWidth * 0.3, pyLo + Math.random() * 40, 6, 2.2), 1000);
+    setSceneTimeout(6, () => PETAL_SYSTEM.burst(innerWidth * 0.7, pyLo + Math.random() * 40, 6, 2.2), 2200);
+    setSceneTimeout(6, () => PETAL_SYSTEM.burst(innerWidth * 0.5, pyLo + Math.random() * 35, 5, 2), 3500);
 }
