@@ -2086,6 +2086,7 @@ function enter4() {
     function syncHoaDaoMusic(mt) {
         const bpm = HOA_DAO.bpm;
         const beat = Math.max(0, mt - HOA_DAO.beatOffset) * (bpm / 60);
+        const beatFrac = beat - Math.floor(beat);
         const barBeat = Math.floor(beat) % 4;
         const attack = musicBeatEnvelopeFrom(mt, HOA_DAO);
         const strong = barBeat === 0 ? 1.35 : (barBeat === 2 ? 1 : 0.45);
