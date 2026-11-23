@@ -3136,29 +3136,35 @@ function enter4() {
             }
             scene4El.classList.add('tree-bloomed');
         }
-        // Poem: hạt đứng im → ~1.6s hiện chữ
-        if (!textShown && seed.state === 'settled' && sinceSeedSettled >= 1.6) {
+        // Poem "Hoa đào…": hiện trước lyric đầu ~1s
+        {
+            const firstLyricT = (HOA_DAO.lyrics[0] && HOA_DAO.lyrics[0].t) || HOA_DAO.vocalAt;
+            const lyricLead = HOA_DAO.lyricLead || 0;
+            // Lyric lên màn khi mt + lead >= firstLyricT → poem sớm hơn 1s
+            const poemAt = firstLyricT - lyricLead - 1;
+            if (!textShown && mt >= poemAt) {
                 textShown = true;
-            document.querySelectorAll('#scene-5 .seed-line, #scene-5 .seed-sub').forEach(el => {
+                document.querySelectorAll('#scene-5 .seed-line, #scene-5 .seed-sub').forEach(el => {
                     el.style.opacity = '';
                     el.style.transform = '';
                     el.style.filter = '';
                 });
                 anime.timeline({ easing: 'easeOutExpo' })
                     .add({
-                    targets: '#scene-5 .seed-line',
+                        targets: '#scene-5 .seed-line',
                         opacity: [0, 1],
                         translateY: [20, 0],
                         filter: ['blur(10px)', 'blur(0px)'],
                         duration: 1300
                     })
                     .add({
-                    targets: '#scene-5 .seed-sub',
+                        targets: '#scene-5 .seed-sub',
                         opacity: [0, 1],
                         translateY: [14, 0],
                         duration: 900
                     }, '-=400');
             }
+        }
 
         // Cây phụ (không lá) — hiện sau khi cây chính nở full (~45.76)
         if (!useCssTree && !forestGoing && mt >= C.fullBloom && bloomGlow >= 0.85) {
