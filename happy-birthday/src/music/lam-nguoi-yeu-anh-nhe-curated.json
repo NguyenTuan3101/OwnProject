@@ -1,22 +1,6 @@
 {
-  "method": "whisper rescan (dense early) + manual canon align + librosa beat",
-  "file": "lam-nguoi-yeu-anh-nhe.mp3",
-  "duration": 191.61,
-  "bpm": 99.384,
-  "beatOffset": 0.302,
-  "vocalAt": 13.0,
-  "lyricLead": 0.28,
-  "cues": {
-    "intro": 1.5,
-    "verse1": 13.0,
-    "chorus1": 39.22,
-    "hook1": 64.52,
-    "rap": 75.24,
-    "chorus2": 103.28,
-    "hook2": 170.06,
-    "ask": 181.7
-  },
-  "lyrics": [
+  "method": "script.js canon + web fill (tkaraoke) for ASR gaps",
+  "curated": [
     {
       "t": 13.0,
       "mood": "shy",
@@ -150,6 +134,18 @@
       "sub": "Nhưng tương lai sẽ đúng nếu ta yêu nhau mãi"
     },
     {
+      "t": 84.6,
+      "mood": "play",
+      "line": "Bàn phím máy tính chơi nhiều cũng chai",
+      "sub": "Hoa đẹp đến mấy cũng có ngày tàn phai"
+    },
+    {
+      "t": 86.4,
+      "mood": "play",
+      "line": "Yêu xong chia tay ai cũng sợ hãi",
+      "sub": "Riêng tình yêu anh trao bé…"
+    },
+    {
       "t": 88.0,
       "mood": "tender",
       "line": "Tình yêu anh trao em nó rất dai và rất dài",
@@ -160,6 +156,12 @@
       "mood": "brave",
       "line": "Anh đã cố đổi thay để mạnh mẽ hơn vì anh sợ cô đơn",
       "sub": "Và sợ mất bé"
+    },
+    {
+      "t": 93.48,
+      "mood": "brave",
+      "line": "Nói yêu má hồng mắt cong bờ môi mọng rất khó",
+      "sub": "Vì anh ngại… nhưng vẫn muốn nói"
     },
     {
       "t": 97.28,
@@ -184,6 +186,12 @@
       "mood": "tender",
       "line": "Từ giờ và sau này xua lạnh hơi đêm mùa đông",
       "sub": "Anh muốn sưởi ấm những ngày của bé"
+    },
+    {
+      "t": 109.5,
+      "mood": "tender",
+      "line": "Là ngày ta sum vầy khỏa lấp con tim hao gầy",
+      "sub": "Lấp trống tình yêu đong đầy"
     },
     {
       "t": 113.5,
@@ -216,6 +224,12 @@
       "sub": "Anh muốn đi cùng bé"
     },
     {
+      "t": 128.5,
+      "mood": "brave",
+      "line": "Anh đã cố đổi thay để mạnh mẽ hơn vì anh sợ cô đơn",
+      "sub": "Vẫn vì Bé Bơ"
+    },
+    {
       "t": 132.68,
       "mood": "longing",
       "line": "Là khi những nỗi nhớ như sóng xô nơi đây từng cơn",
@@ -238,6 +252,18 @@
       "mood": "ask",
       "line": "Người yêu ơi yêu mình anh được không",
       "sub": "Bé Bơ ơi"
+    },
+    {
+      "t": 147.6,
+      "mood": "tender",
+      "line": "Từ giờ và sau này xua lạnh hơi đêm mùa đông",
+      "sub": "Anh muốn ở bên bé"
+    },
+    {
+      "t": 151.1,
+      "mood": "tender",
+      "line": "Là ngày ta sum vầy khỏa lấp con tim hao gầy",
+      "sub": "Lấp trống tình yêu đong đầy"
     },
     {
       "t": 155.0,

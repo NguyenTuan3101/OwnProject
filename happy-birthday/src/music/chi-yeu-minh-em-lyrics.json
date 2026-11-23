@@ -11,7 +11,7 @@
     "chorus1": 80.5,
     "verse2": 141.15,
     "chorus2": 161.35,
-    "finale": 244.74
+    "finale": 245.0
   },
   "curated": [
     {
@@ -19,288 +19,296 @@
       "mood": "meet",
       "line": "Vừa ngày nào ánh mắt ta trao nhau lần đầu",
       "sub": "Kỷ niệm bắt đầu từ một ánh nhìn…",
-      "focus": 0,
-      "fx": "spark"
+      "fx": "spark",
+      "focus": 0
     },
     {
       "t": 47.04,
       "mood": "smile",
       "line": "Nụ cười em đã khắc sâu trái tim của anh",
       "sub": "Nụ cười Bé Bơ — khắc vào tim",
-      "focus": 1,
-      "fx": "warm"
+      "fx": "warm",
+      "focus": 1
     },
     {
       "t": 50.78,
       "mood": "miss",
       "line": "Phải làm sao cho quên đi bao nhớ thương về em",
       "sub": "Những đêm nhớ…",
-      "focus": 2,
-      "fx": "dim"
+      "fx": "dim",
+      "focus": 2
     },
     {
       "t": 55.91,
       "mood": "miss",
       "line": "Phải làm sao cho phút giây đó ngừng trôi mãi",
       "sub": "Muốn giữ khoảnh khắc ấy mãi",
-      "focus": 2,
-      "fx": "slow"
+      "fx": "slow",
+      "focus": 2
     },
     {
       "t": 60.98,
       "mood": "return",
       "line": "Và một ngày tiếng yêu thương đó chợt trở về",
       "sub": "Yêu thương trở lại…",
-      "focus": 0,
-      "fx": "burst"
+      "fx": "burst",
+      "focus": 0
     },
     {
       "t": 65.36,
       "mood": "return",
       "line": "Gặp lại em lòng hạnh phúc mang bao nhung nhớ",
       "sub": "Hạnh phúc khi gặp lại Bé Bơ",
-      "focus": 1,
-      "fx": "burst"
+      "fx": "burst",
+      "focus": 1
     },
     {
       "t": 70.43,
       "mood": "only",
       "line": "Và anh biết mãi mãi trong cuộc đời này",
       "sub": "Đã thuộc về một người",
-      "focus": 3,
-      "fx": "heart"
+      "fx": "heart",
+      "focus": 3
     },
     {
       "t": 76.09,
       "mood": "only",
       "line": "Thì tình yêu anh đã thuộc về người",
       "sub": "Thuộc về Bé Bơ",
-      "focus": 3,
-      "fx": "heart"
+      "fx": "heart",
+      "focus": 3
     },
     {
       "t": 80.5,
       "mood": "only",
       "line": "Tình yêu đó anh chỉ trao cho riêng người thôi",
       "sub": "Chỉ yêu mình Bé Bơ",
-      "focus": -1,
-      "fx": "heart"
+      "fx": "heart",
+      "focus": -1
     },
     {
       "t": 84.96,
       "mood": "only",
       "line": "Dù đời thay đổi nhưng trái tim anh nguyện chung tình",
       "sub": "Nguyện không đổi thay",
-      "focus": -1,
-      "fx": "glow"
+      "fx": "glow",
+      "focus": -1
     },
     {
       "t": 91.25,
       "mood": "miss",
       "line": "Người có biết khi xa em trong lòng nhớ thương đêm từng đêm",
       "sub": "Nhớ từng đêm…",
-      "focus": 2,
-      "fx": "dim"
+      "fx": "dim",
+      "focus": 2
     },
     {
       "t": 96.32,
       "mood": "return",
       "line": "Cầu mong sao cho chúng ta không rời xa nữa",
       "sub": "Đừng rời xa nữa",
-      "focus": 1,
-      "fx": "warm"
+      "fx": "warm",
+      "focus": 1
     },
     {
       "t": 100.75,
       "mood": "forever",
       "line": "Dù ngàn năm sau khi trái đất kia có đổi thay",
       "sub": "Vẫn yêu người muôn đời",
-      "focus": 3,
-      "fx": "glow"
+      "fx": "glow",
+      "focus": 3
     },
     {
       "t": 105.81,
       "mood": "forever",
       "line": "Thì lòng anh vẫn sẽ chẳng đổi thay yêu người muôn đời",
       "sub": "Chẳng đổi thay…",
-      "focus": 3,
-      "fx": "glow"
+      "fx": "glow",
+      "focus": 3
     },
     {
       "t": 111.48,
       "mood": "forever",
       "line": "Mùa đông giá rét sẽ ấm nồng có em kề bên",
       "sub": "Ấm vì có Bé Bơ",
-      "focus": -1,
-      "fx": "warm"
+      "fx": "warm",
+      "focus": -1
     },
     {
       "t": 115.89,
       "mood": "forever",
       "line": "Tình anh và em mãi không phai mờ qua ngàn sóng gió",
       "sub": "Mãi không phai mờ",
-      "focus": -1,
-      "fx": "finale"
+      "fx": "finale",
+      "focus": -1
     },
     {
       "t": 141.15,
       "mood": "return",
       "line": "Và một ngày tiếng yêu thương đó chợt trở về",
       "sub": "Yêu thương trở lại lần nữa…",
-      "focus": 0,
-      "fx": "burst"
+      "fx": "burst",
+      "focus": 0
     },
     {
       "t": 146.84,
       "mood": "return",
       "line": "Gặp lại em lòng hạnh phúc mang bao nhung nhớ",
       "sub": "Hạnh phúc khi gặp lại",
-      "focus": 1,
-      "fx": "warm"
+      "fx": "warm",
+      "focus": 1
     },
     {
       "t": 151.6,
       "mood": "only",
       "line": "Và anh biết mãi mãi trong cuộc đời này",
       "sub": "Mãi mãi…",
-      "focus": 3,
-      "fx": "heart"
+      "fx": "heart",
+      "focus": 3
     },
     {
       "t": 156.29,
       "mood": "only",
       "line": "Thì tình yêu anh đã thuộc về người",
       "sub": "Thuộc về Bé Bơ",
-      "focus": 3,
-      "fx": "heart"
+      "fx": "heart",
+      "focus": 3
     },
     {
       "t": 161.35,
       "mood": "only",
       "line": "Tình yêu đó anh chỉ trao cho riêng người thôi",
       "sub": "Chỉ trao cho riêng Bé Bơ",
-      "focus": -1,
-      "fx": "heart"
+      "fx": "heart",
+      "focus": -1
     },
     {
       "t": 165.79,
       "mood": "only",
       "line": "Dù đời thay đổi nhưng trái tim anh nguyện chung tình",
       "sub": "Nguyện chung tình",
-      "focus": -1,
-      "fx": "glow"
+      "fx": "glow",
+      "focus": -1
     },
     {
       "t": 171.48,
       "mood": "miss",
       "line": "Người có biết khi xa em trong lòng nhớ thương đêm từng đêm",
       "sub": "Nhớ thương đêm từng đêm",
-      "focus": 2,
-      "fx": "dim"
+      "fx": "dim",
+      "focus": 2
     },
     {
       "t": 175.89,
       "mood": "return",
       "line": "Cầu mong sao cho chúng ta không rời xa nữa",
       "sub": "Không rời xa nữa",
-      "focus": 1,
-      "fx": "warm"
+      "fx": "warm",
+      "focus": 1
     },
     {
       "t": 181.58,
       "mood": "forever",
       "line": "Dù ngàn năm sau khi trái đất kia có đổi thay",
       "sub": "Dù ngàn năm sau…",
-      "focus": 3,
-      "fx": "glow"
+      "fx": "glow",
+      "focus": 3
     },
     {
       "t": 186.64,
       "mood": "forever",
       "line": "Thì lòng anh vẫn sẽ chẳng đổi thay yêu người muôn đời",
       "sub": "Yêu người muôn đời",
-      "focus": 3,
-      "fx": "glow"
+      "fx": "glow",
+      "focus": 3
     },
     {
       "t": 192.31,
       "mood": "forever",
       "line": "Mùa đông giá rét sẽ ấm nồng có em kề bên",
       "sub": "Có Bé Bơ kề bên",
-      "focus": -1,
-      "fx": "warm"
+      "fx": "warm",
+      "focus": -1
     },
     {
       "t": 196.74,
       "mood": "forever",
       "line": "Tình anh và em mãi không phai mờ qua ngàn sóng gió",
       "sub": "Mãi không phai mờ",
-      "focus": -1,
-      "fx": "finale"
+      "fx": "finale",
+      "focus": -1
     },
     {
       "t": 202.41,
       "mood": "only",
       "line": "Tình yêu đó anh chỉ trao cho riêng người thôi",
       "sub": "Chỉ yêu mình Bé Bơ",
-      "focus": -1,
-      "fx": "heart"
+      "fx": "heart",
+      "focus": -1
     },
     {
       "t": 206.84,
       "mood": "only",
       "line": "Dù đời thay đổi nhưng trái tim anh nguyện chung tình",
       "sub": "Nguyện chung tình",
-      "focus": -1,
-      "fx": "glow"
+      "fx": "glow",
+      "focus": -1
     },
     {
       "t": 211.88,
       "mood": "miss",
       "line": "Người có biết khi xa em trong lòng nhớ thương đêm từng đêm",
       "sub": "Nhớ từng đêm…",
-      "focus": 2,
-      "fx": "dim"
+      "fx": "dim",
+      "focus": 2
     },
     {
       "t": 217.62,
       "mood": "return",
       "line": "Cầu mong sao cho chúng ta không rời xa nữa",
       "sub": "Đừng rời xa nữa",
-      "focus": 1,
-      "fx": "warm"
+      "fx": "warm",
+      "focus": 1
     },
     {
       "t": 222.01,
       "mood": "forever",
       "line": "Dù ngàn năm sau khi trái đất kia có đổi thay",
       "sub": "Vẫn yêu người muôn đời",
-      "focus": 3,
-      "fx": "glow"
+      "fx": "glow",
+      "focus": 3
     },
     {
       "t": 227.07,
       "mood": "forever",
       "line": "Thì lòng anh vẫn sẽ chẳng đổi thay yêu người muôn đời",
       "sub": "Chẳng đổi thay…",
-      "focus": 3,
-      "fx": "glow"
+      "fx": "glow",
+      "focus": 3
     },
     {
       "t": 232.73,
       "mood": "forever",
       "line": "Mùa đông giá rét sẽ ấm nồng có em kề bên",
       "sub": "Ấm nồng…",
-      "focus": -1,
-      "fx": "warm"
+      "fx": "warm",
+      "focus": -1
     },
     {
-      "t": 244.74,
+      "t": 245.0,
       "mood": "forever",
       "line": "Tình anh và em mãi không phai mờ qua ngàn sóng gió",
+      "sub": "Mãi không phai mờ",
+      "fx": "finale",
+      "focus": -1
+    },
+    {
+      "t": 251.0,
+      "mood": "forever",
+      "line": "Nguyện cho tình ta mãi không phai mờ qua ngàn sóng gió",
       "sub": "Chỉ yêu mình Bé Bơ",
-      "focus": -1,
-      "fx": "finale"
+      "fx": "finale",
+      "focus": -1
     }
   ]
 }
