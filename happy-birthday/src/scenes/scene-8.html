@@ -1,0 +1,113 @@
+<!-- SCENE 8: KỶ NIỆM + KẾT — Chỉ Yêu Mình Em → một cái ôm -->
+<section class="scene" id="scene-8">
+        <div class="memory-mood" aria-hidden="true"></div>
+        <div class="cyme-glow" aria-hidden="true"></div>
+
+        <div class="cyme-neon-hearts" aria-hidden="true">
+            <div class="cyme-heart-stage" id="cyme-heart-stage">
+                <div class="cyme-heart-orbit" id="cyme-heart-orbit"></div>
+                <div class="cyme-heart-frame" id="cyme-heart-frame"></div>
+            </div>
+        </div>
+        <canvas class="scene-canvas" id="final-canvas" aria-hidden="true"></canvas>
+
+        <div class="scene-inner scene-inner--memory" id="memory-phase">
+            <div class="cyme-stage">
+                <header class="cyme-head">
+                    <p class="show-label">Khung khoảnh khắc</p>
+                    <h2 class="cyme-title s4-title">Yêuu... Thưnnn... Bé Bơ</h2>
+                    <p class="song-credit">Theo cảm hứng: Chỉ Yêu Mình Em — Châu Khải Phong</p>
+                </header>
+
+                <div class="cyme-intro" id="cyme-intro" aria-live="polite">
+                    <p class="cyme-intro-line" id="cyme-intro-line"></p>
+                </div>
+
+                <div class="photo-grid" id="memory-grid">
+                    <div class="photo-card" data-mood="meet" data-cap="Lần đầu">
+                        <div class="photo-flip">
+                            <img class="is-active" src="src/img/photo1.jpg" alt="">
+                            <img src="src/img/photo2.jpg" alt="">
+                            <img src="src/img/photo3.jpg" alt="">
+                            <img src="src/img/photo4.jpg" alt="">
+                            <img src="src/img/photo5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="photo-card" data-mood="smile" data-cap="Nụ cười">
+                        <div class="photo-flip">
+                            <img class="is-active" src="src/img/photo6.jpg" alt="">
+                            <img src="src/img/photo7.jpg" alt="">
+                            <img src="src/img/photo8.jpg" alt="">
+                            <img src="src/img/photo9.jpg" alt="">
+                            <img src="src/img/photo10.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="photo-card" data-mood="miss" data-cap="Nhớ thương">
+                        <div class="photo-flip">
+                            <img class="is-active" src="src/img/photo11.jpg" alt="">
+                            <img src="src/img/photo12.jpg" alt="">
+                            <img src="src/img/photo13.jpg" alt="">
+                            <img src="src/img/photo14.jpg" alt="">
+                            <img src="src/img/photo15.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="photo-card" data-mood="forever" data-cap="Mãi bên">
+                        <div class="photo-flip">
+                            <img class="is-active" src="src/img/photo16.jpg" alt="">
+                            <img src="src/img/photo17.jpg" alt="">
+                            <img src="src/img/photo18.jpg" alt="">
+                            <img src="src/img/photo19.jpg" alt="">
+                            <img src="src/img/photo20.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="karaoke-box karaoke-box--corner" aria-live="polite">
+            <p id="karaoke-main"></p>
+            <p id="karaoke-sub"></p>
+        </div>
+
+        <div class="scene-inner scene-inner--final" id="final-phase" hidden>
+            <!-- Nguồn nội dung thư — JS đo khung rồi tách thành N tờ -->
+            <div id="letter-source" hidden>
+                <p data-letter-label>Một chút yêu thương anh muốn gửi bé</p>
+                <p data-letter-block>
+                    Vậy là món quà nhỏ của anh cũng sắp đến hồi kết rùii...
+                </p>
+                <p data-letter-block>
+                    Anh biết mình đã bỏ lỡ ngày đặc biệt của bé,
+                    hong thể ở bên chúc mừng đúng lúc, nhưng vẫn muốn
+                    dành thời gian này để bù đắp bằng tất cả sự chân thành.
+                </p>
+                <p data-letter-block>
+                    Chúc bé tuổi mới luôn vui vẻ, bình an, rạng rỡ và xinh đẹp.
+                    Mong những điều bé mong muốn sẽ dần thành hiện thực.
+                </p>
+                <p data-letter-block>
+                    Thật ra anh muốn nói với bé: anh rất vui vì đã gặp được bé.
+                    Từ lúc nào chẳng hay, bé đã trở thành người khiến anh
+                    muốn quan tâm và muốn dành thật nhiều thời gian bên cạnh.
+                </p>
+                <p data-letter-block>
+                    Anh không biết tương lai sẽ ra sao, nhưng anh thật lòng
+                    muốn tìm hiểu bé nhiều hơn, muốn đồng hành cùng bé
+                    trong những ngày vui, cả những lúc bé pùn.
+                </p>
+                <p data-letter-block>
+                    Nếu bé cũng sẵn lòng, anh muốn thử bước vào thế giới của bé —
+                    khum chỉ gửi lời chúc, mà còn cùng bé đón thêm nhiều sinh nhật sau này hihi.
+                </p>
+                <h2 data-letter-block>Happy Birthday, Bé Bơ của anh! ❤️</h2>
+                <p class="final-signature" data-letter-block>
+                    Sinh nhật này anh đến muộn một chút,
+                    nhưng tình cảm anh dành cho bé là thật lòng.<br>
+                    Cho anh được thương bé nhé!<br>
+                    yêu lắm bé cơ của anh ❤️❤️❤️
+                </p>
+            </div>
+
+            <div class="letter-desk" id="letter-desk" aria-live="polite"></div>
+        </div>
+    </section>

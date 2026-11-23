@@ -1,0 +1,68 @@
+<!-- SCENE 9: FINALE — tỏ tình + Làm Người Yêu Anh Nhé -->
+<section class="scene" id="scene-9">
+    <div class="finale-glow" aria-hidden="true"></div>
+    <div class="finale-glow finale-glow--soft" aria-hidden="true"></div>
+    <canvas class="scene-canvas" id="finale-canvas" aria-hidden="true"></canvas>
+
+    <div class="finale-stage">
+        <header class="finale-ask" id="finale-ask">
+            <p class="finale-label" id="finale-label">Anh có một điều muốn hỏi bé nhé…</p>
+            <h2 class="finale-title" id="finale-title">Bé Bơ ơiii... Bé bơ àaa...?</h2>
+            <p class="finale-hook" id="finale-hook">Làm người yêu anh nhé... nhé...🤭?</p>
+        </header>
+
+        <div class="finale-heart-wrap" id="finale-heart-wrap">
+            <div class="finale-heart-stage" id="finale-heart-stage">
+                <div class="finale-heart-halo" aria-hidden="true"></div>
+                <svg class="finale-heart-svg" viewBox="0 0 100 92" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="finaleHeartFill" x1="18%" y1="8%" x2="78%" y2="96%">
+                            <stop offset="0%" stop-color="#ffd0e8"/>
+                            <stop offset="38%" stop-color="#ff6aa8"/>
+                            <stop offset="72%" stop-color="#e8327a"/>
+                            <stop offset="100%" stop-color="#b01458"/>
+                        </linearGradient>
+                        <linearGradient id="finaleHeartSheen" x1="30%" y1="10%" x2="55%" y2="55%">
+                            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.72"/>
+                            <stop offset="45%" stop-color="#ffffff" stop-opacity="0.12"/>
+                            <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+                        </linearGradient>
+                        <filter id="finaleHeartSoft" x="-35%" y="-35%" width="170%" height="170%">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="1.1" result="b"/>
+                            <feMerge>
+                                <feMergeNode in="b"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <!-- Classic heart, centered in viewBox -->
+                    <path class="finale-heart-shape"
+                        filter="url(#finaleHeartSoft)"
+                        fill="url(#finaleHeartFill)"
+                        d="M50 86.5
+                           C22 66 4 48.5 4 28.5
+                           C4 14.2 15.2 4 28.8 4
+                           C37.6 4 45.2 8.4 50 15.2
+                           C54.8 8.4 62.4 4 71.2 4
+                           C84.8 4 96 14.2 96 28.5
+                           C96 48.5 78 66 50 86.5Z"/>
+                    <path class="finale-heart-sheen"
+                        fill="url(#finaleHeartSheen)"
+                        d="M28.5 10.5
+                           C22 12.2 17.5 17.8 17.5 25.2
+                           C17.5 34 24.5 42.5 36 52
+                           C30 36 31 18 42 12.5
+                           C37.5 10.8 32.5 10 28.5 10.5Z"
+                        opacity="0.85"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="finale-karaoke" id="finale-karaoke" aria-live="polite">
+            <p class="finale-lyric-main" id="finale-lyric-main"></p>
+            <p class="finale-lyric-sub" id="finale-lyric-sub"></p>
+        </div>
+
+        <p class="finale-sub" id="finale-sub">Cho anh được thương bé — từ hôm nay, và mãi về sau nhaaa... ❤️</p>
+    </div>
+</section>

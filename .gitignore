@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Local tooling / caches
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+*.wav
+*.log
+
+# Local whisper/rescan helpers (not needed to run the site)
+happy-birthday/_*.py
+happy-birthday/_*.mjs

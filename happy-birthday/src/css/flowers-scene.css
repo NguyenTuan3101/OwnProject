@@ -1,7 +1,7 @@
-/* ===== FLOWER SCENE (scene-5) ===== */
+/* ===== FLOWER SCENE (scene-6) ===== */
 
 /* Pause all animations until scene is active */
-#scene-5:not(.fl-active) .fl-scene * {
+#scene-6:not(.fl-active) .fl-scene * {
     animation-play-state: paused !important;
 }
 
@@ -29,34 +29,181 @@
     z-index: 2; pointer-events: none;
 }
 
-/* Poem overlay */
+.fl-aurora,
+.fl-mist,
+.fl-horizon {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1.4s ease, filter 1.4s ease;
+    z-index: 1;
+}
+.fl-aurora {
+    background:
+        radial-gradient(ellipse 70% 35% at 50% 18%, rgba(120, 220, 180, 0.22), transparent 70%),
+        radial-gradient(ellipse 50% 28% at 20% 30%, rgba(255, 180, 200, 0.12), transparent 65%),
+        radial-gradient(ellipse 45% 25% at 80% 28%, rgba(140, 200, 255, 0.14), transparent 65%);
+    filter: blur(2px);
+    z-index: 1;
+}
+.fl-mist {
+    background:
+        linear-gradient(180deg, transparent 45%, rgba(180, 230, 210, 0.08) 70%, rgba(20, 40, 35, 0.35) 100%);
+    z-index: 2;
+}
+.fl-horizon {
+    background: radial-gradient(ellipse 90% 40% at 50% 100%, rgba(255, 200, 140, 0.18), transparent 62%);
+    z-index: 1;
+}
+
+/* Timed acts — sky / atmosphere shifts */
+#scene-6.fl-act-verse .fl-horizon { opacity: 0.55; }
+#scene-6.fl-act-pre .fl-mist { opacity: 0.7; }
+#scene-6.fl-act-pre .fl-horizon { opacity: 0.75; }
+#scene-6.fl-act-chorus .fl-aurora { opacity: 0.95; }
+#scene-6.fl-act-chorus .fl-mist { opacity: 0.85; }
+#scene-6.fl-act-chorus .fl-horizon { opacity: 1; }
+#scene-6.fl-act-rap .fl-aurora {
+    opacity: 0.7;
+    background:
+        radial-gradient(ellipse 60% 32% at 50% 16%, rgba(120, 180, 255, 0.2), transparent 70%),
+        radial-gradient(ellipse 40% 24% at 70% 35%, rgba(180, 140, 255, 0.12), transparent 65%);
+}
+#scene-6.fl-act-rap .fl-mist { opacity: 0.45; }
+#scene-6.fl-act-rap .fl-horizon { opacity: 0.35; }
+#scene-6.fl-act-bridge .fl-aurora { opacity: 0.4; }
+#scene-6.fl-act-bridge .fl-mist { opacity: 0.9; }
+#scene-6.fl-act-bridge .fl-horizon { opacity: 0.5; }
+#scene-6.fl-act-finale .fl-aurora { opacity: 1; filter: blur(1px) saturate(1.15); }
+#scene-6.fl-act-finale .fl-mist { opacity: 1; }
+#scene-6.fl-act-finale .fl-horizon { opacity: 1; }
+#scene-6.fl-act-outro .fl-aurora { opacity: 0.55; }
+#scene-6.fl-act-outro .fl-mist { opacity: 0.75; }
+#scene-6.fl-act-outro .fl-horizon { opacity: 0.65; }
+
+#scene-6.fl-act-chorus .fl-poem,
+#scene-6.fl-act-finale .fl-poem {
+    opacity: 0.22 !important;
+    filter: blur(1px);
+    transition: opacity 1s ease, filter 1s ease;
+}
+#scene-6.fl-act-chorus .fl-poem-sub,
+#scene-6.fl-act-finale .fl-poem-sub {
+    opacity: 0.18 !important;
+}
+
+/* Poem overlay — zones: top title, side feel/whisper, bottom lyric */
 .fl-poem-overlay {
     position: absolute;
-    top: 10%;
-    left: 50%; transform: translateX(-50%);
+    inset: 0;
     z-index: 10;
+    pointer-events: none;
     text-align: center;
-    width: 100%;
-    padding: 0 20px;
+}
+.fl-poem-overlay .show-label {
+    position: absolute;
+    top: max(10px, env(safe-area-inset-top));
+    left: 0;
+    right: 0;
+    margin: 0 auto 0;
+    width: min(94vw, 40rem);
+    white-space: nowrap;
+    font-size: var(--type-label, clamp(1.15rem, 0.92rem + 1vw, 1.65rem));
 }
 .fl-poem {
-    font-size: clamp(1.8rem, 5vw, 3.5rem);
+    position: absolute;
+    top: 6.5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: min(94vw, 42rem);
+    font-size: var(--type-display, clamp(1.7rem, 1.25rem + 1.8vw, 2.75rem));
     color: rgba(200, 245, 255, 0.92);
     text-shadow: 0 0 20px rgba(100,230,255,0.5), 0 0 50px rgba(80,200,255,0.3);
     opacity: 0;
     font-weight: 300;
-    letter-spacing: 6px;
+    letter-spacing: 0.1em;
+    line-height: 1.15;
+    white-space: nowrap;
 }
 .fl-poem-sub {
-    font-size: clamp(0.95rem, 2.5vw, 1.4rem);
-    color: rgba(180, 240, 255, 0.6);
-    margin-top: 12px;
+    position: absolute;
+    top: 14.5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: min(92vw, 36rem);
+    font-size: var(--type-body, clamp(0.92rem, 0.82rem + 0.5vw, 1.15rem));
+    color: rgba(180, 240, 255, 0.65);
     opacity: 0;
     font-style: italic;
-    letter-spacing: 2px;
+    letter-spacing: 0.04em;
+    line-height: 1.35;
+    word-break: keep-all;
+}
+.fl-feel {
+    position: absolute;
+    top: 20%;
+    left: max(14px, 3.5vw);
+    width: min(32vw, 300px);
+    margin: 0;
+    text-align: left;
+    font-size: var(--type-body, clamp(0.92rem, 0.82rem + 0.5vw, 1.15rem));
+    line-height: 1.4;
+    color: rgba(255, 210, 220, 0.92);
+    font-style: italic;
+    letter-spacing: 0.04em;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    text-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.75),
+        0 0 22px rgba(255, 140, 170, 0.4);
+    min-height: 1.5em;
+}
+.fl-whisper {
+    position: absolute;
+    top: 20%;
+    right: max(14px, 3.5vw);
+    width: min(32vw, 300px);
+    margin: 0;
+    text-align: right;
+    font-size: var(--type-caption, clamp(0.78rem, 0.7rem + 0.35vw, 0.95rem));
+    line-height: 1.4;
+    color: rgba(255, 236, 210, 0.9);
+    letter-spacing: 0.04em;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    text-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.75),
+        0 0 18px rgba(255, 190, 140, 0.35);
+    min-height: 1.4em;
 }
 
-/* Flower container positioned at bottom */
+/* Mood washes — nỗi lòng */
+#scene-6.fl-mood-shy .fl-horizon {
+    background: radial-gradient(ellipse 90% 42% at 50% 100%, rgba(255, 190, 170, 0.22), transparent 62%);
+}
+#scene-6.fl-mood-longing .fl-aurora {
+    background:
+        radial-gradient(ellipse 70% 35% at 50% 16%, rgba(255, 160, 190, 0.2), transparent 70%),
+        radial-gradient(ellipse 45% 28% at 75% 30%, rgba(160, 210, 255, 0.12), transparent 65%);
+}
+#scene-6.fl-mood-afraid .fl-mist {
+    background: linear-gradient(180deg, transparent 40%, rgba(40, 60, 90, 0.28) 78%, rgba(10, 16, 28, 0.5) 100%);
+}
+#scene-6.fl-mood-confess .fl-aurora {
+    opacity: 1 !important;
+    background:
+        radial-gradient(ellipse 75% 40% at 50% 18%, rgba(255, 170, 200, 0.32), transparent 68%),
+        radial-gradient(ellipse 50% 30% at 30% 35%, rgba(255, 210, 160, 0.16), transparent 65%);
+}
+#scene-6.fl-mood-tender .fl-horizon {
+    opacity: 1 !important;
+    background: radial-gradient(ellipse 95% 48% at 50% 100%, rgba(255, 200, 170, 0.3), transparent 60%);
+}
+
+/* Flower: ban đầu to đầy khung; khi có tim chỉ thu nhẹ phần dưới */
 .fl-wrap {
     position: absolute;
     bottom: 0;
@@ -67,25 +214,43 @@
     justify-content: center;
     perspective: 1000px;
     z-index: 3;
+    max-height: 92vh;
+    overflow: visible;
+    transition: max-height 1.35s ease;
+}
+#scene-6.fl-heart-on .fl-wrap {
+    max-height: 62vh;
 }
 
 /* ===== FLOWER CSS (from flowers.html) ===== */
 
 .flowers {
     position: relative;
-    transform: scale(0.7);
+    transform: scale(0.96);
+    transform-origin: 50% 100%;
+    margin-bottom: -2vh;
+    transition: transform 1.35s cubic-bezier(0.33, 1, 0.32, 1);
+}
+#scene-6.fl-heart-on .flowers {
+    transform: scale(0.62);
 }
 
 .flower {
     position: absolute;
-    bottom: 10vmin;
+    bottom: 4vmin;
     transform-origin: bottom center;
     z-index: 10;
     --fl-speed: 0.8s;
 }
 
-.flower--1 { animation: moving-flower-1 4s linear infinite; }
-.flower--1 .flower__line { height: 70vmin; animation-delay: 0.3s; }
+.flower--1 {
+    left: 50%;
+    margin-left: -2vmin;
+    animation: moving-flower-1 4s linear infinite;
+    --base-rot: 0deg;
+    --sway-amp: 1;
+}
+.flower--1 .flower__line { height: 68vmin; animation-delay: 0.3s; }
 .flower--1 .flower__line__leaf--1 { animation: blooming-leaf-right var(--fl-speed) 1.6s backwards; }
 .flower--1 .flower__line__leaf--2 { animation: blooming-leaf-right var(--fl-speed) 1.4s backwards; }
 .flower--1 .flower__line__leaf--3 { animation: blooming-leaf-left var(--fl-speed) 1.2s backwards; }
@@ -94,9 +259,11 @@
 .flower--1 .flower__line__leaf--6 { animation: blooming-leaf-left var(--fl-speed) 2s backwards; }
 
 .flower--2 {
-    left: 50%;
-    transform: rotate(30deg);
+    left: 68%;
+    transform: rotate(26deg);
     animation: moving-flower-2 4s linear infinite;
+    --base-rot: 16deg;
+    --sway-amp: -0.9;
 }
 .flower--2 .flower__line { height: 60vmin; animation-delay: 0.8s; }
 .flower--2 .flower__line__leaf--1 { animation: blooming-leaf-right var(--fl-speed) 1.9s backwards; }
@@ -105,11 +272,13 @@
 .flower--2 .flower__line__leaf--4 { animation: blooming-leaf-left var(--fl-speed) 1.3s backwards; }
 
 .flower--3 {
-    left: 50%;
-    transform: rotate(-15deg);
+    left: 28%;
+    transform: rotate(-18deg);
     animation: moving-flower-3 4s linear infinite;
+    --base-rot: -19deg;
+    --sway-amp: 0.75;
 }
-.flower--3 .flower__line { animation-delay: 0.9s; }
+.flower--3 .flower__line { height: 58vmin; animation-delay: 0.9s; }
 .flower--3 .flower__line__leaf--1 { animation: blooming-leaf-right var(--fl-speed) 2.5s backwards; }
 .flower--3 .flower__line__leaf--2 { animation: blooming-leaf-right var(--fl-speed) 2.3s backwards; }
 .flower--3 .flower__line__leaf--3 { animation: blooming-leaf-left var(--fl-speed) 2.1s backwards; }
@@ -320,7 +489,7 @@
     border-top-left-radius: 100%;
     border-left: 2vmin solid #079097;
     background-image: linear-gradient(to bottom, transparent, #000 60%);
-    mask-image: linear-gradient(to top, transparent 30%, #079097 60%);
+    mask-image: linear-gradient(to top, transparent 30%, #159faa 60%);
 }
 .flower__g-right--1 { animation: flower-g-right-ans 2.5s linear infinite; }
 .flower__g-right--2 { left: 5vmin; transform: rotateY(-180deg); animation: flower-g-right-ans--2 3s linear infinite; }
@@ -336,7 +505,7 @@
 }
 .flower__g-front__line {
     width: 0.3vmin; height: 20vmin;
-    background-image: linear-gradient(to top, transparent, #079097, transparent 100%);
+    background-image: linear-gradient(to top, transparent, #159faa, transparent 100%);
     position: relative;
 }
 .flower__g-front__leaf-wrapper {
@@ -515,17 +684,163 @@
 @keyframes flower__g-fr-leaft-ans-7 { 0% { transform-origin: left; transform: rotate(45deg) scale(0); } }
 @keyframes flower__g-fr-leaft-ans-8 { 0% { transform-origin: right; transform: rotate(15deg) rotateY(-180deg) scale(0); } }
 @keyframes leaf-ans-1 {
-    0%, 100% { transform: rotate(-5deg) scale(1); }
-    50%       { transform: rotate(5deg) scale(1.1); }
+    0%, 100% { transform: rotate(-3deg) scale(1); }
+    50%       { transform: rotate(3.5deg) scale(1.04); }
 }
 @keyframes leaf-ans-2 {
-    0%, 100% { transform: rotateY(-180deg) rotate(5deg); }
-    50%       { transform: rotateY(-180deg) rotate(0deg) scale(1.1); }
+    0%, 100% { transform: rotateY(-180deg) rotate(3deg); }
+    50%       { transform: rotateY(-180deg) rotate(-1deg) scale(1.04); }
 }
 @keyframes leaf-ans-3 {
     0%, 100% { transform: rotate(-10deg) rotateY(-180deg); }
-    50%       { transform: rotate(-20deg) rotateY(-180deg); }
+    50%       { transform: rotate(-15deg) rotateY(-180deg); }
 }
 @keyframes grow-ans {
     0% { transform: scale(0); opacity: 0; }
+}
+
+/*
+  Music sway: keep native flower bobble.
+  Drive leaves + grass more than the whole stem (gentle breeze feel).
+  JS sets --sway / --leaf-sway / --grass-sway on #scene-6.
+*/
+#scene-6.fl-music {
+    --sway: 0deg;
+    --leaf-sway: 0deg;
+    --grass-sway: 0deg;
+}
+#scene-6.fl-music .flowers {
+    transform: scale(0.96) rotate(calc(var(--sway) * 0.35));
+    transform-origin: 50% 100%;
+}
+#scene-6.fl-music.fl-heart-on .flowers {
+    transform: scale(0.62) rotate(calc(var(--sway) * 0.35));
+}
+#scene-6.fl-music .flower__leafs {
+    /* không scale theo beat — tránh khựng */
+    transform: rotate(calc(var(--leaf-sway) * 0.45));
+    transform-origin: center bottom;
+}
+#scene-6.fl-music .flower__line__leaf--1,
+#scene-6.fl-music .flower__line__leaf--2,
+#scene-6.fl-music .flower__line__leaf--5 {
+    transform: rotate(calc(70deg + var(--leaf-sway))) rotateY(30deg);
+}
+#scene-6.fl-music .flower__line__leaf--5 {
+    transform: rotate(calc(70deg + var(--leaf-sway) * 1.15)) rotateY(30deg) scale(0.6);
+    transform-origin: left;
+}
+#scene-6.fl-music .flower__line__leaf--3,
+#scene-6.fl-music .flower__line__leaf--4 {
+    transform: rotate(calc(-70deg + var(--leaf-sway) * -1)) rotateY(30deg);
+}
+#scene-6.fl-music .flower__line__leaf--6 {
+    transform: rotate(calc(-70deg + var(--leaf-sway) * -1.1)) rotateY(30deg) scale(0.6);
+    transform-origin: right;
+}
+#scene-6.fl-music .flower--2 .flower__line__leaf--1,
+#scene-6.fl-music .flower--2 .flower__line__leaf--2 {
+    transform: rotate(calc(70deg + var(--leaf-sway) * 0.9)) rotateY(30deg);
+}
+#scene-6.fl-music .flower--2 .flower__line__leaf--3,
+#scene-6.fl-music .flower--2 .flower__line__leaf--4 {
+    transform: rotate(calc(-70deg + var(--leaf-sway) * -0.9)) rotateY(30deg);
+}
+#scene-6.fl-music .flower--3 .flower__line__leaf--1,
+#scene-6.fl-music .flower--3 .flower__line__leaf--2 {
+    transform: rotate(calc(70deg + var(--leaf-sway) * 0.8)) rotateY(30deg);
+}
+#scene-6.fl-music .flower--3 .flower__line__leaf--3,
+#scene-6.fl-music .flower--3 .flower__line__leaf--4 {
+    transform: rotate(calc(-70deg + var(--leaf-sway) * -0.8)) rotateY(30deg);
+}
+
+/* Grass / long leaves — main breeze carriers */
+#scene-6.fl-music .long-g .leaf--0,
+#scene-6.fl-music .long-g .leaf--1 {
+    animation: none !important;
+    transform: rotate(calc(-2deg + var(--grass-sway)));
+    transform-origin: bottom center;
+}
+#scene-6.fl-music .long-g .leaf--2 {
+    animation: none !important;
+    transform: rotateY(-180deg) rotate(calc(2deg + var(--grass-sway) * -0.85));
+    transform-origin: bottom left;
+}
+#scene-6.fl-music .long-g .leaf--3 {
+    animation: none !important;
+    transform: rotate(calc(-12deg + var(--grass-sway) * -0.7)) rotateY(-180deg);
+    transform-origin: bottom left;
+}
+#scene-6.fl-music .long-g--1 { transform: scale(0.8) rotate(calc(-5deg + var(--grass-sway) * 0.35)); }
+#scene-6.fl-music .long-g--5 { transform: scale(0.8) rotate(calc(2deg + var(--grass-sway) * -0.4)); }
+#scene-6.fl-music .long-g--6 { transform: scale(0.8) rotate(calc(2deg + var(--grass-sway) * 0.25)); }
+#scene-6.fl-music .long-g--7 { transform: scale(0.6) rotate(calc(2deg + var(--grass-sway) * -0.3)); opacity: 0.75; }
+
+#scene-6.fl-music .flower__g-front {
+    animation: none !important;
+    transform: rotate(calc(-30deg + var(--grass-sway) * 0.55)) rotateY(35deg) scale(1.04);
+}
+#scene-6.fl-music .flower__g-right--1 {
+    animation: none !important;
+    transform: rotate(calc(22deg + var(--grass-sway) * 0.5));
+}
+#scene-6.fl-music .flower__g-right--2 {
+    animation: none !important;
+    transform: rotateY(-180deg) rotate(calc(2deg + var(--grass-sway) * -0.45)) rotateX(-20deg);
+}
+#scene-6.fl-music .flower__g-long {
+    animation: none !important;
+    transform: rotate(calc(-31deg + var(--grass-sway) * 0.4)) rotateY(-20deg);
+}
+#scene-6.fl-music .flower__g-fr {
+    animation: none !important;
+    transform: rotate(calc(3deg + var(--grass-sway) * 0.35));
+}
+#scene-6.fl-music .growing-grass .flower__grass--1 {
+    animation: none !important;
+    transform: rotate(calc(-49deg + var(--grass-sway) * 0.45)) rotateY(40deg);
+}
+#scene-6.fl-music .growing-grass .flower__grass--2 {
+    animation: none !important;
+    transform: scale(0.5) rotate(calc(77deg + var(--grass-sway) * -0.4)) rotateX(10deg) rotateY(-200deg);
+}
+
+#scene-6 .lyric-line[data-lyric] {
+    position: absolute;
+    left: auto;
+    right: max(16px, 3vw);
+    bottom: max(48px, 6.5vh);
+    margin: 0;
+    width: min(48vw, 380px);
+    min-height: 1.4em;
+    padding: 0;
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(1.05rem, 2.4vw, 1.45rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+    word-break: keep-all;
+    text-align: right;
+    color: #fff4ea;
+    text-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.9),
+        0 2px 8px rgba(0, 0, 0, 0.55),
+        0 0 16px rgba(255, 150, 200, 0.4);
+    transition: opacity 0.25s ease;
+    z-index: 12;
+}
+
+@media (max-width: 700px) {
+    .fl-feel,
+    .fl-whisper {
+        width: min(42vw, 200px);
+        top: 24%;
+        font-size: clamp(0.8rem, 3.2vw, 1rem);
+    }
+    .fl-poem { top: 7.5%; letter-spacing: 3px; }
+    .fl-poem-sub { top: 16%; }
+    .flower--2 { left: 62%; }
+    .flower--3 { left: 34%; }
 }

@@ -1,0 +1,42 @@
+{
+  "method": "faster-whisper medium + word_timestamps (no VAD) on hoa-dao.wav",
+  "note": "Text = official lyrics; t = ASR word/segment start. Scene-5 chỉ dùng curated — không gắn rap / lyric ước lượng sau điệp khúc.",
+  "duration": 172.85,
+  "lyricLead": 0.28,
+  "cues": {
+    "vocalAt": 15.16,
+    "preBloom": 45.0,
+    "fullBloom": 62.5,
+    "petalFly": 62.5,
+    "chorus": 63.1,
+    "chorus2": 78.54,
+    "outroGlow": 95.0
+  },
+  "curated": [
+    { "t": 15.16, "text": "Sơn khê sương trắng bay…" },
+    { "t": 18.12, "text": "Thấp thoáng bóng hình nàng thơ…" },
+    { "t": 19.62, "text": "Cho ta thoáng say…" },
+    { "t": 21.34, "text": "Bóng dáng như đào hoa…" },
+    { "t": 23.16, "text": "Kiêu sa trong tuyết pha…" },
+    { "t": 25.86, "text": "Cười ngạo gió đông ngoài xa…" },
+    { "t": 30.42, "text": "Vươn lên trong giá sương…" },
+    { "t": 33.52, "text": "Nụ đào mỉm cười kiêu sa…" },
+    { "t": 35.02, "text": "Khi đông vừa qua…" },
+    { "t": 37.1, "text": "Người thấy trong lòng bao xốn xang…" },
+    { "t": 40.32, "text": "Như ta mãi hai mươi…" },
+    { "t": 45.76, "text": "Nụ hoa nào căng mọng…" },
+    { "t": 50.08, "text": "Vừa tiếu ngạo đông phong…" },
+    { "t": 53.48, "text": "Một nét cười đã mở trời xuân xanh…" },
+    { "t": 63.1, "text": "Hoa bay giữa trời…" },
+    { "t": 65.5, "text": "Bay, bay như môi cười…" },
+    { "t": 67.14, "text": "Ta bay giữa đời…" },
+    { "t": 69.26, "text": "Qua chông gai mấy thời…" },
+    { "t": 70.7, "text": "Giống như môi hoa đào…" },
+    { "t": 74.28, "text": "Cười ngạo gió đông…" },
+    { "t": 78.54, "text": "Hoa bay dạt dào…" },
+    { "t": 80.34, "text": "Cho ta luôn tin vào…" },
+    { "t": 82.44, "text": "Sức sống tuôn trào…" },
+    { "t": 84.44, "text": "Nâng gót chân anh hào…" },
+    { "t": 85.76, "text": "Vượt ngàn chông gai…" }
+  ]
+}

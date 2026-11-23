@@ -1,0 +1,297 @@
+{
+  "method": "whisper rescan (dense early) + manual canon align + librosa beat",
+  "file": "lam-nguoi-yeu-anh-nhe.mp3",
+  "duration": 191.61,
+  "bpm": 99.384,
+  "beatOffset": 0.302,
+  "vocalAt": 13.0,
+  "lyricLead": 0.28,
+  "cues": {
+    "intro": 1.5,
+    "verse1": 13.0,
+    "chorus1": 39.22,
+    "hook1": 64.52,
+    "rap": 75.24,
+    "chorus2": 103.28,
+    "hook2": 170.06,
+    "ask": 181.7
+  },
+  "lyrics": [
+    {
+      "t": 13.0,
+      "mood": "shy",
+      "line": "Em lặng im còn anh thì ngồi ngẩn ngơ nhìn khuôn mặt ngây thơ đó",
+      "sub": "Anh nhìn Bé Bơ… lòng rối hết cả lên"
+    },
+    {
+      "t": 17.5,
+      "mood": "shy",
+      "line": "Em hững hờ quá nên anh lo sợ bơ vơ",
+      "sub": "Anh sợ bé chẳng để ý tới anh"
+    },
+    {
+      "t": 19.8,
+      "mood": "shy",
+      "line": "Đợi chờ đôi mắt ngoan em ngại ngùng ngó sang",
+      "sub": "Chỉ cần một ánh nhìn cũng đủ"
+    },
+    {
+      "t": 22.4,
+      "mood": "shy",
+      "line": "Anh thẫn thờ bơ phờ đôi mắt mơ",
+      "sub": "Anh như mất hồn vì bé"
+    },
+    {
+      "t": 24.6,
+      "mood": "brave",
+      "line": "Anh đã cố đổi thay để mạnh mẽ hơn vì anh sợ cô đơn",
+      "sub": "Anh muốn đủ tốt cho Bé Bơ"
+    },
+    {
+      "t": 28.0,
+      "mood": "brave",
+      "line": "Nói yêu má hồng mắt cong bờ môi mọng rất khó",
+      "sub": "Vì anh ngại… nhưng vẫn muốn nói"
+    },
+    {
+      "t": 33.56,
+      "mood": "brave",
+      "line": "Vì lo trong trái tim em đã có ai",
+      "sub": "Anh vẫn mang theo một chút ngại"
+    },
+    {
+      "t": 36.4,
+      "mood": "brave",
+      "line": "Nhưng nếu yêu em là sai thì anh đây không cần đúng",
+      "sub": "Thương bé là điều anh chọn"
+    },
+    {
+      "t": 39.22,
+      "mood": "ask",
+      "line": "Người yêu ơi yêu mình anh được không",
+      "sub": "Bé Bơ ơi, anh hỏi thật lòng"
+    },
+    {
+      "t": 43.24,
+      "mood": "ask",
+      "line": "Từ giờ và sau này xua lạnh hơi đêm mùa đông",
+      "sub": "Anh muốn ở bên bé"
+    },
+    {
+      "t": 46.5,
+      "mood": "tender",
+      "line": "Là ngày ta sum vầy khỏa lấp con tim hao gầy",
+      "sub": "Lấp đầy những khoảng trống trong anh"
+    },
+    {
+      "t": 49.5,
+      "mood": "tender",
+      "line": "Hãy để anh chứng minh cho em thấy",
+      "sub": "Bằng tất cả sự chân thành"
+    },
+    {
+      "t": 52.02,
+      "mood": "ask",
+      "line": "Người yêu ơi yêu thì có gì sai",
+      "sub": "Đâu có sai đâu"
+    },
+    {
+      "t": 56.0,
+      "mood": "ask",
+      "line": "Không là anh thì ai để anh đưa em về",
+      "sub": "Về một nơi chỉ có hai đứa mình"
+    },
+    {
+      "t": 59.9,
+      "mood": "tender",
+      "line": "Là tình yêu mãi mê mặc kệ người ta cười chê",
+      "sub": "Bởi vì tình yêu là thế"
+    },
+    {
+      "t": 64.52,
+      "mood": "confess",
+      "line": "Làm người yêu anh nhé, Bé Bơ",
+      "sub": "Làm người yêu anh nhé, Bé Bơ"
+    },
+    {
+      "t": 67.4,
+      "mood": "confess",
+      "line": "Rồi làm vợ anh nhé, Bé Bơ",
+      "sub": "Một lời hứa anh giữ thật lâu"
+    },
+    {
+      "t": 70.8,
+      "mood": "confess",
+      "line": "Làm người yêu anh nhé, Bé Bơ",
+      "sub": "Với anh, bé là Bé Bơ"
+    },
+    {
+      "t": 72.5,
+      "mood": "confess",
+      "line": "Rồi làm vợ anh nhé, Bé Bơ",
+      "sub": "Anh đang nghiêm túc đó"
+    },
+    {
+      "t": 75.24,
+      "mood": "play",
+      "line": "Không hiểu không hiểu không hiểu",
+      "sub": "Tim anh rối hết cả lên"
+    },
+    {
+      "t": 77.4,
+      "mood": "play",
+      "line": "Gặp em tự nhiên trái tim nằm bên trái nhảy sang bên phải",
+      "sub": "Chỉ vì Bé Bơ thôi"
+    },
+    {
+      "t": 81.6,
+      "mood": "play",
+      "line": "Anh cộng em thì bằng ba là sai",
+      "sub": "Nhưng tương lai sẽ đúng nếu ta yêu nhau mãi"
+    },
+    {
+      "t": 88.0,
+      "mood": "tender",
+      "line": "Tình yêu anh trao em nó rất dai và rất dài",
+      "sub": "Không phải thứ dễ phai"
+    },
+    {
+      "t": 91.02,
+      "mood": "brave",
+      "line": "Anh đã cố đổi thay để mạnh mẽ hơn vì anh sợ cô đơn",
+      "sub": "Và sợ mất bé"
+    },
+    {
+      "t": 97.28,
+      "mood": "brave",
+      "line": "Vì lo trong trái tim em đã có ai",
+      "sub": "Dù vậy anh vẫn muốn nói"
+    },
+    {
+      "t": 100.2,
+      "mood": "brave",
+      "line": "Nhưng nếu yêu em là sai thì anh đây không cần đúng",
+      "sub": "Anh chọn bé"
+    },
+    {
+      "t": 103.28,
+      "mood": "ask",
+      "line": "Người yêu ơi yêu mình anh được không",
+      "sub": "Lần nữa — anh hỏi bé"
+    },
+    {
+      "t": 106.5,
+      "mood": "tender",
+      "line": "Từ giờ và sau này xua lạnh hơi đêm mùa đông",
+      "sub": "Anh muốn sưởi ấm những ngày của bé"
+    },
+    {
+      "t": 113.5,
+      "mood": "tender",
+      "line": "Hãy để anh chứng minh cho em thấy",
+      "sub": "Không chỉ bằng lời"
+    },
+    {
+      "t": 115.78,
+      "mood": "ask",
+      "line": "Người yêu ơi yêu thì có gì sai",
+      "sub": "Không là anh thì ai?"
+    },
+    {
+      "t": 120.2,
+      "mood": "ask",
+      "line": "Không là anh thì ai để anh đưa em về",
+      "sub": "Về bên anh"
+    },
+    {
+      "t": 124.0,
+      "mood": "tender",
+      "line": "Là tình yêu mãi mê",
+      "sub": "Mặc kệ người ta cười chê"
+    },
+    {
+      "t": 126.92,
+      "mood": "confess",
+      "line": "Bởi vì tình yêu là thế",
+      "sub": "Anh muốn đi cùng bé"
+    },
+    {
+      "t": 132.68,
+      "mood": "longing",
+      "line": "Là khi những nỗi nhớ như sóng xô nơi đây từng cơn",
+      "sub": "Anh nhớ bé nhiều lắm"
+    },
+    {
+      "t": 135.9,
+      "mood": "longing",
+      "line": "Là khi em cười đùa bên ai đau đớn nên anh giận hờn",
+      "sub": "Vì anh đã thích bé thật rồi"
+    },
+    {
+      "t": 138.88,
+      "mood": "brave",
+      "line": "Nhưng yêu em là sai thì anh đây không cần đúng",
+      "sub": "Anh vẫn muốn hỏi…"
+    },
+    {
+      "t": 144.92,
+      "mood": "ask",
+      "line": "Người yêu ơi yêu mình anh được không",
+      "sub": "Bé Bơ ơi"
+    },
+    {
+      "t": 155.0,
+      "mood": "tender",
+      "line": "Hãy để anh chứng minh cho em thấy",
+      "sub": "Bằng cả những ngày phía trước"
+    },
+    {
+      "t": 157.74,
+      "mood": "ask",
+      "line": "Người yêu ơi yêu thì có gì sai",
+      "sub": "Đâu có sai đâu"
+    },
+    {
+      "t": 161.5,
+      "mood": "ask",
+      "line": "Không là anh thì ai",
+      "sub": "Để anh đưa bé về"
+    },
+    {
+      "t": 165.5,
+      "mood": "tender",
+      "line": "Là tình yêu mãi mê mặc kệ người ta cười chê",
+      "sub": "Bởi vì tình yêu là thế"
+    },
+    {
+      "t": 170.06,
+      "mood": "confess",
+      "line": "Làm người yêu anh nhé, Bé Bơ",
+      "sub": "Anh đang hỏi thật đó"
+    },
+    {
+      "t": 173.3,
+      "mood": "confess",
+      "line": "Rồi làm vợ anh nhé, Bé Bơ",
+      "sub": "Nếu bé cũng sẵn lòng"
+    },
+    {
+      "t": 176.52,
+      "mood": "confess",
+      "line": "Làm người yêu anh nhé, Bé Bơ",
+      "sub": "Anh chỉ gọi Bé Bơ"
+    },
+    {
+      "t": 178.5,
+      "mood": "confess",
+      "line": "Rồi làm vợ anh nhé, Bé Bơ",
+      "sub": "Anh chờ câu trả lời của bé"
+    },
+    {
+      "t": 181.7,
+      "mood": "ask",
+      "line": "Ý em sao… ý em sao?",
+      "sub": "Bé Bơ ơi — làm người yêu anh nhé?"
+    }
+  ]
+}

@@ -1,0 +1,7138 @@
+{
+  "method": "faster-whisper medium rescan dense early + librosa beat",
+  "file": "lam-nguoi-yeu-anh-nhe.mp3",
+  "duration": 191.61,
+  "bpm": 99.384,
+  "beatOffset": 1.7183,
+  "beats": [
+    1.718,
+    2.299,
+    2.81,
+    3.32,
+    3.901,
+    4.528,
+    5.224,
+    5.921,
+    6.502,
+    7.105,
+    7.57,
+    8.104,
+    8.707,
+    9.311,
+    9.961,
+    10.635,
+    11.308,
+    11.912,
+    12.516,
+    13.119,
+    13.723,
+    14.303,
+    14.93,
+    15.534,
+    16.115,
+    16.718,
+    17.299,
+    17.926,
+    18.553,
+    19.226,
+    19.9,
+    20.503,
+    21.107,
+    21.711,
+    22.314,
+    22.918,
+    23.522,
+    24.102,
+    24.729,
+    25.31,
+    26.076,
+    26.703,
+    27.307,
+    27.91,
+    28.514,
+    29.304,
+    29.907,
+    30.511,
+    31.092,
+    31.695,
+    32.299,
+    32.879,
+    33.506,
+    34.087,
+    34.691,
+    35.294,
+    35.898,
+    36.502,
+    37.082,
+    37.686,
+    38.266,
+    38.87,
+    39.497,
+    40.101,
+    40.705,
+    41.308,
+    41.912,
+    42.516,
+    43.119,
+    43.723,
+    44.304,
+    44.907,
+    45.511,
+    46.092,
+    46.695,
+    47.299,
+    47.903,
+    48.483,
+    49.11,
+    49.714
+  ],
+  "segments": [
+    {
+      "start": 13.02,
+      "end": 17.98,
+      "text": "Em lặng im còn anh thì ngồi ngẩn ngơ. Nhìn hôn mặt ngay thơ đó em hứng ngờ.",
+      "words": [
+        {
+          "start": 13.02,
+          "end": 13.46,
+          "word": "Em"
+        },
+        {
+          "start": 13.46,
+          "end": 13.7,
+          "word": "lặng"
+        },
+        {
+          "start": 13.7,
+          "end": 13.86,
+          "word": "im"
+        },
+        {
+          "start": 13.86,
+          "end": 14.12,
+          "word": "còn"
+        },
+        {
+          "start": 14.12,
+          "end": 14.26,
+          "word": "anh"
+        },
+        {
+          "start": 14.26,
+          "end": 14.46,
+          "word": "thì"
+        },
+        {
+          "start": 14.46,
+          "end": 14.86,
+          "word": "ngồi"
+        },
+        {
+          "start": 14.86,
+          "end": 15.3,
+          "word": "ngẩn"
+        },
+        {
+          "start": 15.3,
+          "end": 15.7,
+          "word": "ngơ."
+        },
+        {
+          "start": 15.76,
+          "end": 15.86,
+          "word": "Nhìn"
+        },
+        {
+          "start": 15.86,
+          "end": 16.06,
+          "word": "hôn"
+        },
+        {
+          "start": 16.06,
+          "end": 16.54,
+          "word": "mặt"
+        },
+        {
+          "start": 16.54,
+          "end": 16.94,
+          "word": "ngay"
+        },
+        {
+          "start": 16.94,
+          "end": 17.14,
+          "word": "thơ"
+        },
+        {
+          "start": 17.14,
+          "end": 17.26,
+          "word": "đó"
+        },
+        {
+          "start": 17.26,
+          "end": 17.46,
+          "word": "em"
+        },
+        {
+          "start": 17.46,
+          "end": 17.68,
+          "word": "hứng"
+        },
+        {
+          "start": 17.68,
+          "end": 17.98,
+          "word": "ngờ."
+        }
+      ]
+    },
+    {
+      "start": 12.96,
+      "end": 27.98,
+      "text": "Em lặng im còn anh thì ngồi ngẩn ngơ nhìn khuôn mặt. Ngay thơ đó em hứa ngờ quá nên anh lo sợ bơ vơ. Đợi chờ rối mắt mang em ngay mù ngó sang anh thân thờ. Đôi mắt mơ anh đã cố đôi thay đêm anh nghe.",
+      "words": [
+        {
+          "start": 12.96,
+          "end": 13.48,
+          "word": "Em"
+        },
+        {
+          "start": 13.48,
+          "end": 13.7,
+          "word": "lặng"
+        },
+        {
+          "start": 13.7,
+          "end": 13.84,
+          "word": "im"
+        },
+        {
+          "start": 13.84,
+          "end": 14.04,
+          "word": "còn"
+        },
+        {
+          "start": 14.04,
+          "end": 14.26,
+          "word": "anh"
+        },
+        {
+          "start": 14.26,
+          "end": 14.46,
+          "word": "thì"
+        },
+        {
+          "start": 14.46,
+          "end": 14.86,
+          "word": "ngồi"
+        },
+        {
+          "start": 14.86,
+          "end": 15.28,
+          "word": "ngẩn"
+        },
+        {
+          "start": 15.28,
+          "end": 15.68,
+          "word": "ngơ"
+        },
+        {
+          "start": 15.68,
+          "end": 15.9,
+          "word": "nhìn"
+        },
+        {
+          "start": 15.9,
+          "end": 16.1,
+          "word": "khuôn"
+        },
+        {
+          "start": 16.1,
+          "end": 16.54,
+          "word": "mặt."
+        },
+        {
+          "start": 16.74,
+          "end": 16.88,
+          "word": "Ngay"
+        },
+        {
+          "start": 16.88,
+          "end": 17.16,
+          "word": "thơ"
+        },
+        {
+          "start": 17.16,
+          "end": 17.26,
+          "word": "đó"
+        },
+        {
+          "start": 17.26,
+          "end": 17.48,
+          "word": "em"
+        },
+        {
+          "start": 17.48,
+          "end": 17.7,
+          "word": "hứa"
+        },
+        {
+          "start": 17.7,
+          "end": 18.06,
+          "word": "ngờ"
+        },
+        {
+          "start": 18.06,
+          "end": 18.48,
+          "word": "quá"
+        },
+        {
+          "start": 18.48,
+          "end": 18.84,
+          "word": "nên"
+        },
+        {
+          "start": 18.84,
+          "end": 19.08,
+          "word": "anh"
+        },
+        {
+          "start": 19.08,
+          "end": 19.24,
+          "word": "lo"
+        },
+        {
+          "start": 19.24,
+          "end": 19.84,
+          "word": "sợ"
+        },
+        {
+          "start": 19.84,
+          "end": 20.18,
+          "word": "bơ"
+        },
+        {
+          "start": 20.18,
+          "end": 20.56,
+          "word": "vơ."
+        },
+        {
+          "start": 20.72,
+          "end": 21.0,
+          "word": "Đợi"
+        },
+        {
+          "start": 21.0,
+          "end": 21.26,
+          "word": "chờ"
+        },
+        {
+          "start": 21.26,
+          "end": 21.62,
+          "word": "rối"
+        },
+        {
+          "start": 21.62,
+          "end": 22.02,
+          "word": "mắt"
+        },
+        {
+          "start": 22.02,
+          "end": 22.3,
+          "word": "mang"
+        },
+        {
+          "start": 22.3,
+          "end": 22.5,
+          "word": "em"
+        },
+        {
+          "start": 22.5,
+          "end": 22.7,
+          "word": "ngay"
+        },
+        {
+          "start": 22.7,
+          "end": 22.94,
+          "word": "mù"
+        },
+        {
+          "start": 22.94,
+          "end": 23.24,
+          "word": "ngó"
+        },
+        {
+          "start": 23.24,
+          "end": 23.6,
+          "word": "sang"
+        },
+        {
+          "start": 23.6,
+          "end": 23.86,
+          "word": "anh"
+        },
+        {
+          "start": 23.86,
+          "end": 24.12,
+          "word": "thân"
+        },
+        {
+          "start": 24.12,
+          "end": 24.46,
+          "word": "thờ."
+        },
+        {
+          "start": 25.28,
+          "end": 25.44,
+          "word": "Đôi"
+        },
+        {
+          "start": 25.44,
+          "end": 25.72,
+          "word": "mắt"
+        },
+        {
+          "start": 25.72,
+          "end": 25.98,
+          "word": "mơ"
+        },
+        {
+          "start": 25.98,
+          "end": 26.28,
+          "word": "anh"
+        },
+        {
+          "start": 26.28,
+          "end": 26.44,
+          "word": "đã"
+        },
+        {
+          "start": 26.44,
+          "end": 26.68,
+          "word": "cố"
+        },
+        {
+          "start": 26.68,
+          "end": 26.88,
+          "word": "đôi"
+        },
+        {
+          "start": 26.88,
+          "end": 27.08,
+          "word": "thay"
+        },
+        {
+          "start": 27.08,
+          "end": 27.34,
+          "word": "đêm"
+        },
+        {
+          "start": 27.34,
+          "end": 27.66,
+          "word": "anh"
+        },
+        {
+          "start": 27.66,
+          "end": 27.98,
+          "word": "nghe."
+        }
+      ]
+    },
+    {
+      "start": 14.0,
+      "end": 35.98,
+      "text": "Em lặng anh thì ngồi ngẩn ngơ nhìn khuôn mặt. Ngày thơ đó em hứa ngờ quá nên anh lo sợ bơ vơ. Đợi chờ rối mắt mắt em ngay mùng ngó sang. Anh thân thờ đôi mắt mơ. Anh đã cố đôi thay để mạnh nghe hơn vì anh sợ. Cô đơn ơi yêu má hồng mắt cong bờ môi mỏng giật kho. Vì lo trong trái tim em nặng có anh",
+      "words": [
+        {
+          "start": 14.0,
+          "end": 14.12,
+          "word": "Em"
+        },
+        {
+          "start": 14.12,
+          "end": 14.24,
+          "word": "lặng"
+        },
+        {
+          "start": 14.24,
+          "end": 14.24,
+          "word": "anh"
+        },
+        {
+          "start": 14.24,
+          "end": 14.44,
+          "word": "thì"
+        },
+        {
+          "start": 14.44,
+          "end": 14.86,
+          "word": "ngồi"
+        },
+        {
+          "start": 14.86,
+          "end": 15.28,
+          "word": "ngẩn"
+        },
+        {
+          "start": 15.28,
+          "end": 15.68,
+          "word": "ngơ"
+        },
+        {
+          "start": 15.68,
+          "end": 15.88,
+          "word": "nhìn"
+        },
+        {
+          "start": 15.88,
+          "end": 16.12,
+          "word": "khuôn"
+        },
+        {
+          "start": 16.12,
+          "end": 16.54,
+          "word": "mặt."
+        },
+        {
+          "start": 16.76,
+          "end": 16.88,
+          "word": "Ngày"
+        },
+        {
+          "start": 16.88,
+          "end": 17.14,
+          "word": "thơ"
+        },
+        {
+          "start": 17.14,
+          "end": 17.26,
+          "word": "đó"
+        },
+        {
+          "start": 17.26,
+          "end": 17.48,
+          "word": "em"
+        },
+        {
+          "start": 17.48,
+          "end": 17.76,
+          "word": "hứa"
+        },
+        {
+          "start": 17.76,
+          "end": 18.04,
+          "word": "ngờ"
+        },
+        {
+          "start": 18.04,
+          "end": 18.46,
+          "word": "quá"
+        },
+        {
+          "start": 18.46,
+          "end": 18.84,
+          "word": "nên"
+        },
+        {
+          "start": 18.84,
+          "end": 19.08,
+          "word": "anh"
+        },
+        {
+          "start": 19.08,
+          "end": 19.24,
+          "word": "lo"
+        },
+        {
+          "start": 19.24,
+          "end": 19.82,
+          "word": "sợ"
+        },
+        {
+          "start": 19.82,
+          "end": 20.16,
+          "word": "bơ"
+        },
+        {
+          "start": 20.16,
+          "end": 20.54,
+          "word": "vơ."
+        },
+        {
+          "start": 20.72,
+          "end": 20.98,
+          "word": "Đợi"
+        },
+        {
+          "start": 20.98,
+          "end": 21.26,
+          "word": "chờ"
+        },
+        {
+          "start": 21.26,
+          "end": 21.64,
+          "word": "rối"
+        },
+        {
+          "start": 21.64,
+          "end": 22.0,
+          "word": "mắt"
+        },
+        {
+          "start": 22.0,
+          "end": 22.26,
+          "word": "mắt"
+        },
+        {
+          "start": 22.26,
+          "end": 22.5,
+          "word": "em"
+        },
+        {
+          "start": 22.5,
+          "end": 22.7,
+          "word": "ngay"
+        },
+        {
+          "start": 22.7,
+          "end": 22.96,
+          "word": "mùng"
+        },
+        {
+          "start": 22.96,
+          "end": 23.24,
+          "word": "ngó"
+        },
+        {
+          "start": 23.24,
+          "end": 23.58,
+          "word": "sang."
+        },
+        {
+          "start": 23.74,
+          "end": 23.88,
+          "word": "Anh"
+        },
+        {
+          "start": 23.88,
+          "end": 24.1,
+          "word": "thân"
+        },
+        {
+          "start": 24.1,
+          "end": 24.46,
+          "word": "thờ"
+        },
+        {
+          "start": 24.46,
+          "end": 25.44,
+          "word": "đôi"
+        },
+        {
+          "start": 25.44,
+          "end": 25.72,
+          "word": "mắt"
+        },
+        {
+          "start": 25.72,
+          "end": 25.96,
+          "word": "mơ."
+        },
+        {
+          "start": 26.06,
+          "end": 26.24,
+          "word": "Anh"
+        },
+        {
+          "start": 26.24,
+          "end": 26.42,
+          "word": "đã"
+        },
+        {
+          "start": 26.42,
+          "end": 26.68,
+          "word": "cố"
+        },
+        {
+          "start": 26.68,
+          "end": 26.88,
+          "word": "đôi"
+        },
+        {
+          "start": 26.88,
+          "end": 27.08,
+          "word": "thay"
+        },
+        {
+          "start": 27.08,
+          "end": 27.24,
+          "word": "để"
+        },
+        {
+          "start": 27.24,
+          "end": 27.64,
+          "word": "mạnh"
+        },
+        {
+          "start": 27.64,
+          "end": 28.14,
+          "word": "nghe"
+        },
+        {
+          "start": 28.14,
+          "end": 28.4,
+          "word": "hơn"
+        },
+        {
+          "start": 28.4,
+          "end": 28.6,
+          "word": "vì"
+        },
+        {
+          "start": 28.6,
+          "end": 28.9,
+          "word": "anh"
+        },
+        {
+          "start": 28.9,
+          "end": 29.36,
+          "word": "sợ."
+        },
+        {
+          "start": 29.52,
+          "end": 29.74,
+          "word": "Cô"
+        },
+        {
+          "start": 29.74,
+          "end": 29.88,
+          "word": "đơn"
+        },
+        {
+          "start": 29.88,
+          "end": 30.04,
+          "word": "ơi"
+        },
+        {
+          "start": 30.04,
+          "end": 30.24,
+          "word": "yêu"
+        },
+        {
+          "start": 30.24,
+          "end": 30.42,
+          "word": "má"
+        },
+        {
+          "start": 30.42,
+          "end": 30.8,
+          "word": "hồng"
+        },
+        {
+          "start": 30.8,
+          "end": 31.16,
+          "word": "mắt"
+        },
+        {
+          "start": 31.16,
+          "end": 31.7,
+          "word": "cong"
+        },
+        {
+          "start": 31.7,
+          "end": 31.88,
+          "word": "bờ"
+        },
+        {
+          "start": 31.88,
+          "end": 32.06,
+          "word": "môi"
+        },
+        {
+          "start": 32.06,
+          "end": 32.68,
+          "word": "mỏng"
+        },
+        {
+          "start": 32.68,
+          "end": 32.92,
+          "word": "giật"
+        },
+        {
+          "start": 32.92,
+          "end": 33.28,
+          "word": "kho."
+        },
+        {
+          "start": 33.5,
+          "end": 33.64,
+          "word": "Vì"
+        },
+        {
+          "start": 33.64,
+          "end": 34.0,
+          "word": "lo"
+        },
+        {
+          "start": 34.0,
+          "end": 34.46,
+          "word": "trong"
+        },
+        {
+          "start": 34.46,
+          "end": 34.82,
+          "word": "trái"
+        },
+        {
+          "start": 34.82,
+          "end": 35.22,
+          "word": "tim"
+        },
+        {
+          "start": 35.22,
+          "end": 35.48,
+          "word": "em"
+        },
+        {
+          "start": 35.48,
+          "end": 35.74,
+          "word": "nặng"
+        },
+        {
+          "start": 35.74,
+          "end": 35.92,
+          "word": "có"
+        },
+        {
+          "start": 35.92,
+          "end": 35.98,
+          "word": "anh"
+        }
+      ]
+    },
+    {
+      "start": 28.0,
+      "end": 33.36,
+      "text": "Vì anh sợ cô đơn nói yêu má hồng. Mắt mong cong bởi môi mỏng rất khó.",
+      "words": [
+        {
+          "start": 28.0,
+          "end": 28.6,
+          "word": "Vì"
+        },
+        {
+          "start": 28.6,
+          "end": 28.84,
+          "word": "anh"
+        },
+        {
+          "start": 28.84,
+          "end": 29.38,
+          "word": "sợ"
+        },
+        {
+          "start": 29.38,
+          "end": 29.72,
+          "word": "cô"
+        },
+        {
+          "start": 29.72,
+          "end": 29.88,
+          "word": "đơn"
+        },
+        {
+          "start": 29.88,
+          "end": 30.06,
+          "word": "nói"
+        },
+        {
+          "start": 30.06,
+          "end": 30.22,
+          "word": "yêu"
+        },
+        {
+          "start": 30.22,
+          "end": 30.44,
+          "word": "má"
+        },
+        {
+          "start": 30.44,
+          "end": 30.8,
+          "word": "hồng."
+        },
+        {
+          "start": 30.82,
+          "end": 31.04,
+          "word": "Mắt"
+        },
+        {
+          "start": 31.04,
+          "end": 31.3,
+          "word": "mong"
+        },
+        {
+          "start": 31.3,
+          "end": 31.74,
+          "word": "cong"
+        },
+        {
+          "start": 31.74,
+          "end": 31.98,
+          "word": "bởi"
+        },
+        {
+          "start": 31.98,
+          "end": 32.06,
+          "word": "môi"
+        },
+        {
+          "start": 32.06,
+          "end": 32.68,
+          "word": "mỏng"
+        },
+        {
+          "start": 32.68,
+          "end": 32.86,
+          "word": "rất"
+        },
+        {
+          "start": 32.86,
+          "end": 33.36,
+          "word": "khó."
+        }
+      ]
+    },
+    {
+      "start": 33.56,
+      "end": 38.78,
+      "text": "Vì lo trong trái tim em nào có ai. Nhưng người yêu em nó sai thì anh đi không cần đu.",
+      "words": [
+        {
+          "start": 33.56,
+          "end": 33.64,
+          "word": "Vì"
+        },
+        {
+          "start": 33.64,
+          "end": 34.0,
+          "word": "lo"
+        },
+        {
+          "start": 34.0,
+          "end": 34.46,
+          "word": "trong"
+        },
+        {
+          "start": 34.46,
+          "end": 34.82,
+          "word": "trái"
+        },
+        {
+          "start": 34.82,
+          "end": 35.22,
+          "word": "tim"
+        },
+        {
+          "start": 35.22,
+          "end": 35.5,
+          "word": "em"
+        },
+        {
+          "start": 35.5,
+          "end": 35.66,
+          "word": "nào"
+        },
+        {
+          "start": 35.66,
+          "end": 36.06,
+          "word": "có"
+        },
+        {
+          "start": 36.06,
+          "end": 36.22,
+          "word": "ai."
+        },
+        {
+          "start": 36.22,
+          "end": 36.42,
+          "word": "Nhưng"
+        },
+        {
+          "start": 36.42,
+          "end": 36.58,
+          "word": "người"
+        },
+        {
+          "start": 36.58,
+          "end": 36.78,
+          "word": "yêu"
+        },
+        {
+          "start": 36.78,
+          "end": 37.02,
+          "word": "em"
+        },
+        {
+          "start": 37.02,
+          "end": 37.18,
+          "word": "nó"
+        },
+        {
+          "start": 37.18,
+          "end": 37.36,
+          "word": "sai"
+        },
+        {
+          "start": 37.36,
+          "end": 37.58,
+          "word": "thì"
+        },
+        {
+          "start": 37.58,
+          "end": 37.86,
+          "word": "anh"
+        },
+        {
+          "start": 37.86,
+          "end": 37.96,
+          "word": "đi"
+        },
+        {
+          "start": 37.96,
+          "end": 38.26,
+          "word": "không"
+        },
+        {
+          "start": 38.26,
+          "end": 38.42,
+          "word": "cần"
+        },
+        {
+          "start": 38.42,
+          "end": 38.78,
+          "word": "đu."
+        }
+      ]
+    },
+    {
+      "start": 39.22,
+      "end": 43.24,
+      "text": "Người yêu ơi yêu mình anh được không? Từ giờ và sau đã hơi.",
+      "words": [
+        {
+          "start": 39.22,
+          "end": 39.48,
+          "word": "Người"
+        },
+        {
+          "start": 39.48,
+          "end": 39.7,
+          "word": "yêu"
+        },
+        {
+          "start": 39.7,
+          "end": 40.04,
+          "word": "ơi"
+        },
+        {
+          "start": 40.04,
+          "end": 40.48,
+          "word": "yêu"
+        },
+        {
+          "start": 40.48,
+          "end": 40.86,
+          "word": "mình"
+        },
+        {
+          "start": 40.86,
+          "end": 41.28,
+          "word": "anh"
+        },
+        {
+          "start": 41.28,
+          "end": 41.68,
+          "word": "được"
+        },
+        {
+          "start": 41.68,
+          "end": 42.18,
+          "word": "không?"
+        },
+        {
+          "start": 42.38,
+          "end": 42.44,
+          "word": "Từ"
+        },
+        {
+          "start": 42.44,
+          "end": 42.66,
+          "word": "giờ"
+        },
+        {
+          "start": 42.66,
+          "end": 42.82,
+          "word": "và"
+        },
+        {
+          "start": 42.82,
+          "end": 43.14,
+          "word": "sau"
+        },
+        {
+          "start": 43.14,
+          "end": 43.2,
+          "word": "đã"
+        },
+        {
+          "start": 43.2,
+          "end": 43.24,
+          "word": "hơi."
+        }
+      ]
+    },
+    {
+      "start": 43.24,
+      "end": 48.02,
+      "text": "Chúa mình nơi mùa đá là ngày tật xung vời. Qua lắm con tim bao gầy.",
+      "words": [
+        {
+          "start": 43.24,
+          "end": 43.64,
+          "word": "Chúa"
+        },
+        {
+          "start": 43.64,
+          "end": 44.02,
+          "word": "mình"
+        },
+        {
+          "start": 44.02,
+          "end": 44.44,
+          "word": "nơi"
+        },
+        {
+          "start": 44.44,
+          "end": 44.96,
+          "word": "mùa"
+        },
+        {
+          "start": 44.96,
+          "end": 45.34,
+          "word": "đá"
+        },
+        {
+          "start": 45.34,
+          "end": 45.62,
+          "word": "là"
+        },
+        {
+          "start": 45.62,
+          "end": 45.78,
+          "word": "ngày"
+        },
+        {
+          "start": 45.78,
+          "end": 46.04,
+          "word": "tật"
+        },
+        {
+          "start": 46.04,
+          "end": 46.32,
+          "word": "xung"
+        },
+        {
+          "start": 46.32,
+          "end": 46.44,
+          "word": "vời."
+        },
+        {
+          "start": 46.52,
+          "end": 46.96,
+          "word": "Qua"
+        },
+        {
+          "start": 46.96,
+          "end": 47.2,
+          "word": "lắm"
+        },
+        {
+          "start": 47.2,
+          "end": 47.46,
+          "word": "con"
+        },
+        {
+          "start": 47.46,
+          "end": 47.64,
+          "word": "tim"
+        },
+        {
+          "start": 47.64,
+          "end": 47.86,
+          "word": "bao"
+        },
+        {
+          "start": 47.86,
+          "end": 48.02,
+          "word": "gầy."
+        }
+      ]
+    },
+    {
+      "start": 48.08,
+      "end": 51.6,
+      "text": "Lâu trong tình yêu đong đầy. Hãy để anh chứng minh cho em thấy.",
+      "words": [
+        {
+          "start": 48.08,
+          "end": 48.46,
+          "word": "Lâu"
+        },
+        {
+          "start": 48.46,
+          "end": 48.86,
+          "word": "trong"
+        },
+        {
+          "start": 48.86,
+          "end": 49.08,
+          "word": "tình"
+        },
+        {
+          "start": 49.08,
+          "end": 49.28,
+          "word": "yêu"
+        },
+        {
+          "start": 49.28,
+          "end": 49.48,
+          "word": "đong"
+        },
+        {
+          "start": 49.48,
+          "end": 49.88,
+          "word": "đầy."
+        },
+        {
+          "start": 49.92,
+          "end": 50.06,
+          "word": "Hãy"
+        },
+        {
+          "start": 50.06,
+          "end": 50.26,
+          "word": "để"
+        },
+        {
+          "start": 50.26,
+          "end": 50.44,
+          "word": "anh"
+        },
+        {
+          "start": 50.44,
+          "end": 50.66,
+          "word": "chứng"
+        },
+        {
+          "start": 50.66,
+          "end": 50.84,
+          "word": "minh"
+        },
+        {
+          "start": 50.84,
+          "end": 51.04,
+          "word": "cho"
+        },
+        {
+          "start": 51.04,
+          "end": 51.32,
+          "word": "em"
+        },
+        {
+          "start": 51.32,
+          "end": 51.6,
+          "word": "thấy."
+        }
+      ]
+    },
+    {
+      "start": 52.02,
+      "end": 54.68,
+      "text": "Người yêu ơi yêu thì có gì sai.",
+      "words": [
+        {
+          "start": 52.02,
+          "end": 52.26,
+          "word": "Người"
+        },
+        {
+          "start": 52.26,
+          "end": 52.48,
+          "word": "yêu"
+        },
+        {
+          "start": 52.48,
+          "end": 52.84,
+          "word": "ơi"
+        },
+        {
+          "start": 52.84,
+          "end": 53.24,
+          "word": "yêu"
+        },
+        {
+          "start": 53.24,
+          "end": 53.64,
+          "word": "thì"
+        },
+        {
+          "start": 53.64,
+          "end": 54.08,
+          "word": "có"
+        },
+        {
+          "start": 54.08,
+          "end": 54.44,
+          "word": "gì"
+        },
+        {
+          "start": 54.44,
+          "end": 54.68,
+          "word": "sai."
+        }
+      ]
+    },
+    {
+      "start": 48.0,
+      "end": 51.92,
+      "text": "Lúc trong tình yêu đong đầy, hãy để anh chứng minh cho em thấy.",
+      "words": [
+        {
+          "start": 48.0,
+          "end": 48.46,
+          "word": "Lúc"
+        },
+        {
+          "start": 48.46,
+          "end": 48.86,
+          "word": "trong"
+        },
+        {
+          "start": 48.86,
+          "end": 49.14,
+          "word": "tình"
+        },
+        {
+          "start": 49.14,
+          "end": 49.26,
+          "word": "yêu"
+        },
+        {
+          "start": 49.26,
+          "end": 49.54,
+          "word": "đong"
+        },
+        {
+          "start": 49.54,
+          "end": 49.82,
+          "word": "đầy,"
+        },
+        {
+          "start": 50.02,
+          "end": 50.06,
+          "word": "hãy"
+        },
+        {
+          "start": 50.06,
+          "end": 50.24,
+          "word": "để"
+        },
+        {
+          "start": 50.24,
+          "end": 50.44,
+          "word": "anh"
+        },
+        {
+          "start": 50.44,
+          "end": 50.66,
+          "word": "chứng"
+        },
+        {
+          "start": 50.66,
+          "end": 50.8,
+          "word": "minh"
+        },
+        {
+          "start": 50.8,
+          "end": 51.06,
+          "word": "cho"
+        },
+        {
+          "start": 51.06,
+          "end": 51.3,
+          "word": "em"
+        },
+        {
+          "start": 51.3,
+          "end": 51.92,
+          "word": "thấy."
+        }
+      ]
+    },
+    {
+      "start": 52.18,
+      "end": 59.68,
+      "text": "Người yêu ơi yêu thì có gì sai, không là anh thì ái, để anh nhớ em về.",
+      "words": [
+        {
+          "start": 52.18,
+          "end": 52.32,
+          "word": "Người"
+        },
+        {
+          "start": 52.32,
+          "end": 52.46,
+          "word": "yêu"
+        },
+        {
+          "start": 52.46,
+          "end": 52.8,
+          "word": "ơi"
+        },
+        {
+          "start": 52.8,
+          "end": 53.2,
+          "word": "yêu"
+        },
+        {
+          "start": 53.2,
+          "end": 53.64,
+          "word": "thì"
+        },
+        {
+          "start": 53.64,
+          "end": 54.08,
+          "word": "có"
+        },
+        {
+          "start": 54.08,
+          "end": 54.5,
+          "word": "gì"
+        },
+        {
+          "start": 54.5,
+          "end": 54.7,
+          "word": "sai,"
+        },
+        {
+          "start": 55.98,
+          "end": 56.38,
+          "word": "không"
+        },
+        {
+          "start": 56.38,
+          "end": 56.84,
+          "word": "là"
+        },
+        {
+          "start": 56.84,
+          "end": 57.24,
+          "word": "anh"
+        },
+        {
+          "start": 57.24,
+          "end": 57.76,
+          "word": "thì"
+        },
+        {
+          "start": 57.76,
+          "end": 58.24,
+          "word": "ái,"
+        },
+        {
+          "start": 58.26,
+          "end": 58.48,
+          "word": "để"
+        },
+        {
+          "start": 58.48,
+          "end": 58.72,
+          "word": "anh"
+        },
+        {
+          "start": 58.72,
+          "end": 58.9,
+          "word": "nhớ"
+        },
+        {
+          "start": 58.9,
+          "end": 59.22,
+          "word": "em"
+        },
+        {
+          "start": 59.22,
+          "end": 59.68,
+          "word": "về."
+        }
+      ]
+    },
+    {
+      "start": 59.9,
+      "end": 64.28,
+      "text": "Làm tình yêu mãi mê, mặc kì người ta tự chết, bởi vì tình yêu ngạc thế.",
+      "words": [
+        {
+          "start": 59.9,
+          "end": 60.24,
+          "word": "Làm"
+        },
+        {
+          "start": 60.24,
+          "end": 60.24,
+          "word": "tình"
+        },
+        {
+          "start": 60.24,
+          "end": 60.44,
+          "word": "yêu"
+        },
+        {
+          "start": 60.44,
+          "end": 60.78,
+          "word": "mãi"
+        },
+        {
+          "start": 60.78,
+          "end": 61.16,
+          "word": "mê,"
+        },
+        {
+          "start": 61.34,
+          "end": 61.48,
+          "word": "mặc"
+        },
+        {
+          "start": 61.48,
+          "end": 61.62,
+          "word": "kì"
+        },
+        {
+          "start": 61.62,
+          "end": 61.8,
+          "word": "người"
+        },
+        {
+          "start": 61.8,
+          "end": 62.0,
+          "word": "ta"
+        },
+        {
+          "start": 62.0,
+          "end": 62.28,
+          "word": "tự"
+        },
+        {
+          "start": 62.28,
+          "end": 62.8,
+          "word": "chết,"
+        },
+        {
+          "start": 62.94,
+          "end": 63.12,
+          "word": "bởi"
+        },
+        {
+          "start": 63.12,
+          "end": 63.22,
+          "word": "vì"
+        },
+        {
+          "start": 63.22,
+          "end": 63.48,
+          "word": "tình"
+        },
+        {
+          "start": 63.48,
+          "end": 63.62,
+          "word": "yêu"
+        },
+        {
+          "start": 63.62,
+          "end": 63.94,
+          "word": "ngạc"
+        },
+        {
+          "start": 63.94,
+          "end": 64.28,
+          "word": "thế."
+        }
+      ]
+    },
+    {
+      "start": 64.52,
+      "end": 70.62,
+      "text": "Làm người yêu anh nhé baby, rồi làm vợ anh nhé baby.",
+      "words": [
+        {
+          "start": 64.52,
+          "end": 64.76,
+          "word": "Làm"
+        },
+        {
+          "start": 64.76,
+          "end": 64.84,
+          "word": "người"
+        },
+        {
+          "start": 64.84,
+          "end": 65.06,
+          "word": "yêu"
+        },
+        {
+          "start": 65.06,
+          "end": 65.38,
+          "word": "anh"
+        },
+        {
+          "start": 65.38,
+          "end": 65.66,
+          "word": "nhé"
+        },
+        {
+          "start": 65.66,
+          "end": 66.42,
+          "word": "baby,"
+        },
+        {
+          "start": 67.62,
+          "end": 67.82,
+          "word": "rồi"
+        },
+        {
+          "start": 67.82,
+          "end": 68.06,
+          "word": "làm"
+        },
+        {
+          "start": 68.06,
+          "end": 68.2,
+          "word": "vợ"
+        },
+        {
+          "start": 68.2,
+          "end": 68.58,
+          "word": "anh"
+        },
+        {
+          "start": 68.58,
+          "end": 68.84,
+          "word": "nhé"
+        },
+        {
+          "start": 68.84,
+          "end": 70.62,
+          "word": "baby."
+        }
+      ]
+    },
+    {
+      "start": 70.8,
+      "end": 74.22,
+      "text": "Làm người yêu anh nhé baby, rồi làm vợ anh nhé baby.",
+      "words": [
+        {
+          "start": 70.8,
+          "end": 71.14,
+          "word": "Làm"
+        },
+        {
+          "start": 71.14,
+          "end": 71.24,
+          "word": "người"
+        },
+        {
+          "start": 71.24,
+          "end": 71.46,
+          "word": "yêu"
+        },
+        {
+          "start": 71.46,
+          "end": 71.78,
+          "word": "anh"
+        },
+        {
+          "start": 71.78,
+          "end": 72.02,
+          "word": "nhé"
+        },
+        {
+          "start": 72.02,
+          "end": 72.4,
+          "word": "baby,"
+        },
+        {
+          "start": 72.48,
+          "end": 72.66,
+          "word": "rồi"
+        },
+        {
+          "start": 72.66,
+          "end": 72.84,
+          "word": "làm"
+        },
+        {
+          "start": 72.84,
+          "end": 73.04,
+          "word": "vợ"
+        },
+        {
+          "start": 73.04,
+          "end": 73.36,
+          "word": "anh"
+        },
+        {
+          "start": 73.36,
+          "end": 73.62,
+          "word": "nhé"
+        },
+        {
+          "start": 73.62,
+          "end": 74.22,
+          "word": "baby."
+        }
+      ]
+    },
+    {
+      "start": 70.82,
+      "end": 74.22,
+      "text": "Làm người yêu anh nhé baby. Rồi làm vợ anh nhé baby.",
+      "words": [
+        {
+          "start": 70.82,
+          "end": 71.18,
+          "word": "Làm"
+        },
+        {
+          "start": 71.18,
+          "end": 71.28,
+          "word": "người"
+        },
+        {
+          "start": 71.28,
+          "end": 71.48,
+          "word": "yêu"
+        },
+        {
+          "start": 71.48,
+          "end": 71.74,
+          "word": "anh"
+        },
+        {
+          "start": 71.74,
+          "end": 72.02,
+          "word": "nhé"
+        },
+        {
+          "start": 72.02,
+          "end": 72.4,
+          "word": "baby."
+        },
+        {
+          "start": 72.46,
+          "end": 72.66,
+          "word": "Rồi"
+        },
+        {
+          "start": 72.66,
+          "end": 72.84,
+          "word": "làm"
+        },
+        {
+          "start": 72.84,
+          "end": 73.06,
+          "word": "vợ"
+        },
+        {
+          "start": 73.06,
+          "end": 73.26,
+          "word": "anh"
+        },
+        {
+          "start": 73.26,
+          "end": 73.62,
+          "word": "nhé"
+        },
+        {
+          "start": 73.62,
+          "end": 74.22,
+          "word": "baby."
+        }
+      ]
+    },
+    {
+      "start": 75.24,
+      "end": 79.16,
+      "text": "Không hiểu, không hiểu, không hiểu, không hiểu, không hiểu. Gặp em tự nhiên rái tim nằm anh trai.",
+      "words": [
+        {
+          "start": 75.24,
+          "end": 75.6,
+          "word": "Không"
+        },
+        {
+          "start": 75.6,
+          "end": 75.82,
+          "word": "hiểu,"
+        },
+        {
+          "start": 75.84,
+          "end": 76.0,
+          "word": "không"
+        },
+        {
+          "start": 76.0,
+          "end": 76.2,
+          "word": "hiểu,"
+        },
+        {
+          "start": 76.24,
+          "end": 76.78,
+          "word": "không"
+        },
+        {
+          "start": 76.78,
+          "end": 76.82,
+          "word": "hiểu,"
+        },
+        {
+          "start": 76.82,
+          "end": 76.82,
+          "word": "không"
+        },
+        {
+          "start": 76.82,
+          "end": 76.98,
+          "word": "hiểu,"
+        },
+        {
+          "start": 76.98,
+          "end": 77.2,
+          "word": "không"
+        },
+        {
+          "start": 77.2,
+          "end": 77.36,
+          "word": "hiểu."
+        },
+        {
+          "start": 77.46,
+          "end": 77.62,
+          "word": "Gặp"
+        },
+        {
+          "start": 77.62,
+          "end": 77.82,
+          "word": "em"
+        },
+        {
+          "start": 77.82,
+          "end": 78.02,
+          "word": "tự"
+        },
+        {
+          "start": 78.02,
+          "end": 78.22,
+          "word": "nhiên"
+        },
+        {
+          "start": 78.22,
+          "end": 78.36,
+          "word": "rái"
+        },
+        {
+          "start": 78.36,
+          "end": 78.6,
+          "word": "tim"
+        },
+        {
+          "start": 78.6,
+          "end": 78.76,
+          "word": "nằm"
+        },
+        {
+          "start": 78.76,
+          "end": 78.9,
+          "word": "anh"
+        },
+        {
+          "start": 78.9,
+          "end": 79.16,
+          "word": "trai."
+        }
+      ]
+    },
+    {
+      "start": 79.32,
+      "end": 81.52,
+      "text": "Ngày xuân phai, phép toán có tự tính một bộ một bóng hai.",
+      "words": [
+        {
+          "start": 79.32,
+          "end": 79.36,
+          "word": "Ngày"
+        },
+        {
+          "start": 79.36,
+          "end": 79.64,
+          "word": "xuân"
+        },
+        {
+          "start": 79.64,
+          "end": 79.82,
+          "word": "phai,"
+        },
+        {
+          "start": 79.92,
+          "end": 80.04,
+          "word": "phép"
+        },
+        {
+          "start": 80.04,
+          "end": 80.24,
+          "word": "toán"
+        },
+        {
+          "start": 80.24,
+          "end": 80.38,
+          "word": "có"
+        },
+        {
+          "start": 80.38,
+          "end": 80.52,
+          "word": "tự"
+        },
+        {
+          "start": 80.52,
+          "end": 80.6,
+          "word": "tính"
+        },
+        {
+          "start": 80.6,
+          "end": 80.84,
+          "word": "một"
+        },
+        {
+          "start": 80.84,
+          "end": 80.88,
+          "word": "bộ"
+        },
+        {
+          "start": 80.88,
+          "end": 81.1,
+          "word": "một"
+        },
+        {
+          "start": 81.1,
+          "end": 81.34,
+          "word": "bóng"
+        },
+        {
+          "start": 81.34,
+          "end": 81.52,
+          "word": "hai."
+        }
+      ]
+    },
+    {
+      "start": 81.62,
+      "end": 84.24,
+      "text": "Anh cầm em tìm bằng ba, nhưng tương lai nó sẽ đúng nó như ta.",
+      "words": [
+        {
+          "start": 81.62,
+          "end": 81.82,
+          "word": "Anh"
+        },
+        {
+          "start": 81.82,
+          "end": 82.02,
+          "word": "cầm"
+        },
+        {
+          "start": 82.02,
+          "end": 82.2,
+          "word": "em"
+        },
+        {
+          "start": 82.2,
+          "end": 82.32,
+          "word": "tìm"
+        },
+        {
+          "start": 82.32,
+          "end": 82.44,
+          "word": "bằng"
+        },
+        {
+          "start": 82.44,
+          "end": 82.6,
+          "word": "ba,"
+        },
+        {
+          "start": 83.0,
+          "end": 83.12,
+          "word": "nhưng"
+        },
+        {
+          "start": 83.12,
+          "end": 83.28,
+          "word": "tương"
+        },
+        {
+          "start": 83.28,
+          "end": 83.38,
+          "word": "lai"
+        },
+        {
+          "start": 83.38,
+          "end": 83.52,
+          "word": "nó"
+        },
+        {
+          "start": 83.52,
+          "end": 83.64,
+          "word": "sẽ"
+        },
+        {
+          "start": 83.64,
+          "end": 83.82,
+          "word": "đúng"
+        },
+        {
+          "start": 83.82,
+          "end": 83.9,
+          "word": "nó"
+        },
+        {
+          "start": 83.9,
+          "end": 84.1,
+          "word": "như"
+        },
+        {
+          "start": 84.1,
+          "end": 84.24,
+          "word": "ta."
+        }
+      ]
+    },
+    {
+      "start": 84.56,
+      "end": 87.46,
+      "text": "Bàn phim mấy tính chơi nhiều, hoài đều tìm mấy cũng có ngày.",
+      "words": [
+        {
+          "start": 84.56,
+          "end": 84.8,
+          "word": "Bàn"
+        },
+        {
+          "start": 84.8,
+          "end": 85.06,
+          "word": "phim"
+        },
+        {
+          "start": 85.06,
+          "end": 85.24,
+          "word": "mấy"
+        },
+        {
+          "start": 85.24,
+          "end": 85.38,
+          "word": "tính"
+        },
+        {
+          "start": 85.38,
+          "end": 85.6,
+          "word": "chơi"
+        },
+        {
+          "start": 85.6,
+          "end": 85.98,
+          "word": "nhiều,"
+        },
+        {
+          "start": 86.4,
+          "end": 86.66,
+          "word": "hoài"
+        },
+        {
+          "start": 86.66,
+          "end": 86.72,
+          "word": "đều"
+        },
+        {
+          "start": 86.72,
+          "end": 86.86,
+          "word": "tìm"
+        },
+        {
+          "start": 86.86,
+          "end": 87.0,
+          "word": "mấy"
+        },
+        {
+          "start": 87.0,
+          "end": 87.12,
+          "word": "cũng"
+        },
+        {
+          "start": 87.12,
+          "end": 87.28,
+          "word": "có"
+        },
+        {
+          "start": 87.28,
+          "end": 87.46,
+          "word": "ngày."
+        }
+      ]
+    },
+    {
+      "start": 88.0,
+      "end": 91.02,
+      "text": "Yêu xong chia tay, ai cũng sợ hãi tình yêu trở ra em. Nó rất dài, rất dài.",
+      "words": [
+        {
+          "start": 88.0,
+          "end": 88.26,
+          "word": "Yêu"
+        },
+        {
+          "start": 88.26,
+          "end": 88.4,
+          "word": "xong"
+        },
+        {
+          "start": 88.4,
+          "end": 88.56,
+          "word": "chia"
+        },
+        {
+          "start": 88.56,
+          "end": 88.74,
+          "word": "tay,"
+        },
+        {
+          "start": 88.88,
+          "end": 88.94,
+          "word": "ai"
+        },
+        {
+          "start": 88.94,
+          "end": 89.06,
+          "word": "cũng"
+        },
+        {
+          "start": 89.06,
+          "end": 89.22,
+          "word": "sợ"
+        },
+        {
+          "start": 89.22,
+          "end": 89.44,
+          "word": "hãi"
+        },
+        {
+          "start": 89.44,
+          "end": 89.62,
+          "word": "tình"
+        },
+        {
+          "start": 89.62,
+          "end": 89.84,
+          "word": "yêu"
+        },
+        {
+          "start": 89.84,
+          "end": 89.98,
+          "word": "trở"
+        },
+        {
+          "start": 89.98,
+          "end": 90.06,
+          "word": "ra"
+        },
+        {
+          "start": 90.06,
+          "end": 90.26,
+          "word": "em."
+        },
+        {
+          "start": 90.34,
+          "end": 90.34,
+          "word": "Nó"
+        },
+        {
+          "start": 90.34,
+          "end": 90.54,
+          "word": "rất"
+        },
+        {
+          "start": 90.54,
+          "end": 90.62,
+          "word": "dài,"
+        },
+        {
+          "start": 90.74,
+          "end": 90.86,
+          "word": "rất"
+        },
+        {
+          "start": 90.86,
+          "end": 91.02,
+          "word": "dài."
+        }
+      ]
+    },
+    {
+      "start": 91.02,
+      "end": 93.4,
+      "text": "Anh đã cố gắng đi bạnh mẽ hơn vì anh sợ.",
+      "words": [
+        {
+          "start": 91.02,
+          "end": 91.02,
+          "word": "Anh"
+        },
+        {
+          "start": 91.02,
+          "end": 91.02,
+          "word": "đã"
+        },
+        {
+          "start": 91.02,
+          "end": 91.02,
+          "word": "cố"
+        },
+        {
+          "start": 91.02,
+          "end": 91.02,
+          "word": "gắng"
+        },
+        {
+          "start": 91.02,
+          "end": 91.12,
+          "word": "đi"
+        },
+        {
+          "start": 91.12,
+          "end": 91.62,
+          "word": "bạnh"
+        },
+        {
+          "start": 91.62,
+          "end": 92.1,
+          "word": "mẽ"
+        },
+        {
+          "start": 92.1,
+          "end": 92.48,
+          "word": "hơn"
+        },
+        {
+          "start": 92.48,
+          "end": 92.66,
+          "word": "vì"
+        },
+        {
+          "start": 92.66,
+          "end": 92.94,
+          "word": "anh"
+        },
+        {
+          "start": 92.94,
+          "end": 93.4,
+          "word": "sợ."
+        }
+      ]
+    },
+    {
+      "start": 93.48,
+      "end": 97.28,
+      "text": "Cô đã nói yêu má hồng, mắt con mùa mùi mỏng, rất khó.",
+      "words": [
+        {
+          "start": 93.48,
+          "end": 93.72,
+          "word": "Cô"
+        },
+        {
+          "start": 93.72,
+          "end": 93.88,
+          "word": "đã"
+        },
+        {
+          "start": 93.88,
+          "end": 94.04,
+          "word": "nói"
+        },
+        {
+          "start": 94.04,
+          "end": 94.24,
+          "word": "yêu"
+        },
+        {
+          "start": 94.24,
+          "end": 94.44,
+          "word": "má"
+        },
+        {
+          "start": 94.44,
+          "end": 94.8,
+          "word": "hồng,"
+        },
+        {
+          "start": 94.9,
+          "end": 95.12,
+          "word": "mắt"
+        },
+        {
+          "start": 95.12,
+          "end": 95.54,
+          "word": "con"
+        },
+        {
+          "start": 95.54,
+          "end": 95.9,
+          "word": "mùa"
+        },
+        {
+          "start": 95.9,
+          "end": 96.14,
+          "word": "mùi"
+        },
+        {
+          "start": 96.14,
+          "end": 96.62,
+          "word": "mỏng,"
+        },
+        {
+          "start": 96.7,
+          "end": 96.84,
+          "word": "rất"
+        },
+        {
+          "start": 96.84,
+          "end": 97.28,
+          "word": "khó."
+        }
+      ]
+    },
+    {
+      "start": 97.28,
+      "end": 99.98,
+      "text": "Vì lòng trong trái tim em đã có...",
+      "words": [
+        {
+          "start": 97.28,
+          "end": 97.68,
+          "word": "Vì"
+        },
+        {
+          "start": 97.68,
+          "end": 98.04,
+          "word": "lòng"
+        },
+        {
+          "start": 98.04,
+          "end": 98.48,
+          "word": "trong"
+        },
+        {
+          "start": 98.48,
+          "end": 98.82,
+          "word": "trái"
+        },
+        {
+          "start": 98.82,
+          "end": 99.22,
+          "word": "tim"
+        },
+        {
+          "start": 99.22,
+          "end": 99.46,
+          "word": "em"
+        },
+        {
+          "start": 99.46,
+          "end": 99.7,
+          "word": "đã"
+        },
+        {
+          "start": 99.7,
+          "end": 99.98,
+          "word": "có..."
+        }
+      ]
+    },
+    {
+      "start": 95.0,
+      "end": 102.92,
+      "text": "Công mở môi mỏng rất khó. Vì lao trong trái tim em đã có ai. Nhưng yêu em là sai thì anh ấy không cần đúng.",
+      "words": [
+        {
+          "start": 95.0,
+          "end": 95.54,
+          "word": "Công"
+        },
+        {
+          "start": 95.54,
+          "end": 95.84,
+          "word": "mở"
+        },
+        {
+          "start": 95.84,
+          "end": 96.08,
+          "word": "môi"
+        },
+        {
+          "start": 96.08,
+          "end": 96.6,
+          "word": "mỏng"
+        },
+        {
+          "start": 96.6,
+          "end": 96.84,
+          "word": "rất"
+        },
+        {
+          "start": 96.84,
+          "end": 97.32,
+          "word": "khó."
+        },
+        {
+          "start": 97.54,
+          "end": 97.64,
+          "word": "Vì"
+        },
+        {
+          "start": 97.64,
+          "end": 98.02,
+          "word": "lao"
+        },
+        {
+          "start": 98.02,
+          "end": 98.44,
+          "word": "trong"
+        },
+        {
+          "start": 98.44,
+          "end": 98.82,
+          "word": "trái"
+        },
+        {
+          "start": 98.82,
+          "end": 99.22,
+          "word": "tim"
+        },
+        {
+          "start": 99.22,
+          "end": 99.5,
+          "word": "em"
+        },
+        {
+          "start": 99.5,
+          "end": 99.6,
+          "word": "đã"
+        },
+        {
+          "start": 99.6,
+          "end": 100.02,
+          "word": "có"
+        },
+        {
+          "start": 100.02,
+          "end": 100.26,
+          "word": "ai."
+        },
+        {
+          "start": 100.26,
+          "end": 100.54,
+          "word": "Nhưng"
+        },
+        {
+          "start": 100.54,
+          "end": 100.82,
+          "word": "yêu"
+        },
+        {
+          "start": 100.82,
+          "end": 101.1,
+          "word": "em"
+        },
+        {
+          "start": 101.1,
+          "end": 101.22,
+          "word": "là"
+        },
+        {
+          "start": 101.22,
+          "end": 101.44,
+          "word": "sai"
+        },
+        {
+          "start": 101.44,
+          "end": 101.62,
+          "word": "thì"
+        },
+        {
+          "start": 101.62,
+          "end": 101.9,
+          "word": "anh"
+        },
+        {
+          "start": 101.9,
+          "end": 101.96,
+          "word": "ấy"
+        },
+        {
+          "start": 101.96,
+          "end": 102.26,
+          "word": "không"
+        },
+        {
+          "start": 102.26,
+          "end": 102.5,
+          "word": "cần"
+        },
+        {
+          "start": 102.5,
+          "end": 102.92,
+          "word": "đúng."
+        }
+      ]
+    },
+    {
+      "start": 103.28,
+      "end": 109.3,
+      "text": "Người yêu ơi yêu mình anh được không? Từ giờ và sau đã vua đành nơi đây mùa đá.",
+      "words": [
+        {
+          "start": 103.28,
+          "end": 103.5,
+          "word": "Người"
+        },
+        {
+          "start": 103.5,
+          "end": 103.62,
+          "word": "yêu"
+        },
+        {
+          "start": 103.62,
+          "end": 104.06,
+          "word": "ơi"
+        },
+        {
+          "start": 104.06,
+          "end": 104.46,
+          "word": "yêu"
+        },
+        {
+          "start": 104.46,
+          "end": 104.9,
+          "word": "mình"
+        },
+        {
+          "start": 104.9,
+          "end": 105.26,
+          "word": "anh"
+        },
+        {
+          "start": 105.26,
+          "end": 105.66,
+          "word": "được"
+        },
+        {
+          "start": 105.66,
+          "end": 106.12,
+          "word": "không?"
+        },
+        {
+          "start": 106.32,
+          "end": 106.46,
+          "word": "Từ"
+        },
+        {
+          "start": 106.46,
+          "end": 106.64,
+          "word": "giờ"
+        },
+        {
+          "start": 106.64,
+          "end": 106.82,
+          "word": "và"
+        },
+        {
+          "start": 106.82,
+          "end": 107.12,
+          "word": "sau"
+        },
+        {
+          "start": 107.12,
+          "end": 107.22,
+          "word": "đã"
+        },
+        {
+          "start": 107.22,
+          "end": 107.72,
+          "word": "vua"
+        },
+        {
+          "start": 107.72,
+          "end": 108.04,
+          "word": "đành"
+        },
+        {
+          "start": 108.04,
+          "end": 108.3,
+          "word": "nơi"
+        },
+        {
+          "start": 108.3,
+          "end": 108.48,
+          "word": "đây"
+        },
+        {
+          "start": 108.48,
+          "end": 109.02,
+          "word": "mùa"
+        },
+        {
+          "start": 109.02,
+          "end": 109.3,
+          "word": "đá."
+        }
+      ]
+    },
+    {
+      "start": 109.52,
+      "end": 115.78,
+      "text": "Lần này ta xuống vầy, quên lấy con tim bao về. Lúc trong tình yêu đám đầy hay để anh chứng minh cho em thấy.",
+      "words": [
+        {
+          "start": 109.52,
+          "end": 109.68,
+          "word": "Lần"
+        },
+        {
+          "start": 109.68,
+          "end": 109.82,
+          "word": "này"
+        },
+        {
+          "start": 109.82,
+          "end": 110.02,
+          "word": "ta"
+        },
+        {
+          "start": 110.02,
+          "end": 110.32,
+          "word": "xuống"
+        },
+        {
+          "start": 110.32,
+          "end": 110.46,
+          "word": "vầy,"
+        },
+        {
+          "start": 110.92,
+          "end": 110.98,
+          "word": "quên"
+        },
+        {
+          "start": 110.98,
+          "end": 111.2,
+          "word": "lấy"
+        },
+        {
+          "start": 111.2,
+          "end": 111.48,
+          "word": "con"
+        },
+        {
+          "start": 111.48,
+          "end": 111.62,
+          "word": "tim"
+        },
+        {
+          "start": 111.62,
+          "end": 111.88,
+          "word": "bao"
+        },
+        {
+          "start": 111.88,
+          "end": 112.02,
+          "word": "về."
+        },
+        {
+          "start": 112.18,
+          "end": 112.42,
+          "word": "Lúc"
+        },
+        {
+          "start": 112.42,
+          "end": 112.86,
+          "word": "trong"
+        },
+        {
+          "start": 112.86,
+          "end": 113.1,
+          "word": "tình"
+        },
+        {
+          "start": 113.1,
+          "end": 113.28,
+          "word": "yêu"
+        },
+        {
+          "start": 113.28,
+          "end": 113.56,
+          "word": "đám"
+        },
+        {
+          "start": 113.56,
+          "end": 113.88,
+          "word": "đầy"
+        },
+        {
+          "start": 113.88,
+          "end": 114.08,
+          "word": "hay"
+        },
+        {
+          "start": 114.08,
+          "end": 114.32,
+          "word": "để"
+        },
+        {
+          "start": 114.32,
+          "end": 114.46,
+          "word": "anh"
+        },
+        {
+          "start": 114.46,
+          "end": 114.7,
+          "word": "chứng"
+        },
+        {
+          "start": 114.7,
+          "end": 114.8,
+          "word": "minh"
+        },
+        {
+          "start": 114.8,
+          "end": 115.04,
+          "word": "cho"
+        },
+        {
+          "start": 115.04,
+          "end": 115.36,
+          "word": "em"
+        },
+        {
+          "start": 115.36,
+          "end": 115.78,
+          "word": "thấy."
+        }
+      ]
+    },
+    {
+      "start": 115.78,
+      "end": 118.86,
+      "text": "Người yêu ơi yêu thì có gì sai",
+      "words": [
+        {
+          "start": 115.78,
+          "end": 116.28,
+          "word": "Người"
+        },
+        {
+          "start": 116.28,
+          "end": 116.56,
+          "word": "yêu"
+        },
+        {
+          "start": 116.56,
+          "end": 116.82,
+          "word": "ơi"
+        },
+        {
+          "start": 116.82,
+          "end": 117.24,
+          "word": "yêu"
+        },
+        {
+          "start": 117.24,
+          "end": 117.68,
+          "word": "thì"
+        },
+        {
+          "start": 117.68,
+          "end": 118.12,
+          "word": "có"
+        },
+        {
+          "start": 118.12,
+          "end": 118.4,
+          "word": "gì"
+        },
+        {
+          "start": 118.4,
+          "end": 118.86,
+          "word": "sai"
+        }
+      ]
+    },
+    {
+      "start": 119.7,
+      "end": 123.68,
+      "text": "Không là anh thì ai để anh đến về",
+      "words": [
+        {
+          "start": 119.7,
+          "end": 120.42,
+          "word": "Không"
+        },
+        {
+          "start": 120.42,
+          "end": 121.0,
+          "word": "là"
+        },
+        {
+          "start": 121.0,
+          "end": 121.26,
+          "word": "anh"
+        },
+        {
+          "start": 121.26,
+          "end": 121.62,
+          "word": "thì"
+        },
+        {
+          "start": 121.62,
+          "end": 122.24,
+          "word": "ai"
+        },
+        {
+          "start": 122.24,
+          "end": 122.48,
+          "word": "để"
+        },
+        {
+          "start": 122.48,
+          "end": 122.74,
+          "word": "anh"
+        },
+        {
+          "start": 122.74,
+          "end": 123.02,
+          "word": "đến"
+        },
+        {
+          "start": 123.02,
+          "end": 123.68,
+          "word": "về"
+        }
+      ]
+    },
+    {
+      "start": 123.68,
+      "end": 124.98,
+      "text": "Là tình yêu mãi mềm",
+      "words": [
+        {
+          "start": 123.68,
+          "end": 124.06,
+          "word": "Là"
+        },
+        {
+          "start": 124.06,
+          "end": 124.26,
+          "word": "tình"
+        },
+        {
+          "start": 124.26,
+          "end": 124.42,
+          "word": "yêu"
+        },
+        {
+          "start": 124.42,
+          "end": 124.78,
+          "word": "mãi"
+        },
+        {
+          "start": 124.78,
+          "end": 124.98,
+          "word": "mềm"
+        }
+      ]
+    },
+    {
+      "start": 118.0,
+      "end": 119.58,
+      "text": "Không có gì sai.",
+      "words": [
+        {
+          "start": 118.0,
+          "end": 118.0,
+          "word": "Không"
+        },
+        {
+          "start": 118.0,
+          "end": 118.0,
+          "word": "có"
+        },
+        {
+          "start": 118.0,
+          "end": 118.4,
+          "word": "gì"
+        },
+        {
+          "start": 118.4,
+          "end": 119.58,
+          "word": "sai."
+        }
+      ]
+    },
+    {
+      "start": 120.2,
+      "end": 122.24,
+      "text": "Không là anh thì ai?",
+      "words": [
+        {
+          "start": 120.2,
+          "end": 120.4,
+          "word": "Không"
+        },
+        {
+          "start": 120.4,
+          "end": 120.82,
+          "word": "là"
+        },
+        {
+          "start": 120.82,
+          "end": 121.26,
+          "word": "anh"
+        },
+        {
+          "start": 121.26,
+          "end": 121.62,
+          "word": "thì"
+        },
+        {
+          "start": 121.62,
+          "end": 122.24,
+          "word": "ai?"
+        }
+      ]
+    },
+    {
+      "start": 122.36,
+      "end": 123.7,
+      "text": "Để anh biết em về.",
+      "words": [
+        {
+          "start": 122.36,
+          "end": 122.46,
+          "word": "Để"
+        },
+        {
+          "start": 122.46,
+          "end": 122.7,
+          "word": "anh"
+        },
+        {
+          "start": 122.7,
+          "end": 122.96,
+          "word": "biết"
+        },
+        {
+          "start": 122.96,
+          "end": 123.2,
+          "word": "em"
+        },
+        {
+          "start": 123.2,
+          "end": 123.7,
+          "word": "về."
+        }
+      ]
+    },
+    {
+      "start": 124.0,
+      "end": 125.2,
+      "text": "Là tình yêu mãi mềm.",
+      "words": [
+        {
+          "start": 124.0,
+          "end": 124.04,
+          "word": "Là"
+        },
+        {
+          "start": 124.04,
+          "end": 124.28,
+          "word": "tình"
+        },
+        {
+          "start": 124.28,
+          "end": 124.42,
+          "word": "yêu"
+        },
+        {
+          "start": 124.42,
+          "end": 124.8,
+          "word": "mãi"
+        },
+        {
+          "start": 124.8,
+          "end": 125.2,
+          "word": "mềm."
+        }
+      ]
+    },
+    {
+      "start": 125.24,
+      "end": 126.84,
+      "text": "Mặc kể người ta cười chết.",
+      "words": [
+        {
+          "start": 125.24,
+          "end": 125.44,
+          "word": "Mặc"
+        },
+        {
+          "start": 125.44,
+          "end": 125.62,
+          "word": "kể"
+        },
+        {
+          "start": 125.62,
+          "end": 125.8,
+          "word": "người"
+        },
+        {
+          "start": 125.8,
+          "end": 126.02,
+          "word": "ta"
+        },
+        {
+          "start": 126.02,
+          "end": 126.26,
+          "word": "cười"
+        },
+        {
+          "start": 126.26,
+          "end": 126.84,
+          "word": "chết."
+        }
+      ]
+    },
+    {
+      "start": 126.92,
+      "end": 128.3,
+      "text": "Bởi vì tình yêu là thế.",
+      "words": [
+        {
+          "start": 126.92,
+          "end": 127.12,
+          "word": "Bởi"
+        },
+        {
+          "start": 127.12,
+          "end": 127.26,
+          "word": "vì"
+        },
+        {
+          "start": 127.26,
+          "end": 127.5,
+          "word": "tình"
+        },
+        {
+          "start": 127.5,
+          "end": 127.62,
+          "word": "yêu"
+        },
+        {
+          "start": 127.62,
+          "end": 127.86,
+          "word": "là"
+        },
+        {
+          "start": 127.86,
+          "end": 128.3,
+          "word": "thế."
+        }
+      ]
+    },
+    {
+      "start": 128.42,
+      "end": 130.86,
+      "text": "Anh đã cố gắng để mạnh mẽ hơn.",
+      "words": [
+        {
+          "start": 128.42,
+          "end": 128.7,
+          "word": "Anh"
+        },
+        {
+          "start": 128.7,
+          "end": 128.84,
+          "word": "đã"
+        },
+        {
+          "start": 128.84,
+          "end": 129.1,
+          "word": "cố"
+        },
+        {
+          "start": 129.1,
+          "end": 129.34,
+          "word": "gắng"
+        },
+        {
+          "start": 129.34,
+          "end": 129.62,
+          "word": "để"
+        },
+        {
+          "start": 129.62,
+          "end": 130.06,
+          "word": "mạnh"
+        },
+        {
+          "start": 130.06,
+          "end": 130.54,
+          "word": "mẽ"
+        },
+        {
+          "start": 130.54,
+          "end": 130.86,
+          "word": "hơn."
+        }
+      ]
+    },
+    {
+      "start": 130.96,
+      "end": 132.52,
+      "text": "Vì anh sợ cô đơn.",
+      "words": [
+        {
+          "start": 130.96,
+          "end": 131.06,
+          "word": "Vì"
+        },
+        {
+          "start": 131.06,
+          "end": 131.34,
+          "word": "anh"
+        },
+        {
+          "start": 131.34,
+          "end": 131.78,
+          "word": "sợ"
+        },
+        {
+          "start": 131.78,
+          "end": 132.18,
+          "word": "cô"
+        },
+        {
+          "start": 132.18,
+          "end": 132.52,
+          "word": "đơn."
+        }
+      ]
+    },
+    {
+      "start": 132.68,
+      "end": 135.62,
+      "text": "Là khi những nỗi nhớ như sáng xô lời anh từng cần.",
+      "words": [
+        {
+          "start": 132.68,
+          "end": 132.84,
+          "word": "Là"
+        },
+        {
+          "start": 132.84,
+          "end": 133.22,
+          "word": "khi"
+        },
+        {
+          "start": 133.22,
+          "end": 133.52,
+          "word": "những"
+        },
+        {
+          "start": 133.52,
+          "end": 133.68,
+          "word": "nỗi"
+        },
+        {
+          "start": 133.68,
+          "end": 133.84,
+          "word": "nhớ"
+        },
+        {
+          "start": 133.84,
+          "end": 134.08,
+          "word": "như"
+        },
+        {
+          "start": 134.08,
+          "end": 134.4,
+          "word": "sáng"
+        },
+        {
+          "start": 134.4,
+          "end": 134.76,
+          "word": "xô"
+        },
+        {
+          "start": 134.76,
+          "end": 134.92,
+          "word": "lời"
+        },
+        {
+          "start": 134.92,
+          "end": 135.08,
+          "word": "anh"
+        },
+        {
+          "start": 135.08,
+          "end": 135.44,
+          "word": "từng"
+        },
+        {
+          "start": 135.44,
+          "end": 135.62,
+          "word": "cần."
+        }
+      ]
+    },
+    {
+      "start": 135.9,
+      "end": 137.9,
+      "text": "Là khi em cười đùa bên ai đau đớn.",
+      "words": [
+        {
+          "start": 135.9,
+          "end": 136.0,
+          "word": "Là"
+        },
+        {
+          "start": 136.0,
+          "end": 136.36,
+          "word": "khi"
+        },
+        {
+          "start": 136.36,
+          "end": 136.64,
+          "word": "em"
+        },
+        {
+          "start": 136.64,
+          "end": 136.84,
+          "word": "cười"
+        },
+        {
+          "start": 136.84,
+          "end": 137.06,
+          "word": "đùa"
+        },
+        {
+          "start": 137.06,
+          "end": 137.24,
+          "word": "bên"
+        },
+        {
+          "start": 137.24,
+          "end": 137.46,
+          "word": "ai"
+        },
+        {
+          "start": 137.46,
+          "end": 137.64,
+          "word": "đau"
+        },
+        {
+          "start": 137.64,
+          "end": 137.9,
+          "word": "đớn."
+        }
+      ]
+    },
+    {
+      "start": 137.9,
+      "end": 138.84,
+      "text": "Nên anh giận hờn.",
+      "words": [
+        {
+          "start": 137.9,
+          "end": 138.02,
+          "word": "Nên"
+        },
+        {
+          "start": 138.02,
+          "end": 138.24,
+          "word": "anh"
+        },
+        {
+          "start": 138.24,
+          "end": 138.48,
+          "word": "giận"
+        },
+        {
+          "start": 138.48,
+          "end": 138.84,
+          "word": "hờn."
+        }
+      ]
+    },
+    {
+      "start": 138.88,
+      "end": 142.48,
+      "text": "Nhưng yêu em là sai thì anh đứt không cần đúng.",
+      "words": [
+        {
+          "start": 138.88,
+          "end": 139.06,
+          "word": "Nhưng"
+        },
+        {
+          "start": 139.06,
+          "end": 139.26,
+          "word": "yêu"
+        },
+        {
+          "start": 139.26,
+          "end": 139.52,
+          "word": "em"
+        },
+        {
+          "start": 139.52,
+          "end": 139.64,
+          "word": "là"
+        },
+        {
+          "start": 139.64,
+          "end": 139.86,
+          "word": "sai"
+        },
+        {
+          "start": 139.86,
+          "end": 140.08,
+          "word": "thì"
+        },
+        {
+          "start": 140.08,
+          "end": 140.3,
+          "word": "anh"
+        },
+        {
+          "start": 140.3,
+          "end": 140.42,
+          "word": "đứt"
+        },
+        {
+          "start": 140.42,
+          "end": 140.72,
+          "word": "không"
+        },
+        {
+          "start": 140.72,
+          "end": 140.86,
+          "word": "cần"
+        },
+        {
+          "start": 140.86,
+          "end": 142.48,
+          "word": "đúng."
+        }
+      ]
+    },
+    {
+      "start": 144.44,
+      "end": 144.92,
+      "text": "Em",
+      "words": [
+        {
+          "start": 144.44,
+          "end": 144.92,
+          "word": "Em"
+        }
+      ]
+    },
+    {
+      "start": 144.92,
+      "end": 147.76,
+      "text": "Người yêu ơi yêu mình anh được không?",
+      "words": [
+        {
+          "start": 144.92,
+          "end": 145.02,
+          "word": "Người"
+        },
+        {
+          "start": 145.02,
+          "end": 145.32,
+          "word": "yêu"
+        },
+        {
+          "start": 145.32,
+          "end": 145.6,
+          "word": "ơi"
+        },
+        {
+          "start": 145.6,
+          "end": 146.02,
+          "word": "yêu"
+        },
+        {
+          "start": 146.02,
+          "end": 146.46,
+          "word": "mình"
+        },
+        {
+          "start": 146.46,
+          "end": 146.88,
+          "word": "anh"
+        },
+        {
+          "start": 146.88,
+          "end": 147.22,
+          "word": "được"
+        },
+        {
+          "start": 147.22,
+          "end": 147.76,
+          "word": "không?"
+        }
+      ]
+    },
+    {
+      "start": 145.0,
+      "end": 151.04,
+      "text": "Người yêu ơi yêu mình anh được không? Từng giờ và sau đây sớm mạnh hơn em mùa đớn.",
+      "words": [
+        {
+          "start": 145.0,
+          "end": 145.12,
+          "word": "Người"
+        },
+        {
+          "start": 145.12,
+          "end": 145.36,
+          "word": "yêu"
+        },
+        {
+          "start": 145.36,
+          "end": 145.56,
+          "word": "ơi"
+        },
+        {
+          "start": 145.56,
+          "end": 146.02,
+          "word": "yêu"
+        },
+        {
+          "start": 146.02,
+          "end": 146.48,
+          "word": "mình"
+        },
+        {
+          "start": 146.48,
+          "end": 146.9,
+          "word": "anh"
+        },
+        {
+          "start": 146.9,
+          "end": 147.3,
+          "word": "được"
+        },
+        {
+          "start": 147.3,
+          "end": 147.76,
+          "word": "không?"
+        },
+        {
+          "start": 147.9,
+          "end": 148.08,
+          "word": "Từng"
+        },
+        {
+          "start": 148.08,
+          "end": 148.26,
+          "word": "giờ"
+        },
+        {
+          "start": 148.26,
+          "end": 148.38,
+          "word": "và"
+        },
+        {
+          "start": 148.38,
+          "end": 148.7,
+          "word": "sau"
+        },
+        {
+          "start": 148.7,
+          "end": 148.86,
+          "word": "đây"
+        },
+        {
+          "start": 148.86,
+          "end": 149.24,
+          "word": "sớm"
+        },
+        {
+          "start": 149.24,
+          "end": 149.54,
+          "word": "mạnh"
+        },
+        {
+          "start": 149.54,
+          "end": 149.88,
+          "word": "hơn"
+        },
+        {
+          "start": 149.88,
+          "end": 150.12,
+          "word": "em"
+        },
+        {
+          "start": 150.12,
+          "end": 150.5,
+          "word": "mùa"
+        },
+        {
+          "start": 150.5,
+          "end": 151.04,
+          "word": "đớn."
+        }
+      ]
+    },
+    {
+      "start": 151.1,
+      "end": 157.0,
+      "text": "Làm người ta sớm quay quay, con tim hào gầy. Đứng trong tình yêu lau về, để anh chứng minh cho em thấy.",
+      "words": [
+        {
+          "start": 151.1,
+          "end": 151.32,
+          "word": "Làm"
+        },
+        {
+          "start": 151.32,
+          "end": 151.44,
+          "word": "người"
+        },
+        {
+          "start": 151.44,
+          "end": 151.64,
+          "word": "ta"
+        },
+        {
+          "start": 151.64,
+          "end": 151.96,
+          "word": "sớm"
+        },
+        {
+          "start": 151.96,
+          "end": 152.04,
+          "word": "quay"
+        },
+        {
+          "start": 152.04,
+          "end": 152.58,
+          "word": "quay,"
+        },
+        {
+          "start": 152.86,
+          "end": 153.06,
+          "word": "con"
+        },
+        {
+          "start": 153.06,
+          "end": 153.24,
+          "word": "tim"
+        },
+        {
+          "start": 153.24,
+          "end": 153.52,
+          "word": "hào"
+        },
+        {
+          "start": 153.52,
+          "end": 153.64,
+          "word": "gầy."
+        },
+        {
+          "start": 153.82,
+          "end": 154.04,
+          "word": "Đứng"
+        },
+        {
+          "start": 154.04,
+          "end": 154.42,
+          "word": "trong"
+        },
+        {
+          "start": 154.42,
+          "end": 154.62,
+          "word": "tình"
+        },
+        {
+          "start": 154.62,
+          "end": 154.84,
+          "word": "yêu"
+        },
+        {
+          "start": 154.84,
+          "end": 155.16,
+          "word": "lau"
+        },
+        {
+          "start": 155.16,
+          "end": 155.5,
+          "word": "về,"
+        },
+        {
+          "start": 155.68,
+          "end": 155.82,
+          "word": "để"
+        },
+        {
+          "start": 155.82,
+          "end": 156.0,
+          "word": "anh"
+        },
+        {
+          "start": 156.0,
+          "end": 156.28,
+          "word": "chứng"
+        },
+        {
+          "start": 156.28,
+          "end": 156.38,
+          "word": "minh"
+        },
+        {
+          "start": 156.38,
+          "end": 156.64,
+          "word": "cho"
+        },
+        {
+          "start": 156.64,
+          "end": 156.84,
+          "word": "em"
+        },
+        {
+          "start": 156.84,
+          "end": 157.08,
+          "word": "thấy."
+        }
+      ]
+    },
+    {
+      "start": 157.74,
+      "end": 165.22,
+      "text": "Người yêu ơi yêu thì có gì sai. Đâu có sai đâu. Không là anh thì anh. Đời anh nhé baby.",
+      "words": [
+        {
+          "start": 157.74,
+          "end": 157.9,
+          "word": "Người"
+        },
+        {
+          "start": 157.9,
+          "end": 158.12,
+          "word": "yêu"
+        },
+        {
+          "start": 158.12,
+          "end": 158.4,
+          "word": "ơi"
+        },
+        {
+          "start": 158.4,
+          "end": 158.8,
+          "word": "yêu"
+        },
+        {
+          "start": 158.8,
+          "end": 159.2,
+          "word": "thì"
+        },
+        {
+          "start": 159.2,
+          "end": 159.66,
+          "word": "có"
+        },
+        {
+          "start": 159.66,
+          "end": 160.04,
+          "word": "gì"
+        },
+        {
+          "start": 160.04,
+          "end": 160.4,
+          "word": "sai."
+        },
+        {
+          "start": 160.42,
+          "end": 160.66,
+          "word": "Đâu"
+        },
+        {
+          "start": 160.66,
+          "end": 160.94,
+          "word": "có"
+        },
+        {
+          "start": 160.94,
+          "end": 161.38,
+          "word": "sai"
+        },
+        {
+          "start": 161.38,
+          "end": 161.6,
+          "word": "đâu."
+        },
+        {
+          "start": 161.68,
+          "end": 162.06,
+          "word": "Không"
+        },
+        {
+          "start": 162.06,
+          "end": 162.42,
+          "word": "là"
+        },
+        {
+          "start": 162.42,
+          "end": 162.84,
+          "word": "anh"
+        },
+        {
+          "start": 162.84,
+          "end": 163.22,
+          "word": "thì"
+        },
+        {
+          "start": 163.22,
+          "end": 163.82,
+          "word": "anh."
+        },
+        {
+          "start": 163.88,
+          "end": 164.04,
+          "word": "Đời"
+        },
+        {
+          "start": 164.04,
+          "end": 164.42,
+          "word": "anh"
+        },
+        {
+          "start": 164.42,
+          "end": 164.72,
+          "word": "nhé"
+        },
+        {
+          "start": 164.72,
+          "end": 165.22,
+          "word": "baby."
+        }
+      ]
+    },
+    {
+      "start": 165.5,
+      "end": 172.3,
+      "text": "Làm tình yêu mãi mê, mặc kệ người ta từ chế. Bởi vì tình yêu là thế. Làm người yêu anh nhé baby.",
+      "words": [
+        {
+          "start": 165.5,
+          "end": 165.66,
+          "word": "Làm"
+        },
+        {
+          "start": 165.66,
+          "end": 165.86,
+          "word": "tình"
+        },
+        {
+          "start": 165.86,
+          "end": 166.04,
+          "word": "yêu"
+        },
+        {
+          "start": 166.04,
+          "end": 166.42,
+          "word": "mãi"
+        },
+        {
+          "start": 166.42,
+          "end": 166.76,
+          "word": "mê,"
+        },
+        {
+          "start": 166.96,
+          "end": 167.08,
+          "word": "mặc"
+        },
+        {
+          "start": 167.08,
+          "end": 167.2,
+          "word": "kệ"
+        },
+        {
+          "start": 167.2,
+          "end": 167.42,
+          "word": "người"
+        },
+        {
+          "start": 167.42,
+          "end": 167.58,
+          "word": "ta"
+        },
+        {
+          "start": 167.58,
+          "end": 167.92,
+          "word": "từ"
+        },
+        {
+          "start": 167.92,
+          "end": 168.4,
+          "word": "chế."
+        },
+        {
+          "start": 168.48,
+          "end": 168.66,
+          "word": "Bởi"
+        },
+        {
+          "start": 168.66,
+          "end": 168.82,
+          "word": "vì"
+        },
+        {
+          "start": 168.82,
+          "end": 169.04,
+          "word": "tình"
+        },
+        {
+          "start": 169.04,
+          "end": 169.2,
+          "word": "yêu"
+        },
+        {
+          "start": 169.2,
+          "end": 169.5,
+          "word": "là"
+        },
+        {
+          "start": 169.5,
+          "end": 169.88,
+          "word": "thế."
+        },
+        {
+          "start": 170.06,
+          "end": 170.24,
+          "word": "Làm"
+        },
+        {
+          "start": 170.24,
+          "end": 170.4,
+          "word": "người"
+        },
+        {
+          "start": 170.4,
+          "end": 170.66,
+          "word": "yêu"
+        },
+        {
+          "start": 170.66,
+          "end": 170.96,
+          "word": "anh"
+        },
+        {
+          "start": 170.96,
+          "end": 171.26,
+          "word": "nhé"
+        },
+        {
+          "start": 171.26,
+          "end": 172.3,
+          "word": "baby."
+        }
+      ]
+    },
+    {
+      "start": 168.0,
+      "end": 176.26,
+      "text": "Bởi vì tình yêu là thế. Làm người yêu anh nhé baby. Rồi làm vợ anh nhé baby.",
+      "words": [
+        {
+          "start": 168.0,
+          "end": 168.66,
+          "word": "Bởi"
+        },
+        {
+          "start": 168.66,
+          "end": 168.84,
+          "word": "vì"
+        },
+        {
+          "start": 168.84,
+          "end": 169.06,
+          "word": "tình"
+        },
+        {
+          "start": 169.06,
+          "end": 169.22,
+          "word": "yêu"
+        },
+        {
+          "start": 169.22,
+          "end": 169.48,
+          "word": "là"
+        },
+        {
+          "start": 169.48,
+          "end": 169.9,
+          "word": "thế."
+        },
+        {
+          "start": 170.12,
+          "end": 170.38,
+          "word": "Làm"
+        },
+        {
+          "start": 170.38,
+          "end": 170.44,
+          "word": "người"
+        },
+        {
+          "start": 170.44,
+          "end": 170.66,
+          "word": "yêu"
+        },
+        {
+          "start": 170.66,
+          "end": 170.96,
+          "word": "anh"
+        },
+        {
+          "start": 170.96,
+          "end": 171.2,
+          "word": "nhé"
+        },
+        {
+          "start": 171.2,
+          "end": 172.8,
+          "word": "baby."
+        },
+        {
+          "start": 173.3,
+          "end": 173.42,
+          "word": "Rồi"
+        },
+        {
+          "start": 173.42,
+          "end": 173.68,
+          "word": "làm"
+        },
+        {
+          "start": 173.68,
+          "end": 173.78,
+          "word": "vợ"
+        },
+        {
+          "start": 173.78,
+          "end": 174.16,
+          "word": "anh"
+        },
+        {
+          "start": 174.16,
+          "end": 174.46,
+          "word": "nhé"
+        },
+        {
+          "start": 174.46,
+          "end": 176.26,
+          "word": "baby."
+        }
+      ]
+    },
+    {
+      "start": 176.52,
+      "end": 181.38,
+      "text": "Làm người yêu anh nhé baby. Rồi làm vợ anh nhé baby. No no no.",
+      "words": [
+        {
+          "start": 176.52,
+          "end": 176.78,
+          "word": "Làm"
+        },
+        {
+          "start": 176.78,
+          "end": 176.86,
+          "word": "người"
+        },
+        {
+          "start": 176.86,
+          "end": 177.04,
+          "word": "yêu"
+        },
+        {
+          "start": 177.04,
+          "end": 177.28,
+          "word": "anh"
+        },
+        {
+          "start": 177.28,
+          "end": 177.62,
+          "word": "nhé"
+        },
+        {
+          "start": 177.62,
+          "end": 178.0,
+          "word": "baby."
+        },
+        {
+          "start": 178.08,
+          "end": 178.26,
+          "word": "Rồi"
+        },
+        {
+          "start": 178.26,
+          "end": 178.48,
+          "word": "làm"
+        },
+        {
+          "start": 178.48,
+          "end": 178.62,
+          "word": "vợ"
+        },
+        {
+          "start": 178.62,
+          "end": 178.94,
+          "word": "anh"
+        },
+        {
+          "start": 178.94,
+          "end": 179.2,
+          "word": "nhé"
+        },
+        {
+          "start": 179.2,
+          "end": 179.82,
+          "word": "baby."
+        },
+        {
+          "start": 180.04,
+          "end": 180.24,
+          "word": "No"
+        },
+        {
+          "start": 180.24,
+          "end": 180.6,
+          "word": "no"
+        },
+        {
+          "start": 180.6,
+          "end": 181.38,
+          "word": "no."
+        }
+      ]
+    },
+    {
+      "start": 181.7,
+      "end": 184.72,
+      "text": "Ý em sao? Ý em sao?",
+      "words": [
+        {
+          "start": 181.7,
+          "end": 182.04,
+          "word": "Ý"
+        },
+        {
+          "start": 182.04,
+          "end": 182.4,
+          "word": "em"
+        },
+        {
+          "start": 182.4,
+          "end": 182.94,
+          "word": "sao?"
+        },
+        {
+          "start": 183.24,
+          "end": 183.58,
+          "word": "Ý"
+        },
+        {
+          "start": 183.58,
+          "end": 184.02,
+          "word": "em"
+        },
+        {
+          "start": 184.02,
+          "end": 184.72,
+          "word": "sao?"
+        }
+      ]
+    }
+  ],
+  "words": [
+    {
+      "start": 12.96,
+      "end": 13.48,
+      "word": "Em"
+    },
+    {
+      "start": 13.46,
+      "end": 13.7,
+      "word": "lặng"
+    },
+    {
+      "start": 13.7,
+      "end": 13.84,
+      "word": "im"
+    },
+    {
+      "start": 13.84,
+      "end": 14.04,
+      "word": "còn"
+    },
+    {
+      "start": 14.0,
+      "end": 14.12,
+      "word": "Em"
+    },
+    {
+      "start": 14.04,
+      "end": 14.26,
+      "word": "anh"
+    },
+    {
+      "start": 14.12,
+      "end": 14.24,
+      "word": "lặng"
+    },
+    {
+      "start": 14.24,
+      "end": 14.44,
+      "word": "thì"
+    },
+    {
+      "start": 14.44,
+      "end": 14.86,
+      "word": "ngồi"
+    },
+    {
+      "start": 14.86,
+      "end": 15.28,
+      "word": "ngẩn"
+    },
+    {
+      "start": 15.28,
+      "end": 15.68,
+      "word": "ngơ"
+    },
+    {
+      "start": 15.68,
+      "end": 15.88,
+      "word": "nhìn"
+    },
+    {
+      "start": 15.86,
+      "end": 16.06,
+      "word": "hôn"
+    },
+    {
+      "start": 15.88,
+      "end": 16.12,
+      "word": "khuôn"
+    },
+    {
+      "start": 16.06,
+      "end": 16.54,
+      "word": "mặt"
+    },
+    {
+      "start": 16.54,
+      "end": 16.94,
+      "word": "ngay"
+    },
+    {
+      "start": 16.76,
+      "end": 16.88,
+      "word": "Ngày"
+    },
+    {
+      "start": 16.88,
+      "end": 17.14,
+      "word": "thơ"
+    },
+    {
+      "start": 17.14,
+      "end": 17.26,
+      "word": "đó"
+    },
+    {
+      "start": 17.26,
+      "end": 17.46,
+      "word": "em"
+    },
+    {
+      "start": 17.46,
+      "end": 17.68,
+      "word": "hứng"
+    },
+    {
+      "start": 17.48,
+      "end": 17.7,
+      "word": "hứa"
+    },
+    {
+      "start": 17.68,
+      "end": 17.98,
+      "word": "ngờ."
+    },
+    {
+      "start": 18.04,
+      "end": 18.46,
+      "word": "quá"
+    },
+    {
+      "start": 18.46,
+      "end": 18.84,
+      "word": "nên"
+    },
+    {
+      "start": 18.84,
+      "end": 19.08,
+      "word": "anh"
+    },
+    {
+      "start": 19.08,
+      "end": 19.24,
+      "word": "lo"
+    },
+    {
+      "start": 19.24,
+      "end": 19.82,
+      "word": "sợ"
+    },
+    {
+      "start": 19.82,
+      "end": 20.16,
+      "word": "bơ"
+    },
+    {
+      "start": 20.16,
+      "end": 20.54,
+      "word": "vơ."
+    },
+    {
+      "start": 20.72,
+      "end": 20.98,
+      "word": "Đợi"
+    },
+    {
+      "start": 20.98,
+      "end": 21.26,
+      "word": "chờ"
+    },
+    {
+      "start": 21.26,
+      "end": 21.62,
+      "word": "rối"
+    },
+    {
+      "start": 21.62,
+      "end": 22.02,
+      "word": "mắt"
+    },
+    {
+      "start": 22.02,
+      "end": 22.3,
+      "word": "mang"
+    },
+    {
+      "start": 22.26,
+      "end": 22.5,
+      "word": "em"
+    },
+    {
+      "start": 22.5,
+      "end": 22.7,
+      "word": "ngay"
+    },
+    {
+      "start": 22.7,
+      "end": 22.94,
+      "word": "mù"
+    },
+    {
+      "start": 22.7,
+      "end": 22.96,
+      "word": "mùng"
+    },
+    {
+      "start": 22.94,
+      "end": 23.24,
+      "word": "ngó"
+    },
+    {
+      "start": 23.24,
+      "end": 23.58,
+      "word": "sang."
+    },
+    {
+      "start": 23.6,
+      "end": 23.86,
+      "word": "anh"
+    },
+    {
+      "start": 23.86,
+      "end": 24.12,
+      "word": "thân"
+    },
+    {
+      "start": 24.1,
+      "end": 24.46,
+      "word": "thờ"
+    },
+    {
+      "start": 24.46,
+      "end": 25.44,
+      "word": "đôi"
+    },
+    {
+      "start": 25.28,
+      "end": 25.44,
+      "word": "Đôi"
+    },
+    {
+      "start": 25.44,
+      "end": 25.72,
+      "word": "mắt"
+    },
+    {
+      "start": 25.72,
+      "end": 25.96,
+      "word": "mơ."
+    },
+    {
+      "start": 25.98,
+      "end": 26.28,
+      "word": "anh"
+    },
+    {
+      "start": 26.24,
+      "end": 26.42,
+      "word": "đã"
+    },
+    {
+      "start": 26.42,
+      "end": 26.68,
+      "word": "cố"
+    },
+    {
+      "start": 26.68,
+      "end": 26.88,
+      "word": "đôi"
+    },
+    {
+      "start": 26.88,
+      "end": 27.08,
+      "word": "thay"
+    },
+    {
+      "start": 27.08,
+      "end": 27.24,
+      "word": "để"
+    },
+    {
+      "start": 27.08,
+      "end": 27.34,
+      "word": "đêm"
+    },
+    {
+      "start": 27.24,
+      "end": 27.64,
+      "word": "mạnh"
+    },
+    {
+      "start": 27.34,
+      "end": 27.66,
+      "word": "anh"
+    },
+    {
+      "start": 27.64,
+      "end": 28.14,
+      "word": "nghe"
+    },
+    {
+      "start": 28.0,
+      "end": 28.6,
+      "word": "Vì"
+    },
+    {
+      "start": 28.14,
+      "end": 28.4,
+      "word": "hơn"
+    },
+    {
+      "start": 28.6,
+      "end": 28.84,
+      "word": "anh"
+    },
+    {
+      "start": 28.84,
+      "end": 29.38,
+      "word": "sợ"
+    },
+    {
+      "start": 29.38,
+      "end": 29.72,
+      "word": "cô"
+    },
+    {
+      "start": 29.72,
+      "end": 29.88,
+      "word": "đơn"
+    },
+    {
+      "start": 29.88,
+      "end": 30.04,
+      "word": "ơi"
+    },
+    {
+      "start": 29.88,
+      "end": 30.06,
+      "word": "nói"
+    },
+    {
+      "start": 30.04,
+      "end": 30.24,
+      "word": "yêu"
+    },
+    {
+      "start": 30.22,
+      "end": 30.44,
+      "word": "má"
+    },
+    {
+      "start": 30.42,
+      "end": 30.8,
+      "word": "hồng"
+    },
+    {
+      "start": 30.8,
+      "end": 31.16,
+      "word": "mắt"
+    },
+    {
+      "start": 31.04,
+      "end": 31.3,
+      "word": "mong"
+    },
+    {
+      "start": 31.16,
+      "end": 31.7,
+      "word": "cong"
+    },
+    {
+      "start": 31.7,
+      "end": 31.88,
+      "word": "bờ"
+    },
+    {
+      "start": 31.74,
+      "end": 31.98,
+      "word": "bởi"
+    },
+    {
+      "start": 31.88,
+      "end": 32.06,
+      "word": "môi"
+    },
+    {
+      "start": 32.06,
+      "end": 32.68,
+      "word": "mỏng"
+    },
+    {
+      "start": 32.68,
+      "end": 32.86,
+      "word": "rất"
+    },
+    {
+      "start": 32.68,
+      "end": 32.92,
+      "word": "giật"
+    },
+    {
+      "start": 32.86,
+      "end": 33.36,
+      "word": "khó."
+    },
+    {
+      "start": 32.92,
+      "end": 33.28,
+      "word": "kho."
+    },
+    {
+      "start": 33.5,
+      "end": 33.64,
+      "word": "Vì"
+    },
+    {
+      "start": 33.64,
+      "end": 34.0,
+      "word": "lo"
+    },
+    {
+      "start": 34.0,
+      "end": 34.46,
+      "word": "trong"
+    },
+    {
+      "start": 34.46,
+      "end": 34.82,
+      "word": "trái"
+    },
+    {
+      "start": 34.82,
+      "end": 35.22,
+      "word": "tim"
+    },
+    {
+      "start": 35.22,
+      "end": 35.48,
+      "word": "em"
+    },
+    {
+      "start": 35.48,
+      "end": 35.74,
+      "word": "nặng"
+    },
+    {
+      "start": 35.5,
+      "end": 35.66,
+      "word": "nào"
+    },
+    {
+      "start": 35.66,
+      "end": 36.06,
+      "word": "có"
+    },
+    {
+      "start": 35.92,
+      "end": 35.98,
+      "word": "anh"
+    },
+    {
+      "start": 36.06,
+      "end": 36.22,
+      "word": "ai."
+    },
+    {
+      "start": 36.22,
+      "end": 36.42,
+      "word": "Nhưng"
+    },
+    {
+      "start": 36.42,
+      "end": 36.58,
+      "word": "người"
+    },
+    {
+      "start": 36.58,
+      "end": 36.78,
+      "word": "yêu"
+    },
+    {
+      "start": 36.78,
+      "end": 37.02,
+      "word": "em"
+    },
+    {
+      "start": 37.02,
+      "end": 37.18,
+      "word": "nó"
+    },
+    {
+      "start": 37.18,
+      "end": 37.36,
+      "word": "sai"
+    },
+    {
+      "start": 37.36,
+      "end": 37.58,
+      "word": "thì"
+    },
+    {
+      "start": 37.58,
+      "end": 37.86,
+      "word": "anh"
+    },
+    {
+      "start": 37.86,
+      "end": 37.96,
+      "word": "đi"
+    },
+    {
+      "start": 37.96,
+      "end": 38.26,
+      "word": "không"
+    },
+    {
+      "start": 38.26,
+      "end": 38.42,
+      "word": "cần"
+    },
+    {
+      "start": 38.42,
+      "end": 38.78,
+      "word": "đu."
+    },
+    {
+      "start": 39.22,
+      "end": 39.48,
+      "word": "Người"
+    },
+    {
+      "start": 39.48,
+      "end": 39.7,
+      "word": "yêu"
+    },
+    {
+      "start": 39.7,
+      "end": 40.04,
+      "word": "ơi"
+    },
+    {
+      "start": 40.04,
+      "end": 40.48,
+      "word": "yêu"
+    },
+    {
+      "start": 40.48,
+      "end": 40.86,
+      "word": "mình"
+    },
+    {
+      "start": 40.86,
+      "end": 41.28,
+      "word": "anh"
+    },
+    {
+      "start": 41.28,
+      "end": 41.68,
+      "word": "được"
+    },
+    {
+      "start": 41.68,
+      "end": 42.18,
+      "word": "không?"
+    },
+    {
+      "start": 42.38,
+      "end": 42.44,
+      "word": "Từ"
+    },
+    {
+      "start": 42.44,
+      "end": 42.66,
+      "word": "giờ"
+    },
+    {
+      "start": 42.66,
+      "end": 42.82,
+      "word": "và"
+    },
+    {
+      "start": 42.82,
+      "end": 43.14,
+      "word": "sau"
+    },
+    {
+      "start": 43.14,
+      "end": 43.2,
+      "word": "đã"
+    },
+    {
+      "start": 43.2,
+      "end": 43.24,
+      "word": "hơi."
+    },
+    {
+      "start": 43.24,
+      "end": 43.64,
+      "word": "Chúa"
+    },
+    {
+      "start": 43.64,
+      "end": 44.02,
+      "word": "mình"
+    },
+    {
+      "start": 44.02,
+      "end": 44.44,
+      "word": "nơi"
+    },
+    {
+      "start": 44.44,
+      "end": 44.96,
+      "word": "mùa"
+    },
+    {
+      "start": 44.96,
+      "end": 45.34,
+      "word": "đá"
+    },
+    {
+      "start": 45.34,
+      "end": 45.62,
+      "word": "là"
+    },
+    {
+      "start": 45.62,
+      "end": 45.78,
+      "word": "ngày"
+    },
+    {
+      "start": 45.78,
+      "end": 46.04,
+      "word": "tật"
+    },
+    {
+      "start": 46.04,
+      "end": 46.32,
+      "word": "xung"
+    },
+    {
+      "start": 46.32,
+      "end": 46.44,
+      "word": "vời."
+    },
+    {
+      "start": 46.52,
+      "end": 46.96,
+      "word": "Qua"
+    },
+    {
+      "start": 46.96,
+      "end": 47.2,
+      "word": "lắm"
+    },
+    {
+      "start": 47.2,
+      "end": 47.46,
+      "word": "con"
+    },
+    {
+      "start": 47.46,
+      "end": 47.64,
+      "word": "tim"
+    },
+    {
+      "start": 47.64,
+      "end": 47.86,
+      "word": "bao"
+    },
+    {
+      "start": 47.86,
+      "end": 48.02,
+      "word": "gầy."
+    },
+    {
+      "start": 48.0,
+      "end": 48.46,
+      "word": "Lúc"
+    },
+    {
+      "start": 48.08,
+      "end": 48.46,
+      "word": "Lâu"
+    },
+    {
+      "start": 48.46,
+      "end": 48.86,
+      "word": "trong"
+    },
+    {
+      "start": 48.86,
+      "end": 49.08,
+      "word": "tình"
+    },
+    {
+      "start": 49.08,
+      "end": 49.28,
+      "word": "yêu"
+    },
+    {
+      "start": 49.26,
+      "end": 49.54,
+      "word": "đong"
+    },
+    {
+      "start": 49.48,
+      "end": 49.88,
+      "word": "đầy."
+    },
+    {
+      "start": 49.92,
+      "end": 50.06,
+      "word": "Hãy"
+    },
+    {
+      "start": 50.06,
+      "end": 50.24,
+      "word": "để"
+    },
+    {
+      "start": 50.24,
+      "end": 50.44,
+      "word": "anh"
+    },
+    {
+      "start": 50.44,
+      "end": 50.66,
+      "word": "chứng"
+    },
+    {
+      "start": 50.66,
+      "end": 50.8,
+      "word": "minh"
+    },
+    {
+      "start": 50.8,
+      "end": 51.06,
+      "word": "cho"
+    },
+    {
+      "start": 51.04,
+      "end": 51.32,
+      "word": "em"
+    },
+    {
+      "start": 51.3,
+      "end": 51.92,
+      "word": "thấy."
+    },
+    {
+      "start": 52.02,
+      "end": 52.26,
+      "word": "Người"
+    },
+    {
+      "start": 52.26,
+      "end": 52.48,
+      "word": "yêu"
+    },
+    {
+      "start": 52.46,
+      "end": 52.8,
+      "word": "ơi"
+    },
+    {
+      "start": 52.8,
+      "end": 53.2,
+      "word": "yêu"
+    },
+    {
+      "start": 53.2,
+      "end": 53.64,
+      "word": "thì"
+    },
+    {
+      "start": 53.64,
+      "end": 54.08,
+      "word": "có"
+    },
+    {
+      "start": 54.08,
+      "end": 54.44,
+      "word": "gì"
+    },
+    {
+      "start": 54.44,
+      "end": 54.68,
+      "word": "sai."
+    },
+    {
+      "start": 55.98,
+      "end": 56.38,
+      "word": "không"
+    },
+    {
+      "start": 56.38,
+      "end": 56.84,
+      "word": "là"
+    },
+    {
+      "start": 56.84,
+      "end": 57.24,
+      "word": "anh"
+    },
+    {
+      "start": 57.24,
+      "end": 57.76,
+      "word": "thì"
+    },
+    {
+      "start": 57.76,
+      "end": 58.24,
+      "word": "ái,"
+    },
+    {
+      "start": 58.26,
+      "end": 58.48,
+      "word": "để"
+    },
+    {
+      "start": 58.48,
+      "end": 58.72,
+      "word": "anh"
+    },
+    {
+      "start": 58.72,
+      "end": 58.9,
+      "word": "nhớ"
+    },
+    {
+      "start": 58.9,
+      "end": 59.22,
+      "word": "em"
+    },
+    {
+      "start": 59.22,
+      "end": 59.68,
+      "word": "về."
+    },
+    {
+      "start": 59.9,
+      "end": 60.24,
+      "word": "Làm"
+    },
+    {
+      "start": 60.24,
+      "end": 60.24,
+      "word": "tình"
+    },
+    {
+      "start": 60.24,
+      "end": 60.44,
+      "word": "yêu"
+    },
+    {
+      "start": 60.44,
+      "end": 60.78,
+      "word": "mãi"
+    },
+    {
+      "start": 60.78,
+      "end": 61.16,
+      "word": "mê,"
+    },
+    {
+      "start": 61.34,
+      "end": 61.48,
+      "word": "mặc"
+    },
+    {
+      "start": 61.48,
+      "end": 61.62,
+      "word": "kì"
+    },
+    {
+      "start": 61.62,
+      "end": 61.8,
+      "word": "người"
+    },
+    {
+      "start": 61.8,
+      "end": 62.0,
+      "word": "ta"
+    },
+    {
+      "start": 62.0,
+      "end": 62.28,
+      "word": "tự"
+    },
+    {
+      "start": 62.28,
+      "end": 62.8,
+      "word": "chết,"
+    },
+    {
+      "start": 62.94,
+      "end": 63.12,
+      "word": "bởi"
+    },
+    {
+      "start": 63.12,
+      "end": 63.22,
+      "word": "vì"
+    },
+    {
+      "start": 63.22,
+      "end": 63.48,
+      "word": "tình"
+    },
+    {
+      "start": 63.48,
+      "end": 63.62,
+      "word": "yêu"
+    },
+    {
+      "start": 63.62,
+      "end": 63.94,
+      "word": "ngạc"
+    },
+    {
+      "start": 63.94,
+      "end": 64.28,
+      "word": "thế."
+    },
+    {
+      "start": 64.52,
+      "end": 64.76,
+      "word": "Làm"
+    },
+    {
+      "start": 64.76,
+      "end": 64.84,
+      "word": "người"
+    },
+    {
+      "start": 64.84,
+      "end": 65.06,
+      "word": "yêu"
+    },
+    {
+      "start": 65.06,
+      "end": 65.38,
+      "word": "anh"
+    },
+    {
+      "start": 65.38,
+      "end": 65.66,
+      "word": "nhé"
+    },
+    {
+      "start": 65.66,
+      "end": 66.42,
+      "word": "baby,"
+    },
+    {
+      "start": 67.62,
+      "end": 67.82,
+      "word": "rồi"
+    },
+    {
+      "start": 67.82,
+      "end": 68.06,
+      "word": "làm"
+    },
+    {
+      "start": 68.06,
+      "end": 68.2,
+      "word": "vợ"
+    },
+    {
+      "start": 68.2,
+      "end": 68.58,
+      "word": "anh"
+    },
+    {
+      "start": 68.58,
+      "end": 68.84,
+      "word": "nhé"
+    },
+    {
+      "start": 68.84,
+      "end": 70.62,
+      "word": "baby."
+    },
+    {
+      "start": 70.8,
+      "end": 71.14,
+      "word": "Làm"
+    },
+    {
+      "start": 71.14,
+      "end": 71.24,
+      "word": "người"
+    },
+    {
+      "start": 71.24,
+      "end": 71.46,
+      "word": "yêu"
+    },
+    {
+      "start": 71.46,
+      "end": 71.78,
+      "word": "anh"
+    },
+    {
+      "start": 71.74,
+      "end": 72.02,
+      "word": "nhé"
+    },
+    {
+      "start": 72.02,
+      "end": 72.4,
+      "word": "baby,"
+    },
+    {
+      "start": 72.46,
+      "end": 72.66,
+      "word": "Rồi"
+    },
+    {
+      "start": 72.66,
+      "end": 72.84,
+      "word": "làm"
+    },
+    {
+      "start": 72.84,
+      "end": 73.04,
+      "word": "vợ"
+    },
+    {
+      "start": 73.04,
+      "end": 73.36,
+      "word": "anh"
+    },
+    {
+      "start": 73.26,
+      "end": 73.62,
+      "word": "nhé"
+    },
+    {
+      "start": 73.62,
+      "end": 74.22,
+      "word": "baby."
+    },
+    {
+      "start": 75.24,
+      "end": 75.6,
+      "word": "Không"
+    },
+    {
+      "start": 75.6,
+      "end": 75.82,
+      "word": "hiểu,"
+    },
+    {
+      "start": 75.84,
+      "end": 76.0,
+      "word": "không"
+    },
+    {
+      "start": 76.78,
+      "end": 76.82,
+      "word": "hiểu,"
+    },
+    {
+      "start": 76.82,
+      "end": 76.82,
+      "word": "không"
+    },
+    {
+      "start": 77.46,
+      "end": 77.62,
+      "word": "Gặp"
+    },
+    {
+      "start": 77.62,
+      "end": 77.82,
+      "word": "em"
+    },
+    {
+      "start": 77.82,
+      "end": 78.02,
+      "word": "tự"
+    },
+    {
+      "start": 78.02,
+      "end": 78.22,
+      "word": "nhiên"
+    },
+    {
+      "start": 78.22,
+      "end": 78.36,
+      "word": "rái"
+    },
+    {
+      "start": 78.36,
+      "end": 78.6,
+      "word": "tim"
+    },
+    {
+      "start": 78.6,
+      "end": 78.76,
+      "word": "nằm"
+    },
+    {
+      "start": 78.76,
+      "end": 78.9,
+      "word": "anh"
+    },
+    {
+      "start": 78.9,
+      "end": 79.16,
+      "word": "trai."
+    },
+    {
+      "start": 79.32,
+      "end": 79.36,
+      "word": "Ngày"
+    },
+    {
+      "start": 79.36,
+      "end": 79.64,
+      "word": "xuân"
+    },
+    {
+      "start": 79.64,
+      "end": 79.82,
+      "word": "phai,"
+    },
+    {
+      "start": 79.92,
+      "end": 80.04,
+      "word": "phép"
+    },
+    {
+      "start": 80.04,
+      "end": 80.24,
+      "word": "toán"
+    },
+    {
+      "start": 80.24,
+      "end": 80.38,
+      "word": "có"
+    },
+    {
+      "start": 80.38,
+      "end": 80.52,
+      "word": "tự"
+    },
+    {
+      "start": 80.52,
+      "end": 80.6,
+      "word": "tính"
+    },
+    {
+      "start": 80.6,
+      "end": 80.84,
+      "word": "một"
+    },
+    {
+      "start": 80.84,
+      "end": 80.88,
+      "word": "bộ"
+    },
+    {
+      "start": 81.1,
+      "end": 81.34,
+      "word": "bóng"
+    },
+    {
+      "start": 81.34,
+      "end": 81.52,
+      "word": "hai."
+    },
+    {
+      "start": 81.62,
+      "end": 81.82,
+      "word": "Anh"
+    },
+    {
+      "start": 81.82,
+      "end": 82.02,
+      "word": "cầm"
+    },
+    {
+      "start": 82.02,
+      "end": 82.2,
+      "word": "em"
+    },
+    {
+      "start": 82.2,
+      "end": 82.32,
+      "word": "tìm"
+    },
+    {
+      "start": 82.32,
+      "end": 82.44,
+      "word": "bằng"
+    },
+    {
+      "start": 82.44,
+      "end": 82.6,
+      "word": "ba,"
+    },
+    {
+      "start": 83.0,
+      "end": 83.12,
+      "word": "nhưng"
+    },
+    {
+      "start": 83.12,
+      "end": 83.28,
+      "word": "tương"
+    },
+    {
+      "start": 83.28,
+      "end": 83.38,
+      "word": "lai"
+    },
+    {
+      "start": 83.38,
+      "end": 83.52,
+      "word": "nó"
+    },
+    {
+      "start": 83.52,
+      "end": 83.64,
+      "word": "sẽ"
+    },
+    {
+      "start": 83.64,
+      "end": 83.82,
+      "word": "đúng"
+    },
+    {
+      "start": 83.9,
+      "end": 84.1,
+      "word": "như"
+    },
+    {
+      "start": 84.1,
+      "end": 84.24,
+      "word": "ta."
+    },
+    {
+      "start": 84.56,
+      "end": 84.8,
+      "word": "Bàn"
+    },
+    {
+      "start": 84.8,
+      "end": 85.06,
+      "word": "phim"
+    },
+    {
+      "start": 85.06,
+      "end": 85.24,
+      "word": "mấy"
+    },
+    {
+      "start": 85.24,
+      "end": 85.38,
+      "word": "tính"
+    },
+    {
+      "start": 85.38,
+      "end": 85.6,
+      "word": "chơi"
+    },
+    {
+      "start": 85.6,
+      "end": 85.98,
+      "word": "nhiều,"
+    },
+    {
+      "start": 86.4,
+      "end": 86.66,
+      "word": "hoài"
+    },
+    {
+      "start": 86.66,
+      "end": 86.72,
+      "word": "đều"
+    },
+    {
+      "start": 86.72,
+      "end": 86.86,
+      "word": "tìm"
+    },
+    {
+      "start": 86.86,
+      "end": 87.0,
+      "word": "mấy"
+    },
+    {
+      "start": 87.0,
+      "end": 87.12,
+      "word": "cũng"
+    },
+    {
+      "start": 87.12,
+      "end": 87.28,
+      "word": "có"
+    },
+    {
+      "start": 87.28,
+      "end": 87.46,
+      "word": "ngày."
+    },
+    {
+      "start": 88.0,
+      "end": 88.26,
+      "word": "Yêu"
+    },
+    {
+      "start": 88.26,
+      "end": 88.4,
+      "word": "xong"
+    },
+    {
+      "start": 88.4,
+      "end": 88.56,
+      "word": "chia"
+    },
+    {
+      "start": 88.56,
+      "end": 88.74,
+      "word": "tay,"
+    },
+    {
+      "start": 88.88,
+      "end": 88.94,
+      "word": "ai"
+    },
+    {
+      "start": 88.94,
+      "end": 89.06,
+      "word": "cũng"
+    },
+    {
+      "start": 89.06,
+      "end": 89.22,
+      "word": "sợ"
+    },
+    {
+      "start": 89.22,
+      "end": 89.44,
+      "word": "hãi"
+    },
+    {
+      "start": 89.44,
+      "end": 89.62,
+      "word": "tình"
+    },
+    {
+      "start": 89.62,
+      "end": 89.84,
+      "word": "yêu"
+    },
+    {
+      "start": 89.84,
+      "end": 89.98,
+      "word": "trở"
+    },
+    {
+      "start": 89.98,
+      "end": 90.06,
+      "word": "ra"
+    },
+    {
+      "start": 90.06,
+      "end": 90.26,
+      "word": "em."
+    },
+    {
+      "start": 90.34,
+      "end": 90.34,
+      "word": "Nó"
+    },
+    {
+      "start": 90.34,
+      "end": 90.54,
+      "word": "rất"
+    },
+    {
+      "start": 90.54,
+      "end": 90.62,
+      "word": "dài,"
+    },
+    {
+      "start": 91.02,
+      "end": 91.02,
+      "word": "Anh"
+    },
+    {
+      "start": 91.02,
+      "end": 91.02,
+      "word": "đã"
+    },
+    {
+      "start": 91.02,
+      "end": 91.02,
+      "word": "cố"
+    },
+    {
+      "start": 91.02,
+      "end": 91.02,
+      "word": "gắng"
+    },
+    {
+      "start": 91.02,
+      "end": 91.12,
+      "word": "đi"
+    },
+    {
+      "start": 91.12,
+      "end": 91.62,
+      "word": "bạnh"
+    },
+    {
+      "start": 91.62,
+      "end": 92.1,
+      "word": "mẽ"
+    },
+    {
+      "start": 92.1,
+      "end": 92.48,
+      "word": "hơn"
+    },
+    {
+      "start": 92.48,
+      "end": 92.66,
+      "word": "vì"
+    },
+    {
+      "start": 92.66,
+      "end": 92.94,
+      "word": "anh"
+    },
+    {
+      "start": 92.94,
+      "end": 93.4,
+      "word": "sợ."
+    },
+    {
+      "start": 93.48,
+      "end": 93.72,
+      "word": "Cô"
+    },
+    {
+      "start": 93.72,
+      "end": 93.88,
+      "word": "đã"
+    },
+    {
+      "start": 93.88,
+      "end": 94.04,
+      "word": "nói"
+    },
+    {
+      "start": 94.04,
+      "end": 94.24,
+      "word": "yêu"
+    },
+    {
+      "start": 94.24,
+      "end": 94.44,
+      "word": "má"
+    },
+    {
+      "start": 94.44,
+      "end": 94.8,
+      "word": "hồng,"
+    },
+    {
+      "start": 94.9,
+      "end": 95.12,
+      "word": "mắt"
+    },
+    {
+      "start": 95.0,
+      "end": 95.54,
+      "word": "Công"
+    },
+    {
+      "start": 95.12,
+      "end": 95.54,
+      "word": "con"
+    },
+    {
+      "start": 95.54,
+      "end": 95.84,
+      "word": "mở"
+    },
+    {
+      "start": 95.54,
+      "end": 95.9,
+      "word": "mùa"
+    },
+    {
+      "start": 95.84,
+      "end": 96.08,
+      "word": "môi"
+    },
+    {
+      "start": 95.9,
+      "end": 96.14,
+      "word": "mùi"
+    },
+    {
+      "start": 96.08,
+      "end": 96.6,
+      "word": "mỏng"
+    },
+    {
+      "start": 96.6,
+      "end": 96.84,
+      "word": "rất"
+    },
+    {
+      "start": 96.84,
+      "end": 97.28,
+      "word": "khó."
+    },
+    {
+      "start": 97.28,
+      "end": 97.68,
+      "word": "Vì"
+    },
+    {
+      "start": 97.64,
+      "end": 98.02,
+      "word": "lao"
+    },
+    {
+      "start": 97.68,
+      "end": 98.04,
+      "word": "lòng"
+    },
+    {
+      "start": 98.02,
+      "end": 98.44,
+      "word": "trong"
+    },
+    {
+      "start": 98.44,
+      "end": 98.82,
+      "word": "trái"
+    },
+    {
+      "start": 98.82,
+      "end": 99.22,
+      "word": "tim"
+    },
+    {
+      "start": 99.22,
+      "end": 99.46,
+      "word": "em"
+    },
+    {
+      "start": 99.46,
+      "end": 99.7,
+      "word": "đã"
+    },
+    {
+      "start": 99.6,
+      "end": 100.02,
+      "word": "có"
+    },
+    {
+      "start": 100.02,
+      "end": 100.26,
+      "word": "ai."
+    },
+    {
+      "start": 100.26,
+      "end": 100.54,
+      "word": "Nhưng"
+    },
+    {
+      "start": 100.54,
+      "end": 100.82,
+      "word": "yêu"
+    },
+    {
+      "start": 100.82,
+      "end": 101.1,
+      "word": "em"
+    },
+    {
+      "start": 101.1,
+      "end": 101.22,
+      "word": "là"
+    },
+    {
+      "start": 101.22,
+      "end": 101.44,
+      "word": "sai"
+    },
+    {
+      "start": 101.44,
+      "end": 101.62,
+      "word": "thì"
+    },
+    {
+      "start": 101.62,
+      "end": 101.9,
+      "word": "anh"
+    },
+    {
+      "start": 101.9,
+      "end": 101.96,
+      "word": "ấy"
+    },
+    {
+      "start": 101.96,
+      "end": 102.26,
+      "word": "không"
+    },
+    {
+      "start": 102.26,
+      "end": 102.5,
+      "word": "cần"
+    },
+    {
+      "start": 102.5,
+      "end": 102.92,
+      "word": "đúng."
+    },
+    {
+      "start": 103.28,
+      "end": 103.5,
+      "word": "Người"
+    },
+    {
+      "start": 103.5,
+      "end": 103.62,
+      "word": "yêu"
+    },
+    {
+      "start": 103.62,
+      "end": 104.06,
+      "word": "ơi"
+    },
+    {
+      "start": 104.06,
+      "end": 104.46,
+      "word": "yêu"
+    },
+    {
+      "start": 104.46,
+      "end": 104.9,
+      "word": "mình"
+    },
+    {
+      "start": 104.9,
+      "end": 105.26,
+      "word": "anh"
+    },
+    {
+      "start": 105.26,
+      "end": 105.66,
+      "word": "được"
+    },
+    {
+      "start": 105.66,
+      "end": 106.12,
+      "word": "không?"
+    },
+    {
+      "start": 106.32,
+      "end": 106.46,
+      "word": "Từ"
+    },
+    {
+      "start": 106.46,
+      "end": 106.64,
+      "word": "giờ"
+    },
+    {
+      "start": 106.64,
+      "end": 106.82,
+      "word": "và"
+    },
+    {
+      "start": 106.82,
+      "end": 107.12,
+      "word": "sau"
+    },
+    {
+      "start": 107.12,
+      "end": 107.22,
+      "word": "đã"
+    },
+    {
+      "start": 107.22,
+      "end": 107.72,
+      "word": "vua"
+    },
+    {
+      "start": 107.72,
+      "end": 108.04,
+      "word": "đành"
+    },
+    {
+      "start": 108.04,
+      "end": 108.3,
+      "word": "nơi"
+    },
+    {
+      "start": 108.3,
+      "end": 108.48,
+      "word": "đây"
+    },
+    {
+      "start": 108.48,
+      "end": 109.02,
+      "word": "mùa"
+    },
+    {
+      "start": 109.02,
+      "end": 109.3,
+      "word": "đá."
+    },
+    {
+      "start": 109.52,
+      "end": 109.68,
+      "word": "Lần"
+    },
+    {
+      "start": 109.68,
+      "end": 109.82,
+      "word": "này"
+    },
+    {
+      "start": 109.82,
+      "end": 110.02,
+      "word": "ta"
+    },
+    {
+      "start": 110.02,
+      "end": 110.32,
+      "word": "xuống"
+    },
+    {
+      "start": 110.32,
+      "end": 110.46,
+      "word": "vầy,"
+    },
+    {
+      "start": 110.92,
+      "end": 110.98,
+      "word": "quên"
+    },
+    {
+      "start": 110.98,
+      "end": 111.2,
+      "word": "lấy"
+    },
+    {
+      "start": 111.2,
+      "end": 111.48,
+      "word": "con"
+    },
+    {
+      "start": 111.48,
+      "end": 111.62,
+      "word": "tim"
+    },
+    {
+      "start": 111.62,
+      "end": 111.88,
+      "word": "bao"
+    },
+    {
+      "start": 111.88,
+      "end": 112.02,
+      "word": "về."
+    },
+    {
+      "start": 112.18,
+      "end": 112.42,
+      "word": "Lúc"
+    },
+    {
+      "start": 112.42,
+      "end": 112.86,
+      "word": "trong"
+    },
+    {
+      "start": 112.86,
+      "end": 113.1,
+      "word": "tình"
+    },
+    {
+      "start": 113.1,
+      "end": 113.28,
+      "word": "yêu"
+    },
+    {
+      "start": 113.28,
+      "end": 113.56,
+      "word": "đám"
+    },
+    {
+      "start": 113.56,
+      "end": 113.88,
+      "word": "đầy"
+    },
+    {
+      "start": 113.88,
+      "end": 114.08,
+      "word": "hay"
+    },
+    {
+      "start": 114.08,
+      "end": 114.32,
+      "word": "để"
+    },
+    {
+      "start": 114.32,
+      "end": 114.46,
+      "word": "anh"
+    },
+    {
+      "start": 114.46,
+      "end": 114.7,
+      "word": "chứng"
+    },
+    {
+      "start": 114.7,
+      "end": 114.8,
+      "word": "minh"
+    },
+    {
+      "start": 114.8,
+      "end": 115.04,
+      "word": "cho"
+    },
+    {
+      "start": 115.04,
+      "end": 115.36,
+      "word": "em"
+    },
+    {
+      "start": 115.36,
+      "end": 115.78,
+      "word": "thấy."
+    },
+    {
+      "start": 115.78,
+      "end": 116.28,
+      "word": "Người"
+    },
+    {
+      "start": 116.28,
+      "end": 116.56,
+      "word": "yêu"
+    },
+    {
+      "start": 116.56,
+      "end": 116.82,
+      "word": "ơi"
+    },
+    {
+      "start": 116.82,
+      "end": 117.24,
+      "word": "yêu"
+    },
+    {
+      "start": 117.24,
+      "end": 117.68,
+      "word": "thì"
+    },
+    {
+      "start": 117.68,
+      "end": 118.12,
+      "word": "có"
+    },
+    {
+      "start": 118.0,
+      "end": 118.0,
+      "word": "Không"
+    },
+    {
+      "start": 118.0,
+      "end": 118.4,
+      "word": "gì"
+    },
+    {
+      "start": 118.4,
+      "end": 118.86,
+      "word": "sai"
+    },
+    {
+      "start": 119.7,
+      "end": 120.42,
+      "word": "Không"
+    },
+    {
+      "start": 120.2,
+      "end": 120.4,
+      "word": "Không"
+    },
+    {
+      "start": 120.4,
+      "end": 120.82,
+      "word": "là"
+    },
+    {
+      "start": 120.82,
+      "end": 121.26,
+      "word": "anh"
+    },
+    {
+      "start": 121.26,
+      "end": 121.62,
+      "word": "thì"
+    },
+    {
+      "start": 121.62,
+      "end": 122.24,
+      "word": "ai"
+    },
+    {
+      "start": 122.24,
+      "end": 122.48,
+      "word": "để"
+    },
+    {
+      "start": 122.46,
+      "end": 122.7,
+      "word": "anh"
+    },
+    {
+      "start": 122.7,
+      "end": 122.96,
+      "word": "biết"
+    },
+    {
+      "start": 122.74,
+      "end": 123.02,
+      "word": "đến"
+    },
+    {
+      "start": 122.96,
+      "end": 123.2,
+      "word": "em"
+    },
+    {
+      "start": 123.02,
+      "end": 123.68,
+      "word": "về"
+    },
+    {
+      "start": 123.68,
+      "end": 124.06,
+      "word": "Là"
+    },
+    {
+      "start": 124.04,
+      "end": 124.28,
+      "word": "tình"
+    },
+    {
+      "start": 124.26,
+      "end": 124.42,
+      "word": "yêu"
+    },
+    {
+      "start": 124.42,
+      "end": 124.78,
+      "word": "mãi"
+    },
+    {
+      "start": 124.78,
+      "end": 124.98,
+      "word": "mềm"
+    },
+    {
+      "start": 125.24,
+      "end": 125.44,
+      "word": "Mặc"
+    },
+    {
+      "start": 125.44,
+      "end": 125.62,
+      "word": "kể"
+    },
+    {
+      "start": 125.62,
+      "end": 125.8,
+      "word": "người"
+    },
+    {
+      "start": 125.8,
+      "end": 126.02,
+      "word": "ta"
+    },
+    {
+      "start": 126.02,
+      "end": 126.26,
+      "word": "cười"
+    },
+    {
+      "start": 126.26,
+      "end": 126.84,
+      "word": "chết."
+    },
+    {
+      "start": 126.92,
+      "end": 127.12,
+      "word": "Bởi"
+    },
+    {
+      "start": 127.12,
+      "end": 127.26,
+      "word": "vì"
+    },
+    {
+      "start": 127.26,
+      "end": 127.5,
+      "word": "tình"
+    },
+    {
+      "start": 127.5,
+      "end": 127.62,
+      "word": "yêu"
+    },
+    {
+      "start": 127.62,
+      "end": 127.86,
+      "word": "là"
+    },
+    {
+      "start": 127.86,
+      "end": 128.3,
+      "word": "thế."
+    },
+    {
+      "start": 128.42,
+      "end": 128.7,
+      "word": "Anh"
+    },
+    {
+      "start": 128.7,
+      "end": 128.84,
+      "word": "đã"
+    },
+    {
+      "start": 128.84,
+      "end": 129.1,
+      "word": "cố"
+    },
+    {
+      "start": 129.1,
+      "end": 129.34,
+      "word": "gắng"
+    },
+    {
+      "start": 129.34,
+      "end": 129.62,
+      "word": "để"
+    },
+    {
+      "start": 129.62,
+      "end": 130.06,
+      "word": "mạnh"
+    },
+    {
+      "start": 130.06,
+      "end": 130.54,
+      "word": "mẽ"
+    },
+    {
+      "start": 130.54,
+      "end": 130.86,
+      "word": "hơn."
+    },
+    {
+      "start": 130.96,
+      "end": 131.06,
+      "word": "Vì"
+    },
+    {
+      "start": 131.06,
+      "end": 131.34,
+      "word": "anh"
+    },
+    {
+      "start": 131.34,
+      "end": 131.78,
+      "word": "sợ"
+    },
+    {
+      "start": 131.78,
+      "end": 132.18,
+      "word": "cô"
+    },
+    {
+      "start": 132.18,
+      "end": 132.52,
+      "word": "đơn."
+    },
+    {
+      "start": 132.68,
+      "end": 132.84,
+      "word": "Là"
+    },
+    {
+      "start": 132.84,
+      "end": 133.22,
+      "word": "khi"
+    },
+    {
+      "start": 133.22,
+      "end": 133.52,
+      "word": "những"
+    },
+    {
+      "start": 133.52,
+      "end": 133.68,
+      "word": "nỗi"
+    },
+    {
+      "start": 133.68,
+      "end": 133.84,
+      "word": "nhớ"
+    },
+    {
+      "start": 133.84,
+      "end": 134.08,
+      "word": "như"
+    },
+    {
+      "start": 134.08,
+      "end": 134.4,
+      "word": "sáng"
+    },
+    {
+      "start": 134.4,
+      "end": 134.76,
+      "word": "xô"
+    },
+    {
+      "start": 134.76,
+      "end": 134.92,
+      "word": "lời"
+    },
+    {
+      "start": 134.92,
+      "end": 135.08,
+      "word": "anh"
+    },
+    {
+      "start": 135.08,
+      "end": 135.44,
+      "word": "từng"
+    },
+    {
+      "start": 135.44,
+      "end": 135.62,
+      "word": "cần."
+    },
+    {
+      "start": 135.9,
+      "end": 136.0,
+      "word": "Là"
+    },
+    {
+      "start": 136.0,
+      "end": 136.36,
+      "word": "khi"
+    },
+    {
+      "start": 136.36,
+      "end": 136.64,
+      "word": "em"
+    },
+    {
+      "start": 136.64,
+      "end": 136.84,
+      "word": "cười"
+    },
+    {
+      "start": 136.84,
+      "end": 137.06,
+      "word": "đùa"
+    },
+    {
+      "start": 137.06,
+      "end": 137.24,
+      "word": "bên"
+    },
+    {
+      "start": 137.24,
+      "end": 137.46,
+      "word": "ai"
+    },
+    {
+      "start": 137.46,
+      "end": 137.64,
+      "word": "đau"
+    },
+    {
+      "start": 137.64,
+      "end": 137.9,
+      "word": "đớn."
+    },
+    {
+      "start": 137.9,
+      "end": 138.02,
+      "word": "Nên"
+    },
+    {
+      "start": 138.02,
+      "end": 138.24,
+      "word": "anh"
+    },
+    {
+      "start": 138.24,
+      "end": 138.48,
+      "word": "giận"
+    },
+    {
+      "start": 138.48,
+      "end": 138.84,
+      "word": "hờn."
+    },
+    {
+      "start": 138.88,
+      "end": 139.06,
+      "word": "Nhưng"
+    },
+    {
+      "start": 139.06,
+      "end": 139.26,
+      "word": "yêu"
+    },
+    {
+      "start": 139.26,
+      "end": 139.52,
+      "word": "em"
+    },
+    {
+      "start": 139.52,
+      "end": 139.64,
+      "word": "là"
+    },
+    {
+      "start": 139.64,
+      "end": 139.86,
+      "word": "sai"
+    },
+    {
+      "start": 139.86,
+      "end": 140.08,
+      "word": "thì"
+    },
+    {
+      "start": 140.08,
+      "end": 140.3,
+      "word": "anh"
+    },
+    {
+      "start": 140.3,
+      "end": 140.42,
+      "word": "đứt"
+    },
+    {
+      "start": 140.42,
+      "end": 140.72,
+      "word": "không"
+    },
+    {
+      "start": 140.72,
+      "end": 140.86,
+      "word": "cần"
+    },
+    {
+      "start": 140.86,
+      "end": 142.48,
+      "word": "đúng."
+    },
+    {
+      "start": 144.44,
+      "end": 144.92,
+      "word": "Em"
+    },
+    {
+      "start": 144.92,
+      "end": 145.02,
+      "word": "Người"
+    },
+    {
+      "start": 145.02,
+      "end": 145.32,
+      "word": "yêu"
+    },
+    {
+      "start": 145.32,
+      "end": 145.6,
+      "word": "ơi"
+    },
+    {
+      "start": 145.56,
+      "end": 146.02,
+      "word": "yêu"
+    },
+    {
+      "start": 146.02,
+      "end": 146.46,
+      "word": "mình"
+    },
+    {
+      "start": 146.46,
+      "end": 146.88,
+      "word": "anh"
+    },
+    {
+      "start": 146.88,
+      "end": 147.22,
+      "word": "được"
+    },
+    {
+      "start": 147.22,
+      "end": 147.76,
+      "word": "không?"
+    },
+    {
+      "start": 147.9,
+      "end": 148.08,
+      "word": "Từng"
+    },
+    {
+      "start": 148.08,
+      "end": 148.26,
+      "word": "giờ"
+    },
+    {
+      "start": 148.26,
+      "end": 148.38,
+      "word": "và"
+    },
+    {
+      "start": 148.38,
+      "end": 148.7,
+      "word": "sau"
+    },
+    {
+      "start": 148.7,
+      "end": 148.86,
+      "word": "đây"
+    },
+    {
+      "start": 148.86,
+      "end": 149.24,
+      "word": "sớm"
+    },
+    {
+      "start": 149.24,
+      "end": 149.54,
+      "word": "mạnh"
+    },
+    {
+      "start": 149.54,
+      "end": 149.88,
+      "word": "hơn"
+    },
+    {
+      "start": 149.88,
+      "end": 150.12,
+      "word": "em"
+    },
+    {
+      "start": 150.12,
+      "end": 150.5,
+      "word": "mùa"
+    },
+    {
+      "start": 150.5,
+      "end": 151.04,
+      "word": "đớn."
+    },
+    {
+      "start": 151.1,
+      "end": 151.32,
+      "word": "Làm"
+    },
+    {
+      "start": 151.32,
+      "end": 151.44,
+      "word": "người"
+    },
+    {
+      "start": 151.44,
+      "end": 151.64,
+      "word": "ta"
+    },
+    {
+      "start": 151.64,
+      "end": 151.96,
+      "word": "sớm"
+    },
+    {
+      "start": 151.96,
+      "end": 152.04,
+      "word": "quay"
+    },
+    {
+      "start": 152.86,
+      "end": 153.06,
+      "word": "con"
+    },
+    {
+      "start": 153.06,
+      "end": 153.24,
+      "word": "tim"
+    },
+    {
+      "start": 153.24,
+      "end": 153.52,
+      "word": "hào"
+    },
+    {
+      "start": 153.52,
+      "end": 153.64,
+      "word": "gầy."
+    },
+    {
+      "start": 153.82,
+      "end": 154.04,
+      "word": "Đứng"
+    },
+    {
+      "start": 154.04,
+      "end": 154.42,
+      "word": "trong"
+    },
+    {
+      "start": 154.42,
+      "end": 154.62,
+      "word": "tình"
+    },
+    {
+      "start": 154.62,
+      "end": 154.84,
+      "word": "yêu"
+    },
+    {
+      "start": 154.84,
+      "end": 155.16,
+      "word": "lau"
+    },
+    {
+      "start": 155.16,
+      "end": 155.5,
+      "word": "về,"
+    },
+    {
+      "start": 155.68,
+      "end": 155.82,
+      "word": "để"
+    },
+    {
+      "start": 155.82,
+      "end": 156.0,
+      "word": "anh"
+    },
+    {
+      "start": 156.0,
+      "end": 156.28,
+      "word": "chứng"
+    },
+    {
+      "start": 156.28,
+      "end": 156.38,
+      "word": "minh"
+    },
+    {
+      "start": 156.38,
+      "end": 156.64,
+      "word": "cho"
+    },
+    {
+      "start": 156.64,
+      "end": 156.84,
+      "word": "em"
+    },
+    {
+      "start": 156.84,
+      "end": 157.08,
+      "word": "thấy."
+    },
+    {
+      "start": 157.74,
+      "end": 157.9,
+      "word": "Người"
+    },
+    {
+      "start": 157.9,
+      "end": 158.12,
+      "word": "yêu"
+    },
+    {
+      "start": 158.12,
+      "end": 158.4,
+      "word": "ơi"
+    },
+    {
+      "start": 158.4,
+      "end": 158.8,
+      "word": "yêu"
+    },
+    {
+      "start": 158.8,
+      "end": 159.2,
+      "word": "thì"
+    },
+    {
+      "start": 159.2,
+      "end": 159.66,
+      "word": "có"
+    },
+    {
+      "start": 159.66,
+      "end": 160.04,
+      "word": "gì"
+    },
+    {
+      "start": 160.04,
+      "end": 160.4,
+      "word": "sai."
+    },
+    {
+      "start": 160.42,
+      "end": 160.66,
+      "word": "Đâu"
+    },
+    {
+      "start": 160.66,
+      "end": 160.94,
+      "word": "có"
+    },
+    {
+      "start": 160.94,
+      "end": 161.38,
+      "word": "sai"
+    },
+    {
+      "start": 161.38,
+      "end": 161.6,
+      "word": "đâu."
+    },
+    {
+      "start": 161.68,
+      "end": 162.06,
+      "word": "Không"
+    },
+    {
+      "start": 162.06,
+      "end": 162.42,
+      "word": "là"
+    },
+    {
+      "start": 162.42,
+      "end": 162.84,
+      "word": "anh"
+    },
+    {
+      "start": 162.84,
+      "end": 163.22,
+      "word": "thì"
+    },
+    {
+      "start": 163.22,
+      "end": 163.82,
+      "word": "anh."
+    },
+    {
+      "start": 163.88,
+      "end": 164.04,
+      "word": "Đời"
+    },
+    {
+      "start": 164.04,
+      "end": 164.42,
+      "word": "anh"
+    },
+    {
+      "start": 164.42,
+      "end": 164.72,
+      "word": "nhé"
+    },
+    {
+      "start": 164.72,
+      "end": 165.22,
+      "word": "baby."
+    },
+    {
+      "start": 165.5,
+      "end": 165.66,
+      "word": "Làm"
+    },
+    {
+      "start": 165.66,
+      "end": 165.86,
+      "word": "tình"
+    },
+    {
+      "start": 165.86,
+      "end": 166.04,
+      "word": "yêu"
+    },
+    {
+      "start": 166.04,
+      "end": 166.42,
+      "word": "mãi"
+    },
+    {
+      "start": 166.42,
+      "end": 166.76,
+      "word": "mê,"
+    },
+    {
+      "start": 166.96,
+      "end": 167.08,
+      "word": "mặc"
+    },
+    {
+      "start": 167.08,
+      "end": 167.2,
+      "word": "kệ"
+    },
+    {
+      "start": 167.2,
+      "end": 167.42,
+      "word": "người"
+    },
+    {
+      "start": 167.42,
+      "end": 167.58,
+      "word": "ta"
+    },
+    {
+      "start": 167.58,
+      "end": 167.92,
+      "word": "từ"
+    },
+    {
+      "start": 167.92,
+      "end": 168.4,
+      "word": "chế."
+    },
+    {
+      "start": 168.0,
+      "end": 168.66,
+      "word": "Bởi"
+    },
+    {
+      "start": 168.48,
+      "end": 168.66,
+      "word": "Bởi"
+    },
+    {
+      "start": 168.66,
+      "end": 168.82,
+      "word": "vì"
+    },
+    {
+      "start": 168.82,
+      "end": 169.04,
+      "word": "tình"
+    },
+    {
+      "start": 169.04,
+      "end": 169.2,
+      "word": "yêu"
+    },
+    {
+      "start": 169.2,
+      "end": 169.5,
+      "word": "là"
+    },
+    {
+      "start": 169.48,
+      "end": 169.9,
+      "word": "thế."
+    },
+    {
+      "start": 170.06,
+      "end": 170.24,
+      "word": "Làm"
+    },
+    {
+      "start": 170.24,
+      "end": 170.4,
+      "word": "người"
+    },
+    {
+      "start": 170.4,
+      "end": 170.66,
+      "word": "yêu"
+    },
+    {
+      "start": 170.66,
+      "end": 170.96,
+      "word": "anh"
+    },
+    {
+      "start": 170.96,
+      "end": 171.2,
+      "word": "nhé"
+    },
+    {
+      "start": 171.2,
+      "end": 172.8,
+      "word": "baby."
+    },
+    {
+      "start": 173.3,
+      "end": 173.42,
+      "word": "Rồi"
+    },
+    {
+      "start": 173.42,
+      "end": 173.68,
+      "word": "làm"
+    },
+    {
+      "start": 173.68,
+      "end": 173.78,
+      "word": "vợ"
+    },
+    {
+      "start": 173.78,
+      "end": 174.16,
+      "word": "anh"
+    },
+    {
+      "start": 174.16,
+      "end": 174.46,
+      "word": "nhé"
+    },
+    {
+      "start": 174.46,
+      "end": 176.26,
+      "word": "baby."
+    },
+    {
+      "start": 176.52,
+      "end": 176.78,
+      "word": "Làm"
+    },
+    {
+      "start": 176.78,
+      "end": 176.86,
+      "word": "người"
+    },
+    {
+      "start": 176.86,
+      "end": 177.04,
+      "word": "yêu"
+    },
+    {
+      "start": 177.04,
+      "end": 177.28,
+      "word": "anh"
+    },
+    {
+      "start": 177.28,
+      "end": 177.62,
+      "word": "nhé"
+    },
+    {
+      "start": 177.62,
+      "end": 178.0,
+      "word": "baby."
+    },
+    {
+      "start": 178.08,
+      "end": 178.26,
+      "word": "Rồi"
+    },
+    {
+      "start": 178.26,
+      "end": 178.48,
+      "word": "làm"
+    },
+    {
+      "start": 178.48,
+      "end": 178.62,
+      "word": "vợ"
+    },
+    {
+      "start": 178.62,
+      "end": 178.94,
+      "word": "anh"
+    },
+    {
+      "start": 178.94,
+      "end": 179.2,
+      "word": "nhé"
+    },
+    {
+      "start": 179.2,
+      "end": 179.82,
+      "word": "baby."
+    },
+    {
+      "start": 180.04,
+      "end": 180.24,
+      "word": "No"
+    },
+    {
+      "start": 180.6,
+      "end": 181.38,
+      "word": "no."
+    },
+    {
+      "start": 181.7,
+      "end": 182.04,
+      "word": "Ý"
+    },
+    {
+      "start": 182.04,
+      "end": 182.4,
+      "word": "em"
+    },
+    {
+      "start": 182.4,
+      "end": 182.94,
+      "word": "sao?"
+    },
+    {
+      "start": 183.24,
+      "end": 183.58,
+      "word": "Ý"
+    },
+    {
+      "start": 183.58,
+      "end": 184.02,
+      "word": "em"
+    },
+    {
+      "start": 184.02,
+      "end": 184.72,
+      "word": "sao?"
+    }
+  ],
+  "curated": [
+    {
+      "t": 39.22,
+      "text": "Người yêu ơi yêu mình anh được không"
+    },
+    {
+      "t": 49.92,
+      "text": "Hãy để anh chứng minh cho em thấy"
+    },
+    {
+      "t": 52.02,
+      "text": "Người yêu ơi yêu thì có gì sai"
+    },
+    {
+      "t": 118.0,
+      "text": "Không là anh thì ai"
+    },
+    {
+      "t": 162.06,
+      "text": "Là tình yêu mãi mê"
+    },
+    {
+      "t": 168.0,
+      "text": "Bởi vì tình yêu là thế"
+    },
+    {
+      "t": 170.06,
+      "text": "Làm người yêu anh nhé baby"
+    },
+    {
+      "t": 173.3,
+      "text": "Rồi làm vợ anh nhé baby"
+    },
+    {
+      "t": 181.7,
+      "text": "Ý em sao ý em sao"
+    }
+  ],
+  "segmentCues": [
+    {
+      "t": 12.96,
+      "text": "Em lặng im còn anh thì ngồi ngẩn ngơ nhìn khuôn mặt. Ngay thơ đó em hứa ngờ quá nên anh lo sợ bơ vơ. Đợi chờ rối mắt mang em ngay mù ngó sang anh thân thờ. Đôi mắt mơ anh đã cố đôi thay đêm anh nghe."
+    },
+    {
+      "t": 28.0,
+      "text": "Vì anh sợ cô đơn nói yêu má hồng. Mắt mong cong bởi môi mỏng rất khó."
+    },
+    {
+      "t": 33.56,
+      "text": "Vì lo trong trái tim em nào có ai. Nhưng người yêu em nó sai thì anh đi không cần đu."
+    },
+    {
+      "t": 39.22,
+      "text": "Người yêu ơi yêu mình anh được không? Từ giờ và sau đã hơi."
+    },
+    {
+      "t": 43.24,
+      "text": "Chúa mình nơi mùa đá là ngày tật xung vời. Qua lắm con tim bao gầy."
+    },
+    {
+      "t": 48.0,
+      "text": "Lúc trong tình yêu đong đầy, hãy để anh chứng minh cho em thấy."
+    },
+    {
+      "t": 52.02,
+      "text": "Người yêu ơi yêu thì có gì sai."
+    },
+    {
+      "t": 59.9,
+      "text": "Làm tình yêu mãi mê, mặc kì người ta tự chết, bởi vì tình yêu ngạc thế."
+    },
+    {
+      "t": 64.52,
+      "text": "Làm người yêu anh nhé baby, rồi làm vợ anh nhé baby."
+    },
+    {
+      "t": 70.8,
+      "text": "Làm người yêu anh nhé baby, rồi làm vợ anh nhé baby."
+    },
+    {
+      "t": 75.24,
+      "text": "Không hiểu, không hiểu, không hiểu, không hiểu, không hiểu. Gặp em tự nhiên rái tim nằm anh trai."
+    },
+    {
+      "t": 79.32,
+      "text": "Ngày xuân phai, phép toán có tự tính một bộ một bóng hai."
+    },
+    {
+      "t": 81.62,
+      "text": "Anh cầm em tìm bằng ba, nhưng tương lai nó sẽ đúng nó như ta."
+    },
+    {
+      "t": 84.56,
+      "text": "Bàn phim mấy tính chơi nhiều, hoài đều tìm mấy cũng có ngày."
+    },
+    {
+      "t": 88.0,
+      "text": "Yêu xong chia tay, ai cũng sợ hãi tình yêu trở ra em. Nó rất dài, rất dài."
+    },
+    {
+      "t": 91.02,
+      "text": "Anh đã cố gắng đi bạnh mẽ hơn vì anh sợ."
+    },
+    {
+      "t": 93.48,
+      "text": "Cô đã nói yêu má hồng, mắt con mùa mùi mỏng, rất khó."
+    },
+    {
+      "t": 95.0,
+      "text": "Công mở môi mỏng rất khó. Vì lao trong trái tim em đã có ai. Nhưng yêu em là sai thì anh ấy không cần đúng."
+    },
+    {
+      "t": 97.28,
+      "text": "Vì lòng trong trái tim em đã có..."
+    },
+    {
+      "t": 103.28,
+      "text": "Người yêu ơi yêu mình anh được không? Từ giờ và sau đã vua đành nơi đây mùa đá."
+    },
+    {
+      "t": 109.52,
+      "text": "Lần này ta xuống vầy, quên lấy con tim bao về. Lúc trong tình yêu đám đầy hay để anh chứng minh cho em thấy."
+    },
+    {
+      "t": 115.78,
+      "text": "Người yêu ơi yêu thì có gì sai"
+    },
+    {
+      "t": 118.0,
+      "text": "Không có gì sai."
+    },
+    {
+      "t": 119.7,
+      "text": "Không là anh thì ai để anh đến về"
+    },
+    {
+      "t": 122.36,
+      "text": "Để anh biết em về."
+    },
+    {
+      "t": 123.68,
+      "text": "Là tình yêu mãi mềm"
+    },
+    {
+      "t": 125.24,
+      "text": "Mặc kể người ta cười chết."
+    },
+    {
+      "t": 126.92,
+      "text": "Bởi vì tình yêu là thế."
+    },
+    {
+      "t": 128.42,
+      "text": "Anh đã cố gắng để mạnh mẽ hơn."
+    },
+    {
+      "t": 130.96,
+      "text": "Vì anh sợ cô đơn."
+    },
+    {
+      "t": 132.68,
+      "text": "Là khi những nỗi nhớ như sáng xô lời anh từng cần."
+    },
+    {
+      "t": 135.9,
+      "text": "Là khi em cười đùa bên ai đau đớn."
+    },
+    {
+      "t": 137.9,
+      "text": "Nên anh giận hờn."
+    },
+    {
+      "t": 144.44,
+      "text": "Em"
+    },
+    {
+      "t": 151.1,
+      "text": "Làm người ta sớm quay quay, con tim hào gầy. Đứng trong tình yêu lau về, để anh chứng minh cho em thấy."
+    },
+    {
+      "t": 157.74,
+      "text": "Người yêu ơi yêu thì có gì sai. Đâu có sai đâu. Không là anh thì anh. Đời anh nhé baby."
+    },
+    {
+      "t": 165.5,
+      "text": "Làm tình yêu mãi mê, mặc kệ người ta từ chế. Bởi vì tình yêu là thế. Làm người yêu anh nhé baby."
+    },
+    {
+      "t": 168.0,
+      "text": "Bởi vì tình yêu là thế. Làm người yêu anh nhé baby. Rồi làm vợ anh nhé baby."
+    },
+    {
+      "t": 176.52,
+      "text": "Làm người yêu anh nhé baby. Rồi làm vợ anh nhé baby. No no no."
+    },
+    {
+      "t": 181.7,
+      "text": "Ý em sao? Ý em sao?"
+    }
+  ]
+}
